@@ -3,36 +3,17 @@ body {
     height: 100vh;
     background-image: url("images/bg.jpg");
     background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 
 
-.title, .enter {
+.greetings {
     color: #7effbc;
-    font-size: 30px;
     margin: 40px;
     font-family: 'Metamorphous', serif;
+    font-size:96px;
+    letter-spacing: 10px;
 }
 
-.title {
-    font-size:121px;
-    letter-spacing: 10px;
-    flex-wrap: wrap;
-}
-.enter{
-    background-color:rgba(0,0,0,0.0);
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 2px solid #7effbc;
-    font-size: 20px;
-    letter-spacing: 15px;
-}
 /* all links */
 a {
 text-decoration: underline;
