@@ -5,6 +5,10 @@ body {
     background-size: cover;
   }
 
+.menu {
+  display:flex;
+  justify-content: space-between;
+}
 
 .greetings {
     color: #7effbc;
@@ -14,10 +18,10 @@ body {
     letter-spacing: 10px;
 }
 
-/* all links */
+/* /* all links */
 a {
 text-decoration: underline;
-}
+} */
 /* unvisited links */
 a:link {
 color: blue; /*TODO:change*/
