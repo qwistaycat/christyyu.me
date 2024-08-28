@@ -26,15 +26,15 @@ img {
 }
 
 .greetings {
-    color: #7effbc;
-    font-family: 'Metamorphous', serif;
-    font-size:96px;
-    margin-left: 20vw;
-    margin-top: 70vh;
+  color: #7effbc;
+  font-family: 'Metamorphous', serif;
+  font-size:96px;
+  margin-left: 20vw;
+  margin-top: 70vh;
 }
 
 .tagline {
-  color: #FFF5D3;
+  color: #7effbc;
   font-family: 'Metamorphous', serif;
   font-size: 24px;
   margin-left:150px;
