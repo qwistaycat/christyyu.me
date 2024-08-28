@@ -32,8 +32,9 @@ img {
   color: #7effbc;
   font-family: 'Metamorphous', serif;
   font-size:96px;
-  margin-left: 20vw;
-  margin-top: 70vh;
+  position:absolute;
+  left: 20vw;
+  top: 70vh;
 }
 
 .tagline {
