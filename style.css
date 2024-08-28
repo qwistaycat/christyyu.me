@@ -3,8 +3,11 @@ body {
     background-size: cover;
   }
 
-div div.title, div div.role, div p.descrip{
+div div.title, div p.descrip{
   color: #FFF5D3;
+}
+div div.role{
+  color:#43A9B7;
 }
 
 .blur{
