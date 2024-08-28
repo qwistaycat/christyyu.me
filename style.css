@@ -7,7 +7,11 @@ div div.title, div div.role, div p.descrip{
   color: #FFF5D3;
 }
 
-
+.blur{
+  width: 900px;
+  margin-left: 20vw;
+  margin-top: 70vh;
+}
 .menu {
   display:flex;
   flex-direction: row;
@@ -15,7 +19,8 @@ div div.title, div div.role, div p.descrip{
   align-items: flex-start;
   position: sticky;
   top:20px;
-} img {
+} 
+img {
   width:45px; /*TODO: change clamp lol*/
   margin:20px;
 }
@@ -27,11 +32,7 @@ div div.title, div div.role, div p.descrip{
     margin-left: 20vw;
     margin-top: 70vh;
 }
-.blur{
-  width: 900px;
-  margin-left: 20vw;
-  margin-top: 70vh;
-}
+
 .tagline {
   color: #FFF5D3;
   font-family: 'Metamorphous', serif;
