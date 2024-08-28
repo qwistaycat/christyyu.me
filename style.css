@@ -7,6 +7,7 @@ div div.title, div div.role, div p.descrip{
   color: #FFF5D3;
 }
 
+
 .menu {
   display:flex;
   flex-direction: row;
@@ -25,6 +26,10 @@ div div.title, div div.role, div p.descrip{
     font-size:96px;
     margin-left: 20vw;
     margin-top: 70vh;
+}
+.blur{
+  margin-left: 20vw;
+  margin-top: 70vh;
 }
 .tagline {
   color: #FFF5D3;
