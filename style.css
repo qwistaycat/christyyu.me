@@ -23,8 +23,8 @@ div div.title, div div.role, div p.descrip{
     color: #7effbc;
     font-family: 'Metamorphous', serif;
     font-size:96px;
-    margin-left: 150px; /*TODO: change to relative*/
-    margin-top: 400px;
+    margin-left: 20vw;
+    margin-top: 70vh;
 }
 .tagline {
   color: #FFF5D3;
