@@ -1,24 +1,40 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("images/bg.jpg");
+    background-image: url("images/bg_home_dark.png");
     background-size: cover;
   }
+
+div div.title, div div.role, div p.descrip{
+  color: #FFF5D3;
+}
 
 .menu {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  position: sticky;
+  top:20px;
+} img {
+  width:45px; /*TODO: change clamp lol*/
+  margin:20px;
 }
 
 .greetings {
     color: #7effbc;
-    margin: 40px;
     font-family: 'Metamorphous', serif;
     font-size:96px;
-    letter-spacing: 10px;
+    margin-left: 150px; /*TODO: change to relative*/
+    margin-top: 400px;
 }
+.tagline {
+  color: #FFF5D3;
+  font-family: 'Metamorphous', serif;
+  font-size: 24px;
+  margin-left:150px;
+  width: 950px;
+  margin-bottom:500px;
+}
+
 
 /* /* all links */
 a {
