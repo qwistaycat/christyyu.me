@@ -28,6 +28,7 @@ div div.title, div div.role, div p.descrip{
     margin-top: 70vh;
 }
 .blur{
+  width: 900px;
   margin-left: 20vw;
   margin-top: 70vh;
 }
