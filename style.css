@@ -20,8 +20,8 @@ div div.role{
   top:20px;
 } 
 img {
-  width:45px; /*TODO: change clamp lol*/
-  margin:20px;
+  width:30px; /*TODO: change clamp lol*/
+  margin:5vh;
 }
 
 .greetings {
@@ -50,6 +50,8 @@ img {
   display: flex;
   justify-content: space-between;
   color:#7effbc;
+  background-color: black;
+  padding: ;
 }
 
 
