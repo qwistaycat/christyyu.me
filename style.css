@@ -29,13 +29,13 @@ img {
   font-family: 'Metamorphous', serif;
   font-size:96px;
   margin-left: 10vw;
-  margin-top: 50vh;
+  margin-top: 40vh;
 }
 .blur{
   width: 900px;
   position:absolute;
   left: 5vw;
-  top: 45vh;
+  top: 35vh;
 }
 
 .tagline {
@@ -48,6 +48,7 @@ img {
 }
 .contact{
   display: flex;
+  justify-content: space-between;
   color:#7effbc;
 }
 
