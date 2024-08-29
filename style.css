@@ -10,11 +10,7 @@ div div.role{
   color:#43A9B7;
 }
 
-.blur{
-  width: 900px;
-  margin-left: 20vw;
-  margin-top: 70vh;
-}
+
 .menu {
   display:flex;
   flex-direction: row;
@@ -32,9 +28,14 @@ img {
   color: #7effbc;
   font-family: 'Metamorphous', serif;
   font-size:96px;
+  margin-left: 10vw;
+  margin-top: 50vh;
+}
+.blur{
+  width: 900px;
   position:absolute;
-  left: 20vw;
-  top: 70vh;
+  left: 5vw;
+  top: 45vh;
 }
 
 .tagline {
