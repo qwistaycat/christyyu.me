@@ -3,12 +3,6 @@ body {
     background-size: cover;
   }
 
-div div.title, div p.descrip{
-  color: #FFF5D3;
-}
-div div.role{
-  color:#43A9B7;
-}
 
 
 .menu {
@@ -19,10 +13,11 @@ div div.role{
   position: sticky;
   top:20px;
 } 
-img {
+.menu img {
   width:30px; /*TODO: change clamp lol*/
   margin:3vh;
 }
+
 
 .greetings {
   color: #7effbc;
@@ -38,20 +33,50 @@ img {
   top: 35vh;
 }
 
+
+div div.title{
+  color: #FFF5D3;
+  font-family: 'Metamorphous', serif;
+}
+div p.descrip{
+  color: #FFF5D3;
+  font-family: 'Syne Mono', serif;
+}
+div div.role{
+  color:#43A9B7;
+  font-family: 'Metamorphous', serif;
+}
+
+.numbered{
+  color:#43A9B7;
+  font-family: 'Syne Mono', serif;
+  margin-left:3vh;
+  font-size:32px;
+}
+.star{
+  width:40px; /*TODO: change clamp lol*/
+  margin-left:3.5vh;
+}
+.GOLD, .newsletter, .refract{
+  display: flex;
+}
+
+
 .tagline {
   color: #7effbc;
   font-family: 'Metamorphous', serif;
   font-size: 24px;
-  margin-left:150px;
+  margin-left: 10vw;
   width: 950px;
-  margin-bottom:500px;
+  margin-bottom:40vh;
+  margin-top:5vh;
 }
 .contact{
   display: flex;
   justify-content: space-between;
   color:#7effbc;
   background-color: black;
-  padding: ;
+  padding: 20px;
 }
 
 
