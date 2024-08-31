@@ -26,11 +26,13 @@ body {
   margin-left: 10vw;
   margin-top: 40vh;
 }
-.blur{
+
+.blur {
   width: 900px;
-  position:absolute;
+  position: absolute;
   left: 5vw;
   top: 35vh;
+  z-index: -1;
 }
 
 
@@ -77,11 +79,14 @@ div div.role{
   color:#7effbc;
   background-color: black;
   padding: 20px;
+  font-size: 64px;
 }
-
-
-
-
+.links{
+  display: grid;
+  grid-template: 50px 50px / 50px 50px;
+  gap:10px;
+  font-size: 24px;
+}
 
 /* /* all links */
 a {
