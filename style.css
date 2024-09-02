@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/bg_home_dark.png");
+    background-image: url("images/bg_home_dark.svg");
     background-size: cover;
   }
 
@@ -34,19 +34,33 @@ body {
   top: 35vh;
   z-index: -1;
 }
+.tagline {
+  color: #7effbc;
+  font-family: 'Metamorphous', serif;
+  font-size: 24px;
+  margin-left: 10vw;
+  margin-bottom:40vh;
+  margin-top:5vh;
+}
 
-
+.texts{
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
 div div.title{
   color: #FFF5D3;
   font-family: 'Metamorphous', serif;
+  font-size: 64px;
 }
 div p.descrip{
   color: #FFF5D3;
   font-family: 'Syne Mono', serif;
+  font-size: 32px;
 }
 div div.role{
   color:#43A9B7;
   font-family: 'Metamorphous', serif;
+  font-size: 32px;
 }
 
 .numbered{
@@ -64,15 +78,6 @@ div div.role{
 }
 
 
-.tagline {
-  color: #7effbc;
-  font-family: 'Metamorphous', serif;
-  font-size: 24px;
-  margin-left: 10vw;
-  width: 950px;
-  margin-bottom:40vh;
-  margin-top:5vh;
-}
 .contact{
   display: flex;
   justify-content: space-between;
@@ -80,6 +85,7 @@ div div.role{
   background-color: black;
   padding: 20px;
   font-size: 64px;
+  font-family: 'Metamorphous', serif;
 }
 .links{
   display: grid;
