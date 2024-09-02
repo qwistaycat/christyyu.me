@@ -22,13 +22,13 @@ body {
 
 .greetings {
   color: #7effbc;
-  font-size:96px;
+  font-size:6rem; /*TODO: change clamp lol 96px*/
   margin-left: 10vw;
   margin-top: 40vh;
 }
 
 .blur {
-  width: 900px;
+  width: 900px; /*TODO: relative*/
   position: absolute;
   left: 5vw;
   top: 35vh;
@@ -36,7 +36,7 @@ body {
 }
 .tagline {
   color: #7effbc;
-  font-size: 1.5em; /*24px*/
+  font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
   margin-left: 10vw;
   margin-bottom:40vh;
   margin-top:5vh;
@@ -48,26 +48,26 @@ body {
 }
 div div.title{
   color: #FFF5D3;
-  font-size: 64px;
+  font-size: 4rem;  /*64px*/ /*TODO: change clamp lol*/
 }
 div p.descrip{
   color: #FFF5D3;
   font-family: 'Syne Mono', serif;
-  font-size: 32px;
+  font-size: 2rem; /*32px*/ /*TODO: change clamp lol*/
 }
 div div.role{
   color:#43A9B7;
-  font-size: 32px;
+  font-size: 2rem; /*32px*/ /*TODO: change clamp lol*/
 }
 
 .numbered{
   color:#43A9B7;
   font-family: 'Syne Mono', serif;
   margin-left:3vh;
-  font-size:32px;
+  font: size 2rem; /*32px*/ /*TODO: change clamp lol*/
 }
 .star{
-  width:40px; /*TODO: change clamp lol*/
+  width:40px;
   margin-left:3.5vh;
 }
 .GOLD, .newsletter, .refract{
@@ -81,14 +81,13 @@ div div.role{
   color:#7effbc;
   background-color: black;
   padding:5vw;
-  font-size: 64px;
+  font-size: 4rem; /*64px*/ /*TODO: change clamp lol*/
 }
 .links{
   display: grid;
   grid-template: 5vh 35vw / 5vh 35vw;
-  gap:5vw;
-  font-size: 0.3em; /*24px*/
-  /*TODO: something funny w font here */
+  gap:1vw;
+  font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
 }
 
 /* /* all links */
