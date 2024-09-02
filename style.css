@@ -1,6 +1,7 @@
 body {
     background-image: url("images/bg_home_dark.svg");
     background-size: cover;
+    font-family: 'Metamorphous', serif;
   }
 
 
@@ -21,7 +22,6 @@ body {
 
 .greetings {
   color: #7effbc;
-  font-family: 'Metamorphous', serif;
   font-size:96px;
   margin-left: 10vw;
   margin-top: 40vh;
@@ -36,7 +36,6 @@ body {
 }
 .tagline {
   color: #7effbc;
-  font-family: 'Metamorphous', serif;
   font-size: 24px;
   margin-left: 10vw;
   margin-bottom:40vh;
@@ -49,7 +48,6 @@ body {
 }
 div div.title{
   color: #FFF5D3;
-  font-family: 'Metamorphous', serif;
   font-size: 64px;
 }
 div p.descrip{
@@ -59,7 +57,6 @@ div p.descrip{
 }
 div div.role{
   color:#43A9B7;
-  font-family: 'Metamorphous', serif;
   font-size: 32px;
 }
 
@@ -83,15 +80,15 @@ div div.role{
   justify-content: space-between;
   color:#7effbc;
   background-color: black;
-  padding: 20px;
+  padding:5vw;
   font-size: 64px;
-  font-family: 'Metamorphous', serif;
 }
 .links{
   display: grid;
-  grid-template: 50px 50px / 50px 50px;
-  gap:10px;
-  font-size: 24px;
+  grid-template: 5vh 35vw / 5vh 35vw;
+  gap:5vw;
+  font-size: 0.5em;
+  /*TODO: something funny w font here */
 }
 
 /* /* all links */
