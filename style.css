@@ -1,7 +1,8 @@
 body {
-    background-image: url("images/bg_home_dark.avif");
+    background-image: url("images/bg_home_dark.png"); /*convert to avif once i figure out how to do it without the picture getting darker*/
     background-size: cover;
     font-family: 'Metamorphous', serif;
+    background-position: center
   }
 
 
@@ -15,7 +16,7 @@ body {
   top:20px;
 } 
 .menu img {
-  width:30px; /*TODO: change clamp lol*/
+  width:30px;
   margin:3vh;
 }
 
@@ -28,7 +29,7 @@ body {
 }
 
 .blur {
-  width: 900px; /*TODO: relative*/
+  max-width: 900px;
   position: absolute;
   left: 5vw;
   top: 35vh;
