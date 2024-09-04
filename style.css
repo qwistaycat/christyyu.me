@@ -2,7 +2,7 @@ body {
     background-image: url("images/bg_home_dark.png"); /*convert to avif once i figure out how to do it without the picture getting darker*/
     background-size: cover;
     font-family: 'Metamorphous', serif;
-    background-position: center
+    /* background-position: center; */
   }
 
 
@@ -27,9 +27,8 @@ body {
   margin-left: 10vw;
   margin-top: 40vh;
 }
-
 .blur {
-  max-width: 900px;
+  max-width: 90vh;
   position: absolute;
   left: 5vw;
   top: 35vh;
@@ -39,29 +38,40 @@ body {
   color: #7effbc;
   font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
   margin-left: 10vw;
-  margin-bottom:40vh; /*SCUFFED SPACING BRUH*/
+  margin-bottom:70vh; /*SCUFFED SPACING BRUH*/
   margin-top:5vh;
-}
-
-.texts{
-  margin-left: 5vw;
-  margin-right: 5vw;
 }
 
 
 div div.title{
   color: #FFF5D3;
-  font-size: 4rem;  /*64px*/ /*TODO: change clamp lol*/
+  font-size: 3rem;  /*48px*/ /*TODO: change clamp lol*/
 }
 div p.descrip{
   color: #FFF5D3;
   font-family: 'Syne Mono', serif;
-  font-size: 2rem; /*32px*/ /*TODO: change clamp lol*/
+  font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
 }
 div div.role{
   color:#43A9B7;
-  font-size: 2rem; /*32px*/ /*TODO: change clamp lol*/
+  font-size: 1rem; /*16px*/ /*TODO: change clamp lol*/
 }
+.side{
+  padding-top: 5vh;
+}
+.texts{
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-top: 10vh;
+}
+.GOLD, .newsletter, .refract{
+  display: flex;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  padding-left: 10vw;
+  padding-right:10vw;
+}
+
 
 .numbered{
   color:#43A9B7;
@@ -73,9 +83,7 @@ div div.role{
   width:40px;
   margin-left:3.5vh;
 }
-.GOLD, .newsletter, .refract{
-  display: flex;
-}
+
 
 
 .contact{
