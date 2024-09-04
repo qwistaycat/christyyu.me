@@ -66,10 +66,14 @@ div div.role{
 }
 .GOLD, .newsletter, .refract{
   display: flex;
-  padding-top: 20vh;
+  padding-top: 30vh;
   padding-bottom: 20vh;
   padding-left: 10vw;
   padding-right:10vw;
+}
+.projpics{
+  width: 40vh;
+  margin-right: 5vw;
 }
 
 
@@ -91,14 +95,21 @@ div div.role{
   justify-content: space-between;
   color:#7effbc;
   background-color: black;
-  padding:5vw;
-  font-size: 4rem; /*64px*/ /*TODO: change clamp lol*/
+  padding:2vh 5vw;
+  font-size: 3rem; /*48px*/ /*TODO: change clamp lol*/
 }
 .links{
-  display: grid;
-  grid-template: 5vh 35vw / 5vh 35vw;
-  gap:1vw;
-  font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem; /*16px*/ /*TODO: change clamp lol*/
+}
+.linkedin, .email{
+  display: flex;
+}
+.linkedin img, .email img{
+  width: 40px;
+  margin-right: 1vw;
 }
 
 /* /* all links */
