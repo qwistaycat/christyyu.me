@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/bg_home_dark.png"); /*convert to avif once i figure out how to do it without the picture getting darker*/
+    background-image: url("images/bg_home_dark.avif");
     background-size: cover;
     font-family: 'Metamorphous', serif;
     /* background-position: center; */
