@@ -34,8 +34,54 @@ body {
     color: #7effbc;
     font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
     margin-left: 10vw;
-    margin-bottom:70vh; /*SCUFFED SPACING BRUH*/
     margin-top:5vh;
     max-width: 55vw;
 }
-  
+.star_plane{
+    margin-left:75vw;
+    margin-top: 10vh;
+    max-width: 250px;
+}
+
+.aboutme{
+    display: flex;
+    align-items: center;
+    padding: 0 15vw;
+    gap: 5vw;
+    color:#7effbc;
+    font-size: 1rem; /*16px*/ /*TODO: change clamp lol*/
+    font-family: 'Syne Mono', serif;
+
+}
+.window{
+    width: 55vh;
+}
+
+.divider{
+    padding-left: 50%;
+}
+
+
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    color:#7effbc;
+    background-color: black;
+    padding:2vh 5vw;
+    font-size: 3rem; /*48px*/ /*TODO: change clamp lol*/
+    margin-top:45vh;
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem; /*16px*/ /*TODO: change clamp lol*/
+  }
+  .linkedin, .email{
+    display: flex;
+  }
+  .linkedin img, .email img{
+    width: 30px;
+    margin-right: 1vw;
+  }
