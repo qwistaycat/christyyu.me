@@ -39,7 +39,7 @@ body {
 }
 .star_plane{
     margin-left:75vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     max-width: 250px;
 }
 
@@ -49,7 +49,7 @@ body {
     padding: 0 15vw;
     gap: 5vw;
     color:#7effbc;
-    font-size: 1rem; /*16px*/ /*TODO: change clamp lol*/
+    font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
     font-family: 'Syne Mono', serif;
 
 }
@@ -62,6 +62,34 @@ body {
 }
 
 
+.bigheader{
+    color:#FFFFC5;
+    font-size: 4rem; /*64px*/ /*TODO: change clamp lol*/
+}
+.text{
+    color:#FFFFC5;
+    font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
+    font-family: 'Syne Mono', serif;
+}
+.story{
+    padding: 20vh 10vw;
+}
+.resume{
+    padding: 20vh 10vw;
+}
+.bigheader{
+
+}
+.category{
+
+}
+.title{
+
+}
+ul{
+    list-style-type: none;
+    font-family: 'Syne Mono', serif;
+}
 
 .contact{
     display: flex;
