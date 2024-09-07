@@ -1,0 +1,41 @@
+body {
+    background-image: url("images/bg_about_dark.png"); /*convert to avif once i figure out how to do it without the picture getting darker*/
+    background-size: cover;
+    font-family: 'Metamorphous', serif;
+}
+
+.menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky;
+    top:20px;
+} 
+.menu img {
+    width:30px;
+    margin:3vh;
+}
+
+.greetings {
+    color: #7effbc;
+    font-size:6rem; /*TODO: change clamp lol 96px*/
+    margin-left: 10vw;
+    margin-top: 40vh;
+}
+.blur {
+    max-width: 90vh;
+    position: absolute;
+    left: 5vw;
+    top: 35vh;
+    z-index: -1;
+}
+.tagline {
+    color: #7effbc;
+    font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
+    margin-left: 10vw;
+    margin-bottom:70vh; /*SCUFFED SPACING BRUH*/
+    margin-top:5vh;
+    max-width: 55vw;
+}
+  
