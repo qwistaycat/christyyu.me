@@ -57,7 +57,7 @@ body {
     font-family: 'Syne Mono', serif;
 }
 .window{
-    width: 55vh;
+    max-width: 55vw;
 }
 
 .divider{
