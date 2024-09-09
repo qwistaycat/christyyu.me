@@ -2,6 +2,7 @@ body {
     background-image: url("images/bg_home_dark.avif");
     background-size: cover;
     font-family: 'Metamorphous', serif;
+    margin:0;
 }
 
 
@@ -22,7 +23,7 @@ body {
 
 .greetings {
   color: #7effbc;
-  font-size:6rem; /*TODO: change clamp lol 96px*/
+  font-size:6rem; /*96px*/
   margin-left: 10vw;
   margin-top: 40vh;
 }
@@ -35,57 +36,79 @@ body {
 }
 .tagline {
   color: #7effbc;
-  font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
+  font-size: 1.5rem; /*24px*/
   margin-left: 10vw;
-  margin-bottom:70vh; /*SCUFFED SPACING BRUH*/
+  margin-bottom:60vh;
   margin-top:5vh;
   max-width: 55vw;
 }
 
 
-div div.title{
+.title{
   color: #FFF5D3;
-  font-size: 3rem;  /*48px*/ /*TODO: change clamp lol*/
+  font-size: 3rem;  /*48px*/
 }
-div p.descrip{
+.descrip{
   color: #FFF5D3;
   font-family: 'Syne Mono', serif;
-  font-size: 1.5rem; /*24px*/ /*TODO: change clamp lol*/
+  font-size: 1.5rem; /*24px*/
 }
-div div.role{
+.role{
   color:#43A9B7;
-  font-size: 1rem; /*16px*/ /*TODO: change clamp lol*/
+  font-size: 1rem; /*16px*/
+}
+.words{
+  display: flex;
+  max-width: 90vw;
 }
 .side{
   padding-top: 5vh;
 }
+.GOLD .side{
+  padding-top: 0;
+}
 .texts{
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
   padding-top: 10vh;
+  max-width: 45vw;
+}
+.GOLD .texts{
+  padding-top: 5vh;
 }
 .GOLD, .newsletter, .refract{
   display: flex;
+  flex-wrap: wrap;
   padding-top: 20vh;
   padding-bottom: 20vh;
   padding-left: 10vw;
-  padding-right:10vw;
+  padding-right:5vw;
 }
 .projpics{
-  width: 40vh;
-  margin-right: 5vw;
+  max-width: 40vh;
+  display: flex;
 }
+.GOLD{
+  display: block;
+}
+.pic1{
+  max-width: 50vw;
+}
+.pic2{
+  max-width: 33vw;
+}
+
+
 
 
 .numbered{
   color:#43A9B7;
   font-family: 'Syne Mono', serif;
-  margin-left:4.2vh;
-  font: size 2rem; /*32px*/ /*TODO: change clamp lol*/
+  font: size 2rem; /*32px*/
+  padding-left: .4vw;
 }
 .star{
   width:40px;
-  margin-left:3.5vh;
 }
 
 
@@ -96,14 +119,14 @@ div div.role{
   color:#7effbc;
   background-color: black;
   padding:2vh 5vw;
-  font-size: 3rem; /*48px*/ /*TODO: change clamp lol*/
-  margin-top:45vh;
+  font-size: 3rem; /*48px*/ 
+  gap:2vw;
 }
 .links{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size: 1rem; /*16px*/ /*TODO: change clamp lol*/
+  font-size: 1rem; /*16px*/ 
 }
 .linkedin, .email{
   display: flex;
