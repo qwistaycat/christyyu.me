@@ -42,7 +42,7 @@ body {
     max-width: 55vw;
 }
 .star_plane{
-    margin-left:75vw;
+    margin-left:65vw;
     margin-top: 5vh;
     max-width: 250px;
 }
@@ -113,7 +113,7 @@ ul{
     padding-bottom: 10vh;
 }
 .artworks{
-    padding: 0 15vw;
+    padding: 0 5vw;
     display: flex;
     gap: 1vw;
     justify-content: center;
@@ -121,7 +121,7 @@ ul{
 }
 .artworks img{
     /* play around w these values */
-    max-width: 50vh;
+    max-width: 70vh;
     max-height: 70vh;
 }
 
