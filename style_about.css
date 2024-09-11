@@ -6,6 +6,51 @@ body {
 }
 
 
+html {
+    font-size: 16px; /* Base font size */
+  }
+  
+  /* Small phones */
+  @media screen and (max-width: 320px) {
+    html {
+      font-size: 50%; /* 8px */
+    }
+  }
+  
+  /* Larger phones */
+  @media screen and (min-width: 321px) and (max-width: 767px) {
+    html {
+      font-size: 62.5%; /* 10px */
+    }
+  }
+  
+  /* Tablets */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+      font-size: 75%; /* 12px */
+    }
+  }
+  
+  /* Laptops and small desktops */
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    html {
+      font-size: 87.5%; /* 14px */
+    }
+  }
+  
+  /* Large desktops */
+  @media screen and (min-width: 1440px) {
+    html {
+      font-size: 100%; /* 16px */
+    }
+  }
+  
+  /* Optional: Fluid scaling for very large screens */
+  @media screen and (min-width: 1800px) {
+    html {
+      font-size: calc(100% + 0.5vw);
+    }
+  }
 
 .menu {
     display:flex;
@@ -23,7 +68,7 @@ body {
 
 .greetings {
     color: #7effbc;
-    font-size:6rem; /*TODO: change clamp lol 96px*/
+    font-size: 6rem; /*TODO: change clamp lol 96px*/
     margin-left: 10vw;
     margin-top: 40vh;
 }
