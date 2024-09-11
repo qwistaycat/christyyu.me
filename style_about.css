@@ -17,7 +17,7 @@ body {
 } 
 .menu img {
     width:30px;
-    margin:3vh;
+    margin: 3vh 3vw;
 }
 
 
@@ -120,8 +120,9 @@ ul{
     flex-wrap: wrap;
 }
 .artworks img{
-    /* play around w these values */
-    max-width: 40vw;
+    max-width: 500px;
+    min-width: 200px;
+
 }
 
 
