@@ -59,19 +59,29 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   position: sticky;
-  top:20px;
+  top:0px; /*this code keeps the sticky*/
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 } 
 .menu img {
-  width:30px;
-  margin: 3vh 3vw;
+  width:40px;
+  margin: 2vh 2vw;
 
   transition-property: transform;
   transition-duration: .2s;
   transition-timing-function: ease-out;
 }
 .menu img:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
+.menuLeft{
+  display: flex;
+  align-items: center;
+  color:#43A9B7;
+  gap: 2vw;
+  font-size: 1.5rem; /*24px*/
+}
+
 
 
 .greetings {
