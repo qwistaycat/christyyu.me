@@ -61,6 +61,7 @@ html {
     top:0px; /*this code keeps the sticky*/
     padding-top: 2vh;
     padding-bottom: 2vh;
+    opacity: 85%;
 } 
 .menu img {
     width:40px;
@@ -73,7 +74,7 @@ html {
 .menu img:hover {
     transform: scale(1.2);
 }
-.menuLeft{
+.menuRight{
   display: flex;
   align-items: center;
   color:#43A9B7;
