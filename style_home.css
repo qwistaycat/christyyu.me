@@ -65,9 +65,8 @@ html {
   opacity: 85%;
 } 
 .menu img {
-  width:40px;
+  width:clamp(20px, 5vw, 40px);
   margin: 2vh 2vw;
-
   transition-property: transform;
   transition-duration: .2s;
   transition-timing-function: ease-out;
@@ -101,9 +100,9 @@ html {
   color: #7effbc;
   font-size: 1.5rem; /*24px*/
   margin-left: 10vw;
-  margin-bottom:60vh;
   margin-top:5vh;
   max-width: 55vw;
+  margin-bottom:60vh;
 }
 
 
@@ -137,11 +136,12 @@ html {
 }
 .GOLD .texts{
   padding-top: 5vh;
-  max-width: 65vw;;
+  max-width: 65vw;
 }
 .GOLD, .newsletter, .refract{
   display: flex;
   flex-wrap: wrap;
+  gap: 5vw;
   padding-top: 20vh;
   padding-bottom: 20vh;
   padding-left: 15vw;

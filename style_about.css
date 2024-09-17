@@ -64,9 +64,8 @@ html {
     opacity: 85%;
 } 
 .menu img {
-    width:40px;
+    width:clamp(20px, 5vw, 40px);
     margin: 2vh 2vw;
-
     transition-property: transform;
     transition-duration: .2s;
     transition-timing-function: ease-out;
