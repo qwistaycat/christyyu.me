@@ -77,7 +77,6 @@ html {
 .menuRight{
   display: flex;
   align-items: center;
-  color:#43A9B7;
   gap: 2vw;
   font-size: 1.5rem; /*24px*/
 }
@@ -211,3 +210,18 @@ ul{
     width: 30px;
     margin-right: 1vw;
 }
+
+/* ===== links ====== */
+
+/*all menu links*/
+.menu a {
+    text-decoration: none;
+    }
+  /* unvisited menu links */
+.menu a:link {
+    color: #43A9B7; /*TODO:change*/
+  }
+  /* visited menu links */
+.menu a:visited {
+    color: #43A9B7; /*TODO:change*/
+  }

@@ -78,7 +78,6 @@ html {
 .menuRight{
   display: flex;
   align-items: center;
-  color:#43A9B7;
   gap: 2vw;
   font-size: 1.5rem; /*24px*/
 }
@@ -200,15 +199,17 @@ html {
   margin-right: 1vw;
 }
 
-/* /* all links */
-a {
-text-decoration: underline;
-} */
-/* unvisited links */
-a:link {
-color: blue; /*TODO:change*/
+/* ===== links ====== */
+
+/*all menu links*/
+.menu a {
+  text-decoration: none;
+  }
+/* unvisited menu links */
+.menu a:link {
+  color: #43A9B7; /*TODO:change*/
 }
-/* visited links */
-a:visited {
-color: purple; /*TODO:change*/
+/* visited menu links */
+.menu a:visited {
+  color: #43A9B7; /*TODO:change*/
 }
