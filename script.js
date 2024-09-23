@@ -1,9 +1,9 @@
 
-const menu = document.querySelector('.menu');
+// const menu = document.querySelector('.menu');
 
-const menuIcon = document.querySelector('.menu_dark');
+// const menuIcon = document.querySelector('.menu_dark');
 
-menuIcon.addEventListener('click', () => {
-    menu.style.backgroundColor = "black";
+// menuIcon.addEventListener('click', () => {
+//     menu.style.backgroundColor = "black";
 
-});
+// });
