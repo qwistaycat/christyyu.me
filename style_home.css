@@ -151,7 +151,6 @@ html {
 .GOLD, .newsletter, .refract{
   display: flex;
   flex-wrap: wrap;
-  gap: 5vw;
   padding-top: 20vh;
   padding-bottom: 20vh;
 }
@@ -165,16 +164,17 @@ html {
 }
 .GOLD .projpics{
   padding-right:0;
+  display: flex;
+  /* flex-wrap: wrap; */
 }
 .GOLD{
   display: block;
 }
 .pic1{
-  max-width: 45vw;
-  width:clamp(400px, 45vw, 700px);
+  width:clamp(300px, 45vw, 700px);
 }
 .pic2{
-  max-width: 25vw;
+  width:clamp(100px, 45vw, 450px);
 }
 
 
