@@ -62,7 +62,7 @@ html {
   top:0px; /*this code keeps the sticky*/
   padding-top: 3vh;
   padding-bottom: 3vh;
-  opacity: 85%;
+  opacity: 0%;
   background-color: black;
   z-index: 2;
 } 
@@ -104,7 +104,6 @@ html {
 .menu a:hover {
   transform: scale(1.2);
 }
-
 
 
 .greetings {
