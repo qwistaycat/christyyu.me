@@ -158,6 +158,11 @@ html {
   padding-top: 15vh;
   max-width: 30vw;
 }
+@media screen and (max-width: 989px) { /* if screen < 989px, then apply this css */
+  .texts {
+    max-width: 75%;
+  }
+}
 .GOLD .texts{
   padding-top: 5vh;
   max-width: 65vw;
