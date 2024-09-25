@@ -226,10 +226,10 @@ html {
   flex-direction: column;
   font-size: 1rem; /*16px*/ 
 }
-.linkedin, .email{
+.linkedin, .email, .github{
   display: flex;
 }
-.linkedin img, .email img{
+.linkedin img, .email img, .github img{
   width: 30px;
   margin-right: 1vw;
 }
