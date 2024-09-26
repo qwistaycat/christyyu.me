@@ -194,6 +194,7 @@ html {
 }
 .pic2{
   width:clamp(100px, 45vw, 450px);
+  object-fit: contain;
 }
 
 
