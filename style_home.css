@@ -248,3 +248,16 @@ html {
 .menu a:visited {
   color: #43A9B7; /*TODO:change*/
 }
+
+/*all contact links*/
+.contact a {
+  text-decoration: none;
+  }
+/* unvisited contact links */
+.contact a:link {
+  color: #7effbc; /*TODO:change*/
+}
+/* visited menu links */
+.contact a:visited {
+  color: #7effbc; /*TODO:change*/
+}
