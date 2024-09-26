@@ -263,4 +263,21 @@ ul{
 .contact a:visited {
     color: #7effbc; /*TODO:change*/
   }
+/* Link styles */
+.contact a {
+  color: #7effbc;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
+.contact a:hover {
+  text-decoration: underline;
+  color: #7effbc;
+}
+
+/* Specifically target LinkedIn and GitHub links */
+.linkedin a:hover, .github a:hover {
+  text-decoration: underline;
+  color: #7effbc;
+}
