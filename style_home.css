@@ -191,12 +191,51 @@ html {
 }
 .pic1{
   width:clamp(300px, 45vw, 700px);
-}
-.pic2{
-  width:clamp(100px, 45vw, 450px);
   object-fit: contain;
 }
+.pic2{
+  margin-left: -3.38vw;
+  width:clamp(100px, 29vw, 450px);
+  object-fit: contain;
+}
+@media screen and (max-width: 1050px) {
+  .GOLD .projpics {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .pic1 {
+    width:65vw;
+  }
+
+  .pic2 {
+    width: 45vw;
+    margin-top: -4.65vw;
+  }
+
+  .pic1, .pic2 {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .GOLD .projpics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic1 {
+    width:75vw;
+  }
+
+  .pic2 {
+    width: 55vw;
+    margin-top: -5.3vw;
+  }
+
+  .pic1, .pic2 {
+    margin-left: 0;
+  }
+}
 
 
 
