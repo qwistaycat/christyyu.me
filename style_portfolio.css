@@ -1,0 +1,323 @@
+body {
+    background-image: url("images/bg_portfolio_dark.svg");
+    background-size: cover;
+    font-family: 'Metamorphous', serif;
+    margin:0;
+}
+
+html {
+  font-size: 16px; /* Base font size */
+}
+
+/* Small phones */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+}
+
+/* Larger phones */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  html {
+    font-size: 62.5%; /* 10px */
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 75%; /* 12px */
+  }
+}
+
+/* Laptops and small desktops */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+}
+
+/* Large desktops */
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 100%; /* 16px */
+  }
+}
+
+/* Optional: Fluid scaling for very large screens */
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: calc(100% + 0.5vw);
+  }
+}
+
+
+
+.menu {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: sticky;
+  top:0px; /*this code keeps the sticky*/
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  opacity: 0%;
+  background-color: black;
+  z-index: 2;
+} 
+.menu_buttons{
+  display:flex;
+  justify-content: space-between;
+}
+.menu_dark, #moon{
+  height:clamp(20px, 5vw, 30px);
+  margin: 3vh 2vw;
+  position: fixed;
+  top:0px; /*this code keeps the sticky*/
+  z-index: 3;
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+}
+.menu_dark{
+  left:0
+}
+#moon{
+  right:0;
+}
+.menu_dark:hover, #moon:hover {
+  transform: scale(1.2);
+}
+.menuWords{
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  margin-left: 10vw;
+  font-size: 1.5rem; /*24px*/
+}
+.menu a{
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+}
+.menu a:hover {
+  transform: scale(1.2);
+}
+
+
+.greetings {
+  color: #7effbc;
+  font-size:6rem; /*96px*/
+  margin-left: 10vw;
+  margin-top: 40vh;
+}
+.blur {
+  max-width: 90vh;
+  position: absolute;
+  left: 5vw;
+  top: 35vh;
+  z-index: -1;
+}
+.tagline {
+  color: #7effbc;
+  font-size: 1.5rem; /*24px*/
+  margin-left: 10vw;
+  margin-top:5vh;
+  max-width: 55vw;
+  margin-bottom:60vh;
+}
+
+
+.title{
+  color: #FFF5D3;
+  font-size: 3rem;  /*48px*/
+}
+.descrip{
+  color: #FFF5D3;
+  font-family: 'Syne Mono', serif;
+  font-size: 1.5rem; /*24px*/
+}
+.role{
+  color:#43A9B7;
+  font-size: 1rem; /*16px*/
+}
+.words{
+  display: flex;
+  padding-left: 15vw;
+}
+.side{
+  padding-top: 10vh;
+}
+.GOLD .side{
+  padding-top: 0;
+}
+.texts{
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding-top: 15vh;
+  max-width: 30vw;
+}
+@media screen and (max-width: 989px) { /* if screen < 989px, then apply this css */
+  .texts {
+    max-width: 75%;
+  }
+}
+.GOLD .texts{
+  padding-top: 5vh;
+  max-width: 65vw;
+}
+.GOLD, .newsletter, .refract{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+.projpics{
+  width:clamp(250px, 50vw, 400px);
+  display: flex;
+  padding-right:5vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.GOLD .projpics{
+  padding-right:0;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.GOLD{
+  display: block;
+}
+.pic1{
+  width:clamp(300px, 45vw, 700px);
+  object-fit: contain;
+}
+.pic2{
+  margin-left: -3.38vw;
+  width:clamp(100px, 29vw, 450px);
+  object-fit: contain;
+}
+@media screen and (max-width: 1050px) {
+  .GOLD .projpics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic1 {
+    width:65vw;
+  }
+
+  .pic2 {
+    width: 45vw;
+    margin-top: -4.65vw;
+  }
+
+  .pic1, .pic2 {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .GOLD .projpics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic1 {
+    width:75vw;
+  }
+
+  .pic2 {
+    width: 55vw;
+    margin-top: -5.3vw;
+  }
+
+  .pic1, .pic2 {
+    margin-left: 0;
+  }
+}
+
+
+
+.numbered{
+  color:#43A9B7;
+  font-family: 'Syne Mono', serif;
+  font: size 2rem; /*32px*/
+  padding-left: .4vw;
+}
+.star{
+  width:40px;
+}
+
+
+
+.contact{
+  display: flex;
+  justify-content: space-between;
+  color:#7effbc;
+  background-color: black;
+  padding:2vh 5vw;
+  font-size: 3rem; /*48px*/ 
+  gap:2vw;
+}
+.links{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem; /*16px*/ 
+}
+.linkedin, .email, .github{
+  display: flex;
+}
+.linkedin img, .email img, .github img{
+  width: 30px;
+  margin-right: 1vw;
+}
+
+/* Link styles */
+.contact a {
+  text-decoration: none;
+  color: #7effbc;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #7effbc;
+}
+
+/* Specifically target LinkedIn and GitHub links */
+.linkedin a:hover, .github a:hover {
+  text-decoration: underline;
+  color: #7effbc;
+}
+
+/* ===== links ====== */
+
+/*all menu links*/
+.menu a {
+  text-decoration: none;
+  }
+/* unvisited menu links */
+.menu a:link {
+  color: #43A9B7; /*TODO:change*/
+}
+/* visited menu links */
+.menu a:visited {
+  color: #43A9B7; /*TODO:change*/
+}
+
+/*all contact links*/
+.contact a {
+  text-decoration: none;
+  }
+/* unvisited contact links */
+.contact a:link {
+  color: #7effbc; /*TODO:change*/
+}
+/* visited menu links */
+.contact a:visited {
+  color: #7effbc; /*TODO:change*/
+}
