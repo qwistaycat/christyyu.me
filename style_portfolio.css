@@ -125,130 +125,25 @@ html {
   margin-left: 10vw;
   margin-top:5vh;
   max-width: 55vw;
-  margin-bottom:60vh;
 }
 
-
-.title{
-  color: #FFF5D3;
-  font-size: 3rem;  /*48px*/
+.folder {
+    width: 100%;
 }
-.descrip{
-  color: #FFF5D3;
+.worksfolder{
+    border: black solid 2px;
+    border-radius: 25px 25px 0 0;
+    background-image: linear-gradient(180deg, #14343E, rgba(0,0,0,.4));
+    display: flex;
+}
+.checklist {
+  padding: 10vh 5vw;
+  color:#FFFFC5;
   font-family: 'Syne Mono', serif;
-  font-size: 1.5rem; /*24px*/
 }
-.role{
-  color:#43A9B7;
-  font-size: 1rem; /*16px*/
+.workscards{
+  padding: 10vh 5vw;
 }
-.words{
-  display: flex;
-  padding-left: 15vw;
-}
-.side{
-  padding-top: 10vh;
-}
-.GOLD .side{
-  padding-top: 0;
-}
-.texts{
-  margin-left: 2vw;
-  margin-right: 2vw;
-  padding-top: 15vh;
-  max-width: 30vw;
-}
-@media screen and (max-width: 989px) { /* if screen < 989px, then apply this css */
-  .texts {
-    max-width: 75%;
-  }
-}
-.GOLD .texts{
-  padding-top: 5vh;
-  max-width: 65vw;
-}
-.GOLD, .newsletter, .refract{
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
-}
-.projpics{
-  width:clamp(250px, 50vw, 400px);
-  display: flex;
-  padding-right:5vw;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
-.GOLD .projpics{
-  padding-right:0;
-  display: flex;
-  /* flex-wrap: wrap; */
-}
-.GOLD{
-  display: block;
-}
-.pic1{
-  width:clamp(300px, 45vw, 700px);
-  object-fit: contain;
-}
-.pic2{
-  margin-left: -3.38vw;
-  width:clamp(100px, 29vw, 450px);
-  object-fit: contain;
-}
-@media screen and (max-width: 1050px) {
-  .GOLD .projpics {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pic1 {
-    width:65vw;
-  }
-
-  .pic2 {
-    width: 45vw;
-    margin-top: -4.65vw;
-  }
-
-  .pic1, .pic2 {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .GOLD .projpics {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pic1 {
-    width:75vw;
-  }
-
-  .pic2 {
-    width: 55vw;
-    margin-top: -5.3vw;
-  }
-
-  .pic1, .pic2 {
-    margin-left: 0;
-  }
-}
-
-
-
-.numbered{
-  color:#43A9B7;
-  font-family: 'Syne Mono', serif;
-  font: size 2rem; /*32px*/
-  padding-left: .4vw;
-}
-.star{
-  width:40px;
-}
-
 
 
 .contact{
