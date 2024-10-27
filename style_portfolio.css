@@ -135,16 +135,27 @@ html {
     border-radius: 25px 25px 0 0;
     background-image: linear-gradient(180deg, #14343E, rgba(0,0,0,.4));
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 10vh 0vw;
 }
 .checklist {
-  padding: 10vh 5vw;
+  padding: 10vh 7vw 10vh 10vw;
   color:#FFFFC5;
   font-family: 'Syne Mono', serif;
+  font-size: 1.5rem; /*24px*/
 }
 .workscards{
-  padding: 10vh 5vw;
+  padding: 10vh 7vw;
+  /* height: 40vh; */
+  /* overflow: scroll; */
 }
-
+.portfoliocard{
+  max-width: 50vw;
+}
+.portDiv{
+  padding: 10vh 0vw;
+}
 
 .contact{
   display: flex;
