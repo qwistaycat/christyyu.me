@@ -129,6 +129,9 @@ html {
 
 .folder {
     width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 78vh;
 }
 .worksfolder{
     border: black solid 2px;
@@ -137,7 +140,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 10vh 0vw 0vh 0vw;
+    margin: 25vh 0vw 0vh 0vw;
 }
 .checklist {
   padding: 10vh 7vw 10vh 10vw;
