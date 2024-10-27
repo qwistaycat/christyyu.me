@@ -137,7 +137,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 10vh 0vw;
+    margin: 10vh 0vw 0vh 0vw;
 }
 .checklist {
   padding: 10vh 7vw 10vh 10vw;
