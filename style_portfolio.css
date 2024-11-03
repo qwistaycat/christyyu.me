@@ -11,15 +11,30 @@ html {
 
 /* Small phones */
 @media screen and (max-width: 320px) {
+  .work{
+    display: block; 
+    /* WHY DOES THIS KEEP GETTING OVERRIDDEN I WANT THIS TO BE BLOCK WHEN THE SCREEN IS SMALL */
+  }
   html {
     font-size: 50%; /* 8px */
   }
+  .portfoliocard{
+    max-width: 90vw;
+  }
+
 }
 
 /* Larger phones */
 @media screen and (min-width: 321px) and (max-width: 767px) {
+  .work{
+    display: block;
+    /* WHY DOES THIS KEEP GETTING OVERRIDDEN I WANT THIS TO BE BLOCK WHEN THE SCREEN IS SMALL */
+  }
   html {
     font-size: 62.5%; /* 10px */
+  }
+  .portfoliocard{
+    max-width: 90vw;
   }
 }
 
@@ -160,7 +175,7 @@ html {
   padding-left: 1vw;
   font-family: 'Syne Mono', serif;
   color:#FFFFC5;
-  font-size: 1rem; /*16px*/
+  font-size: 1.5rem; /*24px*/
 }
 .work p a{
   color:#FFFFC5;
