@@ -1,0 +1,244 @@
+body {
+    background-image: url("images/bg_portfolio_dark.svg");
+    background-size: cover;
+    font-family: 'Metamorphous', serif;
+    margin:0;
+}
+
+html {
+  font-size: 16px; /* Base font size */
+}
+
+/* Small phones */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+}
+
+/* Larger phones */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  html {
+    font-size: 62.5%; /* 10px */
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 75%; /* 12px */
+  }
+}
+
+/* Laptops and small desktops */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+}
+
+/* Large desktops */
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 100%; /* 16px */
+  }
+}
+
+/* Optional: Fluid scaling for very large screens */
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: calc(100% + 0.5vw);
+  }
+}
+
+
+
+.menu {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: sticky;
+  top:0px; /*this code keeps the sticky*/
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  opacity: 0%;
+  background-color: black;
+  z-index: 2;
+} 
+.menu_buttons{
+  display:flex;
+  justify-content: space-between;
+}
+.menu_dark, #moon{
+  height:clamp(20px, 5vw, 30px);
+  margin: 3vh 2vw;
+  position: fixed;
+  top:0px; /*this code keeps the sticky*/
+  z-index: 3;
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+}
+.menu_dark{
+  left:0
+}
+#moon{
+  right:0;
+}
+.menu_dark:hover, #moon:hover {
+  transform: scale(1.2);
+}
+.menuWords{
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  margin-left: 10vw;
+  font-size: 1.5rem; /*24px*/
+}
+.menu a{
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+}
+.menu a:hover {
+  transform: scale(1.2);
+}
+
+
+.greetings {
+  color: #7effbc;
+  font-size:6rem; /*96px*/
+  margin-left: 10vw;
+  margin-top: 40vh;
+}
+.blur {
+  max-width: 90vh;
+  position: absolute;
+  left: 5vw;
+  top: 35vh;
+  z-index: -1;
+}
+.tagline {
+  color: #7effbc;
+  font-size: 1.5rem; /*24px*/
+  margin-left: 10vw;
+  margin-top:5vh;
+  max-width: 55vw;
+}
+
+.folder {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 80vh;
+}
+.worksfolder{
+    border: black solid 2px;
+    border-radius: 25px 25px 0 0;
+    background-image: linear-gradient(180deg, #14343E, rgba(0,0,0,.4));
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 25vh 0vw 0vh 0vw;
+}
+.checklist {
+  padding: 5vh 3vw;
+  color:#FFFFC5;
+  font-family: 'Syne Mono', serif;
+  font-size: 1rem; /*16px*/
+}
+.works{
+  padding: 5vh 3vw;
+  /* height: 40vh; */
+  /* overflow: scroll; */
+}
+.work{
+  display: flex;
+}
+.work p{
+  padding-left: 1vw;
+  font-family: 'Syne Mono', serif;
+  color:#FFFFC5;
+  font-size: 1.5rem; /*16px*/
+}
+.work p a{
+  color:#FFFFC5;
+}
+.portfoliocard{
+  max-width: 40vw;
+}
+.portDiv{
+  padding: 5vh 0vw;
+}
+
+.contact{
+  display: flex;
+  justify-content: space-between;
+  color:#7effbc;
+  background-color: black;
+  padding:2vh 5vw;
+  font-size: 3rem; /*48px*/ 
+  gap:2vw;
+}
+.links{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem; /*16px*/ 
+}
+.linkedin, .email, .github{
+  display: flex;
+}
+.linkedin img, .email img, .github img{
+  width: 30px;
+  margin-right: 1vw;
+}
+
+/* Link styles */
+.contact a {
+  text-decoration: none;
+  color: #7effbc;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #7effbc;
+}
+
+/* Specifically target LinkedIn and GitHub links */
+.linkedin a:hover, .github a:hover {
+  text-decoration: underline;
+  color: #7effbc;
+}
+
+/* ===== links ====== */
+
+/*all menu links*/
+.menu a {
+  text-decoration: none;
+  }
+/* unvisited menu links */
+.menu a:link {
+  color: #43A9B7; /*TODO:change*/
+}
+/* visited menu links */
+.menu a:visited {
+  color: #43A9B7; /*TODO:change*/
+}
+
+/*all contact links*/
+.contact a {
+  text-decoration: none;
+  }
+/* unvisited contact links */
+.contact a:link {
+  color: #7effbc; /*TODO:change*/
+}
+/* visited menu links */
+.contact a:visited {
+  color: #7effbc; /*TODO:change*/
+}
