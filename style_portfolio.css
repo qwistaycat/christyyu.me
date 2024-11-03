@@ -131,7 +131,7 @@ html {
     width: 100%;
     position: absolute;
     z-index: -1;
-    top: 78vh;
+    top: 80vh;
 }
 .worksfolder{
     border: black solid 2px;
@@ -143,21 +143,33 @@ html {
     margin: 25vh 0vw 0vh 0vw;
 }
 .checklist {
-  padding: 10vh 7vw 10vh 10vw;
+  padding: 5vh 3vw;
   color:#FFFFC5;
   font-family: 'Syne Mono', serif;
-  font-size: 1.5rem; /*24px*/
+  font-size: 1rem; /*16px*/
 }
-.workscards{
-  padding: 10vh 7vw;
+.works{
+  padding: 5vh 3vw;
   /* height: 40vh; */
   /* overflow: scroll; */
 }
+.work{
+  display: flex;
+}
+.work p{
+  padding-left: 1vw;
+  font-family: 'Syne Mono', serif;
+  color:#FFFFC5;
+  font-size: 1.5rem; /*16px*/
+}
+.work p a{
+  color:#FFFFC5;
+}
 .portfoliocard{
-  max-width: 50vw;
+  max-width: 40vw;
 }
 .portDiv{
-  padding: 10vh 0vw;
+  padding: 5vh 0vw;
 }
 
 .contact{
