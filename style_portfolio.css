@@ -156,6 +156,9 @@ html {
 .work{
   display: flex;
 }
+.work img{
+  padding: 1vh;
+}
 .work p{
   padding-left: 1vw;
   font-family: 'Syne Mono', serif;
@@ -165,6 +168,37 @@ html {
 .work p a{
   color:#FFFFC5;
 }
+
+.work a img.hovered {
+  display: none;  
+}
+.work a img.onclick {
+  display: none;  
+}
+
+.work:hover a img.hovered {
+  display: block;
+}
+.work:hover a img.normal {
+  display: none;  
+}
+.work:hover a img.onclick {
+  display: none;  
+}
+
+
+.work:active a img.onclick {
+  display: block;  
+}
+.work:active a img.normal {
+  display: none;  
+}
+.work:active a img.hovered {
+  display: none;  
+}
+
+
+
 .portfoliocard{
   max-width: 40vw;
 }
