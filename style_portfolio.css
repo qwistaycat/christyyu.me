@@ -15,13 +15,12 @@ html {
     display: block; 
     /* WHY DOES THIS KEEP GETTING OVERRIDDEN I WANT THIS TO BE BLOCK WHEN THE SCREEN IS SMALL */
   }
-  html {
-    font-size: 50%; /* 8px */
-  }
   .portfoliocard{
     max-width: 90vw;
   }
-
+  html {
+    font-size: 50%; /* 8px */
+  }
 }
 
 /* Larger phones */
@@ -30,11 +29,11 @@ html {
     display: block;
     /* WHY DOES THIS KEEP GETTING OVERRIDDEN I WANT THIS TO BE BLOCK WHEN THE SCREEN IS SMALL */
   }
-  html {
-    font-size: 62.5%; /* 10px */
-  }
   .portfoliocard{
     max-width: 90vw;
+  }
+  html {
+    font-size: 62.5%; /* 10px */
   }
 }
 
