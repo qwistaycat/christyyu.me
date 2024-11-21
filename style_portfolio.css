@@ -173,6 +173,9 @@ html {
   display: flex;
   align-items: center;
 }
+.work img{
+  padding: 1vh;
+}
 .work p{
   padding-left: 1vw;
   font-family: 'Syne Mono', serif;
@@ -205,6 +208,49 @@ html {
     text-align: center;
   }
 }
+  
+/* Hover states for each project */
+.work a:hover img.portfoliocard[src*="refract"] {
+  content: url("images/works_cards/refract_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="noteblockit"] {
+  content: url("images/works_cards/noteblockit_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="newsletter"] {
+  content: url("images/works_cards/newsletter_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="sbhacks"] {
+  content: url("images/works_cards/sbhacks_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="sbcl"] {
+  content: url("images/works_cards/sbcl_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="dogether"] {
+  content: url("images/works_cards/dogether_hover.svg");
+}
+
+/* Active (onclick) states for each project */
+.work a:active img.portfoliocard[src*="refract"] {
+  content: url("images/works_cards/refract_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="noteblockit"] {
+  content: url("images/works_cards/noteblockit_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="newsletter"] {
+  content: url("images/works_cards/newsletter_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="sbhacks"] {
+  content: url("images/works_cards/sbhacks_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="sbcl"] {
+  content: url("images/works_cards/sbcl_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="dogether"] {
+  content: url("images/works_cards/dogether_onclick.svg");
+}
+
+
+
 .portDiv{
   padding: 5vh 0vw;
 }
