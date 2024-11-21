@@ -155,6 +155,8 @@ html {
     flex-direction: row;
     align-items: flex-start;
     margin: 25vh 0vw 0vh 0vw;
+    display: grid;
+    place-items: center;
 }
 .checklist {
   padding: 5vh 3vw;
@@ -169,18 +171,39 @@ html {
 }
 .work{
   display: flex;
+  align-items: center;
 }
 .work p{
   padding-left: 1vw;
   font-family: 'Syne Mono', serif;
   color:#FFFFC5;
   font-size: 1.5rem; /*24px*/
+  place-items: center;
+  flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .work p a{
   color:#FFFFC5;
 }
-.portfoliocard{
-  max-width: 40vw;
+@media screen and (min-width: 1025px) {
+  .portfoliocard{
+    max-width: 40vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .work{
+    flex-direction: column;
+  }
+  .portfoliocard{
+    width: min(60rem, 95vh);
+  }
+  .work p {
+    padding-bottom: 3.5vh;
+    margin-top: 0vh;
+    font-size: 2rem; /*19.2px*/
+    text-align: center;
+  }
 }
 .portDiv{
   padding: 5vh 0vw;
