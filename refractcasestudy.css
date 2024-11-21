@@ -107,6 +107,9 @@ html {
 
 
 
+
+  
+
   .title{
     font-family: 'Oi', cursive;
     font-size: 4rem; /*64px*/
@@ -155,19 +158,84 @@ html {
     padding-left: 15vw;
   }
  
-  .initialapproach{
-    padding: 10vh 10vw;
-    font-size: 1.2rem;
-    color: #D0D6EA;
-  }
-  .initialapproach img{
+  .dividerimg{
     max-width: 50%;
     display: flex;
     justify-self: center;
   }
+  
+  .initialapproach{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+  }
 
+  .newdirection{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+  }
+  .methodology img{
+    max-width: 60%;
+  }
+  .methodology{
+    display: flex;
+    gap: 10vw;
+  }
+  .methodology p{
+    margin-top: 0;
+  }
 
+  .frontenddesign{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+    gap: 10vw;
+  }
+.frontenddesign .refract_prototyping{
+    max-width: 100%;
+}
+.frontenddesign div{
+    display: flex;
+    padding-top: 5vh;
+    gap: 2vw;
+}
+.frontenddesign div img{
+    max-width: 70%;
+}
 
+.results{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+    gap: 10vw;
+}
+.grid-container {
+    padding: 5vh 10vw 0 10vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-template-rows: repeat(2, auto);  /* Two rows that adjust to content height */
+    justify-items: center;
+    text-align: center;
+  }
+  .face {
+    max-width: 100%;
+    align-self: center;;
+  }
+
+  .takeaways{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+    gap: 10vw;
+  }
+  .takeaways p{
+    margin-bottom:30vh;
+  }
+.takeaways img{
+    display: flex;
+    justify-self: center;
+}
 
 
 
@@ -181,7 +249,6 @@ html {
     background-color: black;
     padding:2vh 5vw;
     font-size: 3rem; /*48px*/
-    margin-top:30vh;
     gap:2vw;
     font-family: 'Metamorphous', cursive;
 }

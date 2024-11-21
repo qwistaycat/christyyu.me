@@ -54,13 +54,64 @@
         </div>
 
         <div class="initialapproach">
-            <img src="images/refractcasestudy/divider1.svg">
+            <img class="dividerimg" src="images/refractcasestudy/divider1.svg">
             <!-- TODO: turn this into svg -->
             <h1>1. Initial Approach</h1>
             <p>We first tried introducing noise, which is random pixel-level distortion, along with trying to distort the face directly. results were not effective — random pixel level distortion is easily factored in the training ai models to ignore, and distorting the face directly did not maintain visual similarity to the original photo.</p>
         </div>
-        
 
+        <div class="newdirection">
+            <img class="dividerimg" src="images/refractcasestudy/divider2.svg">
+            <h1>2. New Direction</h1>
+            <h2>Research</h2>
+            <p>Our approach focuses on attacking the <span style="color: #9F7DFF;">training process</span> of deepfake models. Deepfake models typically operate by extracting facial feature embeddings – the unique characteristics that define a person's visual identity, such as face shape or eye size. Deepfake models use embeddings to  replicate a person's likeness to generate convincing imitations. By targeting feature embeddings, we developed a strategy to shield an individual's visual identity from being captured.</p>
+            <p>We began by studying Glaze's research paper for inspiration on how to build our own model. The Glaze software protects artist’s works by adding a few pixels encoded with the embeddings of a completely different art style. Our novel approach is similar — our model selects a different face from our database and “cloaks” the original picture with a few pixels of new facial features embeddings. We fine-tuned the model to make the source photo look like the target photo, without introducing human noticeable changes. After multiple iterations, we successfully optimized the parameters in our model to achieve desired results.</p>
+            <h2>An Ethical Dataset</h2>
+            <p>We generated 500 faces from thispersondoesnotexist.com to train our model instead of scraping for people’s faces online without proper consent — which would’ve contradicted the purpose of this project 😅 !!</p>
+            <h2>Methodology</h2>
+            <div class="methodology">
+                <div>
+                    <p>Together, we wrote a Python script to scrape thispersondoesnotexist.com faces into our database, and another Python script with Hugging Face to get <span style="color: #7effbc;">feature embeddings</span> from a picture of a face. Then, we wrote the algorithm that searched our dataset for a <span style="color: #FFFFC5">target</span> face with the most similar feature embeddings to the <span style="color:#9F7DFF">original</span> face.</p>
+                    <p>The last part of our model we implemented was to produce a new image that minimized visual difference, using the L2 norm metric, and maximized feature embedding differences, using the LPIPS metric. </p>
+                    <p>After working on the core implementation together, we delegated the rest of the work — model fine tuning, and frontend & design.</p>    
+                </div>
+                <img src="images/refractcasestudy/refract_poster.svg" alt="Poster of methodology and workflow.">
+            </div>
+
+        </div> 
+
+        <div class="frontenddesign">
+            <img class="dividerimg" src="images/refractcasestudy/divider3.svg">
+            <h1>3. Frontend & UI Design</h1>
+            <img class="refract_prototyping" src="images/refractcasestudy/refract_prototyping.svg" alt="Process of my prototyping in Figma.">
+            <div>
+                <img src="images/refractcasestudy/refract_brandbook.svg" alt="Brand book of Refract design system">
+                <p>I worked with another member on branding — colors, typography, personality, etc. We designed a simple, consistent style in Figma to prototype. Then, we implemented the frontend, working with another team member in charge of DevOps to connect the backend. This was the first time I coded in Typescript, and learnt a lot of React.js as well!</p>
+            </div>
+        </div>
+
+        <div class="results">
+            <img class="dividerimg" src="images/refractcasestudy/divider4.svg">
+            <h1>4. Results</h1>
+            <p><span style="color: #7effbc;">Cloaked’s</span> similarity to <span style="color: #FFFFC5;">Target: 75.67%</span></p>
+            <p><span style="color: #7effbc;">Cloaked’s</span> similarity to <span style="color: #9F7DFF">Original: 29.57%</span></p>
+            <p><span style="color: #7effbc;">Cloaked images are <span style="text-decoration: underline;">2.56 times more effective</span> at fooling deepfakes!</span></p>
+            <div class="grid-container">
+                <img class="face" src="images/refractcasestudy/originalface.svg" alt="Original face">
+                <img class="face" src="images/refractcasestudy/cloakedface.svg" alt="Cloaked face">
+                <p><span style="color:#9F7DFF;">Original</span></p>
+                <p><span style="color:#7effbc;">Cloaked</span></p>
+            </div>
+            <p>The output image is almost completely identical to the source image in the human eye, but actually very different in terms of facial features calculated from the machine, which used the 500 images ran on our model, and measured the Euclidean distance of the original and cloaked images. Cloaked images are approx. 2.56X more similar to the target than the original in feature embedding space!</p>
+        </div>
+
+        <div class="takeaways">
+            <img class="dividerimg" src="images/refractcasestudy/divider5.svg">
+            <h1>5. Takeaways</h1>
+            <h2>Impact & Implications</h2>
+            <p>Most of us have likely posted on social media before and thus we are all prone to web-scraping activities of scammers where they, unbeknownst to you, steal your photos for deepfakes and other forms of identity theft. With Refract, we easily prevent all of these kinds of attacks.</p>
+            <img src="images/refractcasestudy/diamond.svg">
+        </div>
 
 
 
