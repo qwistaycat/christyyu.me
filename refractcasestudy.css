@@ -139,6 +139,7 @@ html {
   }
   .hero img{
     max-width: 30%;
+    height: auto;
   }
   .refractmenu{
     background-color: #10131E;
@@ -221,6 +222,7 @@ html {
     grid-template-rows: repeat(2, auto);  /* Two rows that adjust to content height */
     justify-items: center;
     text-align: center;
+    gap: 0 1vw;
   }
   .face {
     max-width: 100%;
