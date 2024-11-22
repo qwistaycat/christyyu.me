@@ -63,6 +63,7 @@ html {
     padding-top: 3vh;
     padding-bottom: 3vh;
     opacity: 0%;
+    font-family: 'Metamorphous', cursive;
     background-color: black;
     z-index: 2;
   } 
@@ -108,7 +109,7 @@ html {
 
 
 
-  
+
 
   .title{
     font-family: 'Oi', cursive;
@@ -131,10 +132,13 @@ html {
   .hero{
     display: flex;
     justify-content: center;
-    padding: 0 10vw;
-    font-size: 1.2rem;
+    padding: 5vh 20vw;
+    font-size: 1.4rem;
     color: #D0D6EA;
     gap: 2vw;
+  }
+  .hero img{
+    max-width: 30%;
   }
   .refractmenu{
     background-color: #10131E;
