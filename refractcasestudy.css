@@ -140,6 +140,9 @@ html {
   .hero img{
     max-width: 30%;
     height: auto;
+    border: 3px solid #000;
+    border-radius: 40px;
+
   }
   .refractmenu{
     background-color: #10131E;
