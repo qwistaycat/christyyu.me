@@ -145,6 +145,7 @@ html {
 
   }
   .refractmenu{
+    /* TODO: make hovering #9F7DFF, and clicking each section jumps to the section on the website */
     background-color: #10131E;
     display: flex;
     flex-direction: column;
