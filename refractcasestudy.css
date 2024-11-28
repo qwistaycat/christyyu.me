@@ -255,140 +255,130 @@ html {
   .contact{
     display: flex;
     justify-content: space-between;
-    color:#7effbc;
+    color: #7effbc;
     background-color: black;
-    padding:2vh 5vw;
+    padding: 2vh 5vw;
     font-size: 3rem; /*48px*/
-    gap:2vw;
-    font-family: 'Metamorphous', cursive;
-}
-.links{
+    gap: 2vw;
+    font-family: 'Metamorphous', serif;
+    align-items: center;
+    letter-spacing: normal;
+  }
+
+  .contact p {
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .links{
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: 1rem; /*16px*/
-}
-.linkedin, .email, .github{
+    white-space: nowrap;
+    letter-spacing: normal;
+  }
+  .linkedin, .email, .github{
     display: flex;
-}
-.linkedin img, .email img, .github img{
+    align-items: center;
+  }
+  .linkedin img, .email img, .github img{
     width: 30px;
     margin-right: 1vw;
-}
+  }
 
-/* ===== links ====== */
+  /* ===== links ====== */
 
-/*all menu links*/
-.menu a {
+  /*all menu links*/
+  .menu a {
     text-decoration: none;
     }
   /* unvisited menu links */
-.menu a:link {
+  .menu a:link {
     color: #43A9B7; /*TODO:change*/
   }
   /* visited menu links */
-.menu a:visited {
+  .menu a:visited {
     color: #43A9B7; /*TODO:change*/
   }
 
-/*all contact links*/
-.contact a {
+  /*all contact links*/
+  .contact a {
     text-decoration: none;
     }
   /* unvisited contact links */
-.contact a:link {
+  .contact a:link {
     color: #7effbc; /*TODO:change*/
   }
   /* visited menu links */
-.contact a:visited {
+  .contact a:visited {
     color: #7effbc; /*TODO:change*/
   }
-/* Link styles */
-.contact a {
-  color: #7effbc;
-  transition: all 0.3s ease;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-  color: #7effbc;
-}
-
-/* Specifically target LinkedIn and GitHub links */
-.linkedin a:hover, .github a:hover {
-  text-decoration: underline;
-  color: #7effbc;
-}
-
-/* Add media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    padding: 5vh 10vw;
-  }
-  
-  .hero img {
-    max-width: 80%;
+  /* Link styles */
+  .contact a {
+    color: #7effbc;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
-  .methodology {
-    flex-direction: column;
-    align-items: center;
+  .contact a:hover {
+    text-decoration: underline;
+    color: #7effbc;
   }
 
-  .methodology img {
-    max-width: 100%;
+  /* Specifically target LinkedIn and GitHub links */
+  .linkedin a:hover, .github a:hover {
+    text-decoration: underline;
+    color: #7effbc;
   }
 
-  .frontenddesign div {
-    flex-direction: column;
-    align-items: center;
+  /* Add media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      padding: 5vh 10vw;
+    }
+    
+    .hero img {
+      max-width: 80%;
+    }
+
+    .methodology {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .methodology img {
+      max-width: 100%;
+    }
+
+    .frontenddesign div {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .frontenddesign div img {
+      max-width: 100%;
+    }
   }
 
-  .frontenddesign div img {
-    max-width: 100%;
+  /* Add media query for very small screens */
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .hero {
+      font-size: 1.1rem;
+    }
+
+    .grid-container {
+      padding: 5vh 5vw 0 5vw;
+    }
   }
 
-  .menusection {
-    font-size: 1.8rem;
-    padding-left: 5vw;
+  .email p {
+    margin: auto 0;
   }
-
-  .contact {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .links {
-    width: 100%;
-  }
-
-  .linkedin, .email, .github {
-    justify-content: center;
-  }
-}
-
-/* Add media query for very small screens */
-@media screen and (max-width: 480px) {
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .hero {
-    font-size: 1.1rem;
-  }
-
-  .grid-container {
-    padding: 5vh 5vw 0 5vw;
-  }
-
-  .menuWords {
-    font-size: 1.2rem;
-    margin-left: 5vw;
-  }
-}

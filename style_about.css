@@ -215,25 +215,33 @@ ul{
 .contact{
     display: flex;
     justify-content: space-between;
-    color:#7effbc;
+    color: #7effbc;
     background-color: black;
-    padding:2vh 5vw;
+    padding: 2vh 5vw;
     font-size: 3rem; /*48px*/
-    margin-top:30vh;
-    gap:2vw;
+    gap: 2vw;
+    font-family: 'Metamorphous', serif;
+    align-items: center;
+    letter-spacing: normal;
 }
 .links{
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: 1rem; /*16px*/
+    white-space: nowrap;
+    letter-spacing: normal;
 }
 .linkedin, .email, .github{
     display: flex;
+    align-items: center;
 }
 .linkedin img, .email img, .github img{
     width: 30px;
     margin-right: 1vw;
+}
+.email p {
+    margin: auto 0;
 }
 
 /* ===== links ====== */
