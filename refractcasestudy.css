@@ -339,6 +339,7 @@ html {
       flex-direction: column;
       align-items: center;
       padding: 5vh 10vw;
+      font-size: 1.3rem; /* Increase from base size */
     }
     
     .hero img {
@@ -362,23 +363,128 @@ html {
     .frontenddesign div img {
       max-width: 100%;
     }
+
+    /* Increase text sizes for mobile */
+    .caption {
+      font-size: 1.2rem;
+    }
+
+    .initialapproach,
+    .newdirection,
+    .frontenddesign,
+    .results,
+    .takeaways {
+      font-size: 1.3rem;
+    }
+
+    .menusection {
+      font-size: 2.8rem;
+    }
   }
 
   /* Add media query for very small screens */
   @media screen and (max-width: 480px) {
     .title {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
 
-    .hero {
-      font-size: 1.1rem;
+    .refractgithub {
+      font-size: 1.5rem;
     }
 
     .grid-container {
       padding: 5vh 5vw 0 5vw;
     }
+
+    /* Further increase text sizes for very small screens */
+    .hero,
+    .initialapproach,
+    .newdirection,
+    .frontenddesign,
+    .results,
+    .takeaways {
+      font-size: 1.4rem;
+    }
+
+    .caption {
+      font-size: 1.3rem;
+    }
+
+    .menusection {
+      font-size: 3rem;
+    }
   }
 
   .email p {
     margin: auto 0;
+  }
+
+  /* Main section headers (like "2. New Direction") */
+  .newdirection h1,
+  .initialapproach h1,
+  .frontenddesign h1,
+  .results h1,
+  .takeaways h1 {
+      font-size: 2.5rem;
+      color: #CCD7FF;
+      margin-bottom: 2rem;
+  }
+
+  /* Subsection headers (like "Research", "An Ethical Dataset", "Methodology") */
+  .newdirection h2,
+  .initialapproach h2,
+  .frontenddesign h2,
+  .results h2,
+  .takeaways h2 {
+      font-size: 1.8rem;
+      color: #8394eb;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+  }
+
+  /* Body text */
+  .newdirection p,
+  .initialapproach p,
+  .frontenddesign p,
+  .results p,
+  .takeaways p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #D0D6EA;
+  }
+
+  /* Mobile adjustments */
+  @media screen and (max-width: 768px) {
+      /* Main section headers */
+      .newdirection h1,
+      .initialapproach h1,
+      .frontenddesign h1,
+      .results h1,
+      .takeaways h1 {
+          font-size: 2.8rem;
+          margin-bottom: 1.5rem;
+      }
+
+      /* Subsection headers */
+      .newdirection h2,
+      .initialapproach h2,
+      .frontenddesign h2,
+      .results h2,
+      .takeaways h2 {
+          font-size: 2.2rem;
+          margin-top: 2.5rem;
+          margin-bottom: 1.2rem;
+      }
+
+      /* Body text */
+      .newdirection p,
+      .initialapproach p,
+      .frontenddesign p,
+      .results p,
+      .takeaways p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          margin-bottom: 2rem;
+      }
   }
