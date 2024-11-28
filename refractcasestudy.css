@@ -239,7 +239,7 @@ html {
     color: #D0D6EA;
     gap: 10vw;
   }
-  .takeaways p{
+  .takeaways .before-diamond{
     margin-bottom:30vh;
   }
 .takeaways img{
@@ -380,6 +380,10 @@ html {
     .menusection {
       font-size: 2.8rem;
     }
+
+    .takeaways .before-diamond {
+        margin-bottom: 15vh; /* Reduce the spacing on mobile */
+    }
   }
 
   /* Add media query for very small screens */
@@ -412,6 +416,10 @@ html {
 
     .menusection {
       font-size: 3rem;
+    }
+
+    .takeaways .before-diamond {
+        margin-bottom: 10vh; /* Even smaller spacing for very small screens */
     }
   }
 
