@@ -161,12 +161,29 @@ html {
     font-size: 1rem;
   }
   .menusection{
-    color:#CCD7FF;
-    font-size: 2.5rem; 
+    color: #CCD7FF;
+    font-size: 2.5rem;
     align-self: flex-start;
     padding-left: 15vw;
+    list-style-position: outside;
+    margin: 2rem 0;
   }
- 
+  .menusection li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  .menusection a {
+    color: #CCD7FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    line-height: 1.2;
+  }
+
+  .menusection a:hover {
+    color: #9F7DFF;
+  }
+
   .dividerimg{
     max-width: 50%;
     display: flex;
@@ -378,7 +395,12 @@ html {
     }
 
     .menusection {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
+      padding-left: 8vw;
+    }
+
+    .menusection li {
+      margin-bottom: 0.8rem;
     }
 
     .takeaways .before-diamond {
@@ -415,7 +437,8 @@ html {
     }
 
     .menusection {
-      font-size: 3rem;
+      font-size: 1.8rem;
+      padding-left: 5vw;
     }
 
     .takeaways .before-diamond {
@@ -428,8 +451,8 @@ html {
   }
 
   /* Main section headers (like "2. New Direction") */
-  .newdirection h1,
   .initialapproach h1,
+  .newdirection h1,
   .frontenddesign h1,
   .results h1,
   .takeaways h1 {
@@ -439,8 +462,8 @@ html {
   }
 
   /* Subsection headers (like "Research", "An Ethical Dataset", "Methodology") */
-  .newdirection h2,
   .initialapproach h2,
+  .newdirection h2,
   .frontenddesign h2,
   .results h2,
   .takeaways h2 {
@@ -451,8 +474,8 @@ html {
   }
 
   /* Body text */
-  .newdirection p,
   .initialapproach p,
+  .newdirection p,
   .frontenddesign p,
   .results p,
   .takeaways p {
@@ -465,8 +488,8 @@ html {
   /* Mobile adjustments */
   @media screen and (max-width: 768px) {
       /* Main section headers */
-      .newdirection h1,
       .initialapproach h1,
+      .newdirection h1,
       .frontenddesign h1,
       .results h1,
       .takeaways h1 {
@@ -475,8 +498,8 @@ html {
       }
 
       /* Subsection headers */
-      .newdirection h2,
       .initialapproach h2,
+      .newdirection h2,
       .frontenddesign h2,
       .results h2,
       .takeaways h2 {
@@ -486,13 +509,17 @@ html {
       }
 
       /* Body text */
-      .newdirection p,
       .initialapproach p,
+      .newdirection p,
       .frontenddesign p,
       .results p,
       .takeaways p {
           font-size: 1.4rem;
           line-height: 1.7;
           margin-bottom: 2rem;
+      }
+
+      .refractcontent div:not(:first-child) {
+        padding-top: 0;
       }
   }
