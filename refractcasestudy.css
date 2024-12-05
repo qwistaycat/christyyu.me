@@ -63,6 +63,7 @@ html {
     padding-top: 3vh;
     padding-bottom: 3vh;
     opacity: 0%;
+    font-family: 'Metamorphous', cursive;
     background-color: black;
     z-index: 2;
   } 
@@ -107,6 +108,9 @@ html {
 
 
 
+
+
+
   .title{
     font-family: 'Oi', cursive;
     font-size: 4rem; /*64px*/
@@ -128,12 +132,20 @@ html {
   .hero{
     display: flex;
     justify-content: center;
-    padding: 0 10vw;
-    font-size: 1.2rem;
+    padding: 5vh 20vw;
+    font-size: 1.4rem;
     color: #D0D6EA;
     gap: 2vw;
   }
+  .hero img{
+    max-width: 30%;
+    height: auto;
+    border: 6px solid #000;
+    border-radius: 40px;
+
+  }
   .refractmenu{
+    /* TODO: make hovering #9F7DFF, and clicking each section jumps to the section on the website */
     background-color: #10131E;
     display: flex;
     flex-direction: column;
@@ -149,25 +161,108 @@ html {
     font-size: 1rem;
   }
   .menusection{
-    color:#CCD7FF;
-    font-size: 2.5rem; 
+    color: #CCD7FF;
+    font-size: 2.5rem;
     align-self: flex-start;
     padding-left: 15vw;
+    list-style-position: outside;
+    margin: 2rem 0;
   }
- 
-  .initialapproach{
-    padding: 10vh 10vw;
-    font-size: 1.2rem;
-    color: #D0D6EA;
+  .menusection li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
   }
-  .initialapproach img{
+  .menusection a {
+    color: #CCD7FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    line-height: 1.2;
+  }
+
+  .menusection a:hover {
+    color: #9F7DFF;
+  }
+
+  .dividerimg{
     max-width: 50%;
     display: flex;
     justify-self: center;
   }
+  
+  .initialapproach{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+  }
 
+  .newdirection{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+  }
+  .methodology img{
+    max-width: 60%;
+  }
+  .methodology{
+    display: flex;
+    gap: 10vw;
+  }
+  .methodology p{
+    margin-top: 0;
+  }
 
+  .frontenddesign{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+    gap: 10vw;
+  }
+.frontenddesign .refract_prototyping{
+    max-width: 100%;
+}
+.frontenddesign div{
+    display: flex;
+    padding-top: 5vh;
+    gap: 2vw;
+}
+.frontenddesign div img{
+    max-width: 70%;
+}
 
+.results{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+    gap: 10vw;
+}
+.grid-container {
+    padding: 5vh 10vw 0 10vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-template-rows: repeat(2, auto);  /* Two rows that adjust to content height */
+    justify-items: center;
+    text-align: center;
+    gap: 0 1vw;
+  }
+  .face {
+    max-width: 100%;
+    align-self: center;;
+  }
+
+  .takeaways{
+    padding: 10vh 10vw;
+    font-size: 1.1rem;
+    color: #D0D6EA;
+    gap: 10vw;
+  }
+  .takeaways .before-diamond{
+    margin-bottom:30vh;
+  }
+.takeaways img{
+    display: flex;
+    justify-self: center;
+}
 
 
 
@@ -177,70 +272,254 @@ html {
   .contact{
     display: flex;
     justify-content: space-between;
-    color:#7effbc;
+    color: #7effbc;
     background-color: black;
-    padding:2vh 5vw;
+    padding: 2vh 5vw;
     font-size: 3rem; /*48px*/
-    margin-top:30vh;
-    gap:2vw;
-    font-family: 'Metamorphous', cursive;
-}
-.links{
+    gap: 2vw;
+    font-family: 'Metamorphous', serif;
+    align-items: center;
+    letter-spacing: normal;
+  }
+
+  .contact p {
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .links{
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: 1rem; /*16px*/
-}
-.linkedin, .email, .github{
+    white-space: nowrap;
+    letter-spacing: normal;
+  }
+  .linkedin, .email, .github{
     display: flex;
-}
-.linkedin img, .email img, .github img{
+    align-items: center;
+  }
+  .linkedin img, .email img, .github img{
     width: 30px;
     margin-right: 1vw;
-}
+  }
 
-/* ===== links ====== */
+  /* ===== links ====== */
 
-/*all menu links*/
-.menu a {
+  /*all menu links*/
+  .menu a {
     text-decoration: none;
     }
   /* unvisited menu links */
-.menu a:link {
+  .menu a:link {
     color: #43A9B7; /*TODO:change*/
   }
   /* visited menu links */
-.menu a:visited {
+  .menu a:visited {
     color: #43A9B7; /*TODO:change*/
   }
 
-/*all contact links*/
-.contact a {
+  /*all contact links*/
+  .contact a {
     text-decoration: none;
     }
   /* unvisited contact links */
-.contact a:link {
+  .contact a:link {
     color: #7effbc; /*TODO:change*/
   }
   /* visited menu links */
-.contact a:visited {
+  .contact a:visited {
     color: #7effbc; /*TODO:change*/
   }
-/* Link styles */
-.contact a {
-  color: #7effbc;
-  transition: all 0.3s ease;
-  margin-top: auto;
-  margin-bottom: auto;
-}
+  /* Link styles */
+  .contact a {
+    color: #7effbc;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
-.contact a:hover {
-  text-decoration: underline;
-  color: #7effbc;
-}
+  .contact a:hover {
+    text-decoration: underline;
+    color: #7effbc;
+  }
 
-/* Specifically target LinkedIn and GitHub links */
-.linkedin a:hover, .github a:hover {
-  text-decoration: underline;
-  color: #7effbc;
-}
+  /* Specifically target LinkedIn and GitHub links */
+  .linkedin a:hover, .github a:hover {
+    text-decoration: underline;
+    color: #7effbc;
+  }
+
+  /* Add media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      padding: 5vh 10vw;
+      font-size: 1.3rem; /* Increase from base size */
+    }
+    
+    .hero img {
+      max-width: 80%;
+    }
+
+    .methodology {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .methodology img {
+      max-width: 100%;
+    }
+
+    .frontenddesign div {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .frontenddesign div img {
+      max-width: 100%;
+    }
+
+    /* Increase text sizes for mobile */
+    .caption {
+      font-size: 1.2rem;
+    }
+
+    .initialapproach,
+    .newdirection,
+    .frontenddesign,
+    .results,
+    .takeaways {
+      font-size: 1.3rem;
+    }
+
+    .menusection {
+      font-size: 2.2rem;
+      padding-left: 8vw;
+    }
+
+    .menusection li {
+      margin-bottom: 0.8rem;
+    }
+
+    .takeaways .before-diamond {
+        margin-bottom: 15vh; /* Reduce the spacing on mobile */
+    }
+  }
+
+  /* Add media query for very small screens */
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 3.5rem;
+    }
+
+    .refractgithub {
+      font-size: 1.5rem;
+    }
+
+    .grid-container {
+      padding: 5vh 5vw 0 5vw;
+    }
+
+    /* Further increase text sizes for very small screens */
+    .hero,
+    .initialapproach,
+    .newdirection,
+    .frontenddesign,
+    .results,
+    .takeaways {
+      font-size: 1.4rem;
+    }
+
+    .caption {
+      font-size: 1.3rem;
+    }
+
+    .menusection {
+      font-size: 1.8rem;
+      padding-left: 5vw;
+    }
+
+    .takeaways .before-diamond {
+        margin-bottom: 10vh; /* Even smaller spacing for very small screens */
+    }
+  }
+
+  .email p {
+    margin: auto 0;
+  }
+
+  /* Main section headers (like "2. New Direction") */
+  .initialapproach h1,
+  .newdirection h1,
+  .frontenddesign h1,
+  .results h1,
+  .takeaways h1 {
+      font-size: 2.5rem;
+      color: #CCD7FF;
+      margin-bottom: 2rem;
+  }
+
+  /* Subsection headers (like "Research", "An Ethical Dataset", "Methodology") */
+  .initialapproach h2,
+  .newdirection h2,
+  .frontenddesign h2,
+  .results h2,
+  .takeaways h2 {
+      font-size: 1.8rem;
+      color: #8394eb;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+  }
+
+  /* Body text */
+  .initialapproach p,
+  .newdirection p,
+  .frontenddesign p,
+  .results p,
+  .takeaways p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #D0D6EA;
+  }
+
+  /* Mobile adjustments */
+  @media screen and (max-width: 768px) {
+      /* Main section headers */
+      .initialapproach h1,
+      .newdirection h1,
+      .frontenddesign h1,
+      .results h1,
+      .takeaways h1 {
+          font-size: 2.8rem;
+          margin-bottom: 1.5rem;
+      }
+
+      /* Subsection headers */
+      .initialapproach h2,
+      .newdirection h2,
+      .frontenddesign h2,
+      .results h2,
+      .takeaways h2 {
+          font-size: 2.2rem;
+          margin-top: 2.5rem;
+          margin-bottom: 1.2rem;
+      }
+
+      /* Body text */
+      .initialapproach p,
+      .newdirection p,
+      .frontenddesign p,
+      .results p,
+      .takeaways p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          margin-bottom: 2rem;
+      }
+
+      .refractcontent div:not(:first-child) {
+        padding-top: 0;
+      }
+  }

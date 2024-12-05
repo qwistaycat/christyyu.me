@@ -263,6 +263,7 @@ html {
   padding:2vh 5vw;
   font-size: 3rem; /*48px*/ 
   gap:2vw;
+  align-items: center;
 }
 .links{
   display: flex;
@@ -272,6 +273,7 @@ html {
 }
 .linkedin, .email, .github{
   display: flex;
+  align-items: center;
 }
 .linkedin img, .email img, .github img{
   width: 30px;
@@ -324,4 +326,8 @@ html {
 /* visited menu links */
 .contact a:visited {
   color: #7effbc; /*TODO:change*/
+}
+
+.email p {
+    margin: auto 0;
 }
