@@ -137,7 +137,7 @@ html {
     color: #D0D6EA;
     gap: 2vw;
   }
-  .hero img{
+  .hero video{
     max-width: 30%;
     height: auto;
     border: 6px solid #000;
@@ -359,7 +359,7 @@ html {
       font-size: 1.3rem; /* Increase from base size */
     }
     
-    .hero img {
+    .hero video {
       max-width: 80%;
     }
 
