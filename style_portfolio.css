@@ -208,6 +208,10 @@ html {
     text-align: center;
   }
 }
+p.new {
+  color:#43A9B7;
+  font-size: 1rem; /*16px*/
+}
   
 /* Hover states for each project */
 .work a:hover img.portfoliocard[src*="refract"] {
