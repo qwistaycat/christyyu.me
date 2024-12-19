@@ -65,6 +65,7 @@ html {
     opacity: 0%;
     background-color: black;
     z-index: 2;
+    font-family: 'Metamorphous', cursive;
   } 
   .menu_buttons{
     display:flex;
