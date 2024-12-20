@@ -223,6 +223,9 @@ content: url("images/works_cards/noteblockit_hover.svg");
 .work a:hover img.portfoliocard[src*="newsletter"] {
 content: url("images/works_cards/newsletter_hover.svg");
 }
+.work a:hover img.portfoliocard[src*="pinataparty"] {
+  content: url("images/works_cards/pinataparty_hover.svg");
+}
 .work a:hover img.portfoliocard[src*="sbhacks"] {
 content: url("images/works_cards/sbhacks_hover.svg");
 }
@@ -242,6 +245,9 @@ content: url("images/works_cards/noteblockit_onclick.svg");
 }
 .work a:active img.portfoliocard[src*="newsletter"] {
 content: url("images/works_cards/newsletter_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="pinataparty"] {
+content: url("images/works_cards/pinataparty_onclick.svg");
 }
 .work a:active img.portfoliocard[src*="sbhacks"] {
 content: url("images/works_cards/sbhacks_onclick.svg");
