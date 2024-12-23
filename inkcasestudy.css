@@ -446,7 +446,12 @@ html {
 
 .flowchart {
   width: 95vw; /* Take up almost entire viewport width */
-  margin-left: calc(-15vw + 2.5vw); /* Compensate for parent padding (15vw) and center the extra width */
+  margin-left: calc(
+    -15vw + 2.5vw
+  ); /* Compensate for parent padding (15vw) and center the extra width */
+
+  /* The image has a bunch of blank space on the right. 
+     This is to compensate for that and make it look centered */
   padding-left: 2vw;
 }
 
@@ -465,8 +470,121 @@ html {
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .features-grid .research-image {
     width: 100%;
   }
+}
+
+.lofi-screens {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.example-feature {
+    margin: 4rem 0;
+}
+
+.feature-comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.sketch-image {
+    width: 30%;
+    height: auto;
+}
+
+.arrow-image {
+    width: 100px;
+    height: auto;
+}
+
+.implementation-image {
+    width: 30%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-comparison {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .sketch-image,
+    .implementation-image {
+        width: 60%;
+    }
+    
+    .arrow-image {
+        transform: rotate(90deg);
+    }
+}
+
+.hifi-design {
+    margin: 4rem 0;
+}
+
+.takeaways {
+    margin-bottom: 6rem;
+}
+
+.takeaways .research-description {
+    max-width: 900px;
+    margin: 3rem auto;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #F4E9E3;
+}
+
+.section-title {
+    font-family: 'Buenard', serif;
+    font-size: 4rem;
+    color: #F4E9E3;
+    margin: 3rem 0;
+}
+
+/* Keep existing feature-comparison styles */
+.feature-comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.sketch-image, .implementation-image {
+    width: 30%;
+    height: auto;
+}
+
+.arrow-image {
+    width: 100px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-comparison {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .sketch-image,
+    .implementation-image {
+        width: 60%;
+    }
+    
+    .arrow-image {
+        transform: rotate(90deg);
+    }
+    
+    .takeaways .research-description {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
 }
