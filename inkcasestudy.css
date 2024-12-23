@@ -60,8 +60,7 @@ html {
   align-items: flex-start;
   position: sticky;
   top: 0px;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding: 3vh 0;
   opacity: 0%;
   background-color: var(--bg-dark);
   z-index: 2;
@@ -81,9 +80,7 @@ html {
   position: fixed;
   top: 0px;
   z-index: 3;
-  transition-property: transform;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .menu_dark {
@@ -170,7 +167,7 @@ html {
   margin: 0;
 }
 .menusection {
-  color: #4a4e68;
+  color: var(--color-ink-menu);
   font-size: 4rem;
   align-self: flex-start;
   padding-left: 15vw;
@@ -572,6 +569,7 @@ html {
   --accent-blue: #43a9b7;
   --accent-green: #7effbc;
   --bg-dark: black;
+  --color-ink-menu: #4a4e68;
 }
 
 /* Update these color references */
