@@ -414,10 +414,11 @@ html {
 .personas-description {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 10%;
+  transform: translateY(0);
   max-width: 300px;
   color: #F4E9E3;
   font-size: 1.2rem;
   line-height: 1.6;
+  margin-right: -100px;
 }
