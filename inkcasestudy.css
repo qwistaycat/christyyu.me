@@ -614,3 +614,108 @@ html {
   text-decoration: underline;
   color: var(--accent-green);
 }
+
+/* Update menu for mobile */
+@media screen and (max-width: 768px) {
+  .menu {
+    padding: 2vh 0;
+  }
+
+  .menuWords {
+    margin-left: 5vw;
+    gap: 5vw;
+    font-size: 1.2rem;
+  }
+
+  .menu_dark,
+  #moon {
+    height: clamp(15px, 4vw, 25px);
+    margin: 2vh 3vw;
+  }
+}
+
+/* Update hero section for mobile */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .title img {
+    max-width: 90%;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* Update research section for mobile */
+@media screen and (max-width: 768px) {
+  .research-section {
+    padding: 0 5vw; /* Reduce padding on mobile */
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .subsection-title {
+    font-size: 2rem;
+  }
+
+  /* Adjust personas layout */
+  .personas-grid {
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .persona-card {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    left: 0;
+    top: 0;
+  }
+
+  .personas-description {
+    position: relative;
+    max-width: 100%;
+    margin: 1rem 0;
+    right: auto;
+  }
+
+  /* Adjust flowchart */
+  .flowchart {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+/* Update inkmenu section for mobile */
+@media screen and (max-width: 768px) {
+  .inkmenu {
+    padding: 2.5vw 5vw;
+  }
+
+  .menusection {
+    font-size: 2.5rem;
+    padding-left: 5vw;
+    margin-bottom: 5rem;
+  }
+}
+
+/* Update contact section for mobile */
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    gap: 1rem;
+  }
+
+  .links {
+    align-items: center;
+  }
+}
