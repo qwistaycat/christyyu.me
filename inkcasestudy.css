@@ -363,13 +363,13 @@ html {
 
 .user-personas {
   margin: 4rem 0;
-  color: #F4E9E3;
+  color: #f4e9e3;
 }
 
 .personas-title {
-  font-family: 'Buenard', serif;
+  font-family: "Buenard", serif;
   font-size: 4rem;
-  color: #F4E9E3;
+  color: #f4e9e3;
   margin-bottom: 2rem;
 }
 
@@ -393,19 +393,22 @@ html {
 }
 
 /* Positioning for each card */
-.persona-card:nth-child(1) { /* Hannah */
+.persona-card:nth-child(1) {
+  /* Hannah */
   top: 0;
   left: 0;
   z-index: 1;
 }
 
-.persona-card:nth-child(2) { /* Lila */
+.persona-card:nth-child(2) {
+  /* Lila */
   top: 20%;
   left: 10%;
   z-index: 2;
 }
 
-.persona-card:nth-child(3) { /* Jared */
+.persona-card:nth-child(3) {
+  /* Jared */
   top: 40%;
   left: 20%;
   z-index: 3;
@@ -417,8 +420,53 @@ html {
   top: 10%;
   transform: translateY(0);
   max-width: 300px;
-  color: #F4E9E3;
+  color: #f4e9e3;
   font-size: 1.2rem;
   line-height: 1.6;
   margin-right: -100px;
+}
+
+.features-content {
+  margin: 2rem 0;
+}
+
+.features-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  margin: 3rem 0;
+}
+
+.research-image {
+  width: 50%; /* Take up half the space */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0; /* Remove bottom margin since we're using gap */
+}
+
+.flowchart {
+  width: 95vw; /* Take up almost entire viewport width */
+  margin-left: calc(-15vw + 2.5vw); /* Compensate for parent padding (15vw) and center the extra width */
+  padding-left: 2vw;
+}
+
+.research-description {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f4e9e3;
+  margin: 2rem 0;
+  flex: 1; /* Allow text to take up available space */
+}
+
+/* Add responsive behavior */
+@media screen and (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .features-grid .research-image {
+    width: 100%;
+  }
 }
