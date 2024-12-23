@@ -459,6 +459,15 @@ html {
   margin-bottom: 0; /* Remove bottom margin since we're using gap */
 }
 
+.affinity-map {
+  width: 50%;
+  height: auto;
+}
+
+.research-description.affinity-map-description {
+  margin-top: 0;
+}
+
 .flowchart {
   width: 95vw; /* Take up almost entire viewport width */
   margin-left: calc(
@@ -468,6 +477,12 @@ html {
   /* The image has a bunch of blank space on the right. 
      This is to compensate for that and make it look centered */
   padding-left: 2vw;
+
+  margin-bottom: -7rem; /* this is to bring the caption closer to the image */
+}
+
+.research-description.image-caption.flowchart-caption {
+  margin-bottom: 6rem;
 }
 
 .research-description {
@@ -511,7 +526,7 @@ html {
 }
 
 .sketch-image {
-  width: 30%;
+  width: 40%;
   height: auto;
 }
 
@@ -521,7 +536,7 @@ html {
 }
 
 .implementation-image {
-  width: 30%;
+  width: 25%;
   height: auto;
 }
 
@@ -531,9 +546,12 @@ html {
     gap: 1rem;
   }
 
-  .sketch-image,
+  .sketch-image {
+    width: 70%;
+  }
+
   .implementation-image {
-    width: 60%;
+    width: 50%;
   }
 
   .arrow-image {
@@ -573,9 +591,13 @@ html {
   margin: 3rem 0;
 }
 
-.sketch-image,
+.sketch-image {
+  width: 35%;
+  height: auto;
+}
+
 .implementation-image {
-  width: 30%;
+  width: 25%;
   height: auto;
 }
 
