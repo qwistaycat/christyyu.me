@@ -63,7 +63,7 @@ html {
   padding-top: 3vh;
   padding-bottom: 3vh;
   opacity: 0%;
-  background-color: black;
+  background-color: var(--bg-dark);
   z-index: 2;
   font-family: "Metamorphous", serif;
   letter-spacing: normal;
@@ -122,38 +122,7 @@ html {
 /* Update link colors */
 .menu a:link,
 .menu a:visited {
-  color: #43A9B7;
-}
-
-/* Update menu button styles */
-.menu_buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu_dark,
-#moon {
-  height: clamp(20px, 5vw, 30px);
-  margin: 3vh 2vw;
-  position: fixed;
-  top: 0px;
-  z-index: 3;
-  transition-property: transform;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
-}
-
-.menu_dark {
-  left: 0;
-}
-
-#moon {
-  right: 0;
-}
-
-.menu_dark:hover,
-#moon:hover {
-  transform: scale(1.2);
+  color: var(--accent-blue);
 }
 
 .title {
@@ -169,8 +138,13 @@ html {
   display: flex;
   justify-content: center;
 }
-.intro {
+.intro,
+.feature-list,
+.research-description {
   font-family: "Libre Franklin", sans-serif;
+}
+
+.intro {
   color: #f4e9e3;
   font-size: 1.5rem; /* Increased from default size */
   line-height: 1.3;
@@ -207,8 +181,8 @@ html {
 .contact {
   display: flex;
   justify-content: space-between;
-  color: #7effbc;
-  background-color: black;
+  color: var(--accent-green);
+  background-color: var(--bg-dark);
   padding: 2vh 5vw;
   font-size: 3rem; /*48px*/
   margin-top: 30vh;
@@ -233,64 +207,26 @@ html {
   margin-right: 1vw;
 }
 
-/* ===== links ====== */
-
-/*all menu links*/
-.menu a {
-  text-decoration: none;
-}
-/* unvisited menu links */
-.menu a:link {
-  color: #43a9b7; /*TODO:change*/
-}
-/* visited menu links */
-.menu a:visited {
-  color: #43a9b7; /*TODO:change*/
-}
-
-/*all contact links*/
 .contact a {
   text-decoration: none;
-}
-/* unvisited contact links */
-.contact a:link {
-  color: #7effbc; /*TODO:change*/
-}
-/* visited menu links */
-.contact a:visited {
-  color: #7effbc; /*TODO:change*/
-}
-/* Link styles */
-.contact a {
-  color: #7effbc;
+  color: var(--accent-green);
   transition: all 0.3s ease;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-  color: #7effbc;
-}
-
-/* Specifically target LinkedIn and GitHub links */
-.linkedin a:hover,
-.github a:hover {
-  text-decoration: underline;
-  color: #7effbc;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 2rem 2rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .hero-wrapper {
-  min-height: 100vh;
+  /* Subtract total navbar padding (3vh margin top + 2vh text + 3vh margin bottom) */
+  min-height: calc(100vh - 8vh);
 }
 
 .content-wrapper {
@@ -335,7 +271,6 @@ html {
 
 .feature-list {
   color: #f4e9e3;
-  font-family: "Libre Franklin", sans-serif;
   margin-left: 2rem;
   line-height: 1.3;
   font-size: 1.5rem;
@@ -369,7 +304,7 @@ html {
   font-family: "Buenard", serif;
   font-size: 4rem;
   color: #f4e9e3;
-  margin-bottom: 2rem;
+  margin: 3rem 0;
 }
 
 .subsection-title {
@@ -387,11 +322,9 @@ html {
 }
 
 .research-description {
-  font-family: "Libre Franklin", sans-serif;
-  font-size: 1.2rem;
+  margin: 2rem 0;
   line-height: 1.6;
   color: #f4e9e3;
-  margin: 2rem 0;
 }
 
 .research-description.image-caption {
@@ -534,11 +467,8 @@ html {
 }
 
 .research-description {
-  font-family: "Libre Franklin", sans-serif;
   font-size: 1.2rem;
-  line-height: 1.6;
   color: #f4e9e3;
-  margin: 2rem 0;
   flex: 1; /* Allow text to take up available space */
 }
 
@@ -569,14 +499,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   margin: 3rem 0;
-  position: relative;
-  left: -1.5rem; /* Shift left using position relative */
 }
 
 .sketch-image {
-  width: 40%;
+  width: 35%;
   height: auto;
 }
 
@@ -596,12 +524,9 @@ html {
     gap: 1rem;
   }
 
-  .sketch-image {
-    width: 70%;
-  }
-
+  .sketch-image,
   .implementation-image {
-    width: 50%;
+    width: 60%;
   }
 
   .arrow-image {
@@ -625,58 +550,6 @@ html {
   color: #f4e9e3;
 }
 
-.section-title {
-  font-family: "Buenard", serif;
-  font-size: 4rem;
-  color: #f4e9e3;
-  margin: 3rem 0;
-}
-
-/* Keep existing feature-comparison styles */
-.feature-comparison {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  margin: 3rem 0;
-}
-
-.sketch-image {
-  width: 35%;
-  height: auto;
-}
-
-.implementation-image {
-  width: 25%;
-  height: auto;
-}
-
-.arrow-image {
-  width: 100px;
-  height: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .feature-comparison {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .sketch-image,
-  .implementation-image {
-    width: 60%;
-  }
-
-  .arrow-image {
-    transform: rotate(90deg);
-  }
-
-  .takeaways .research-description {
-    font-size: 1.1rem;
-    padding: 0 1rem;
-  }
-}
-
 .menusection li {
   cursor: pointer;
   transition: color 0.2s ease;
@@ -690,4 +563,58 @@ html {
 .menusection a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Consolidate repeated color values into variables (already defined but not fully utilized) */
+:root {
+  --text-light: #f4e9e3;
+  --text-muted: #9a8c98;
+  --accent-blue: #43a9b7;
+  --accent-green: #7effbc;
+  --bg-dark: black;
+}
+
+/* Update these color references */
+.menu {
+  background-color: var(--bg-dark);
+}
+
+.contact {
+  color: var(--accent-green);
+  background-color: var(--bg-dark);
+}
+
+.contact a,
+.linkedin a,
+.github a {
+  color: var(--accent-green);
+}
+
+.menu a:link,
+.menu a:visited {
+  color: var(--accent-blue);
+}
+
+/* Remove these duplicate color declarations since they're now handled by variables */
+.intro,
+.feature-list,
+.feature-list li,
+.section-title,
+.subsection-title,
+.research-description {
+  color: var(--text-light);
+}
+
+.intro span,
+.research-description.image-caption,
+.secondary-highlight {
+  color: var(--text-muted);
+}
+
+/* Remove these since they're duplicates */
+.contact a:hover,
+.linkedin a:hover,
+.github a:hover {
+  text-decoration: underline;
+  color: var(--accent-green);
 }
