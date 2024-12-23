@@ -343,6 +343,15 @@ html {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
+  margin-bottom: -2.75rem;
+}
+
+.divider.divider1 {
+  margin-bottom: -1.5rem;
+}
+
+.divider.divider2 {
+  margin: 4rem 0 -1rem 0;
 }
 
 .divider img {
@@ -460,7 +469,7 @@ html {
 }
 
 .research-description.image-caption.flowchart-caption {
-  margin-bottom: 6rem;
+  margin-bottom: 0;
 }
 
 .research-description {
