@@ -59,52 +59,98 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   position: sticky;
-  top: 0px; /*this code keeps the sticky*/
+  top: 0px;
   padding-top: 3vh;
   padding-bottom: 3vh;
   opacity: 0%;
   background-color: black;
   z-index: 2;
-  font-family: "Metamorphous", cursive;
+  font-family: "Metamorphous", serif;
 }
+
 .menu_buttons {
   display: flex;
   justify-content: space-between;
 }
+
 .menu_dark,
 #moon {
   height: clamp(20px, 5vw, 30px);
   margin: 3vh 2vw;
   position: fixed;
-  top: 0px; /*this code keeps the sticky*/
+  top: 0px;
   z-index: 3;
   transition-property: transform;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
 }
+
 .menu_dark {
   left: 0;
 }
+
 #moon {
   right: 0;
 }
+
 .menu_dark:hover,
 #moon:hover {
   transform: scale(1.2);
 }
+
 .menuWords {
   display: flex;
   align-items: center;
   gap: 3vw;
   margin-left: 10vw;
-  font-size: 1.5rem; /*24px*/
+  font-size: 1.5rem;
 }
+
 .menu a {
   transition-property: transform;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
+  text-decoration: none;
 }
+
 .menu a:hover {
+  transform: scale(1.2);
+}
+
+/* Update link colors */
+.menu a:link,
+.menu a:visited {
+  color: #43A9B7;
+}
+
+/* Update menu button styles */
+.menu_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_dark,
+#moon {
+  height: clamp(20px, 5vw, 30px);
+  margin: 3vh 2vw;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.menu_dark {
+  left: 0;
+}
+
+#moon {
+  right: 0;
+}
+
+.menu_dark:hover,
+#moon:hover {
   transform: scale(1.2);
 }
 
