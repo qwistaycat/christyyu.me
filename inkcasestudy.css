@@ -8,6 +8,7 @@ body {
 
 html {
   font-size: 16px; /* Base font size */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Small phones */
@@ -147,12 +148,12 @@ html {
   margin: 0;
 }
 .menusection {
-  color: #4a4e68;
+  color: #4A4E68;
   font-size: 4rem;
   align-self: flex-start;
   padding-left: 15vw;
   margin-bottom: 10rem;
-  font-family: "Buenard", serif;
+  font-family: 'Buenard', serif;
 }
 
 .contact {
@@ -477,114 +478,130 @@ html {
 }
 
 .lofi-screens {
-    margin: 4rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
 }
 
 .example-feature {
-    margin: 4rem 0;
+  margin: 4rem 0;
 }
 
 .feature-comparison {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
 }
 
 .sketch-image {
-    width: 30%;
-    height: auto;
+  width: 30%;
+  height: auto;
 }
 
 .arrow-image {
-    width: 100px;
-    height: auto;
+  width: 100px;
+  height: auto;
 }
 
 .implementation-image {
-    width: 30%;
-    height: auto;
+  width: 30%;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
-    .feature-comparison {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .sketch-image,
-    .implementation-image {
-        width: 60%;
-    }
-    
-    .arrow-image {
-        transform: rotate(90deg);
-    }
+  .feature-comparison {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sketch-image,
+  .implementation-image {
+    width: 60%;
+  }
+
+  .arrow-image {
+    transform: rotate(90deg);
+  }
 }
 
 .hifi-design {
-    margin: 4rem 0;
+  margin: 4rem 0;
 }
 
 .takeaways {
-    margin-bottom: 6rem;
+  margin-bottom: 6rem;
 }
 
 .takeaways .research-description {
-    max-width: 900px;
-    margin: 3rem auto;
-    font-size: 1.3rem;
-    line-height: 1.8;
-    color: #F4E9E3;
+  max-width: 900px;
+  margin: 3rem auto;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #f4e9e3;
 }
 
 .section-title {
-    font-family: 'Buenard', serif;
-    font-size: 4rem;
-    color: #F4E9E3;
-    margin: 3rem 0;
+  font-family: "Buenard", serif;
+  font-size: 4rem;
+  color: #f4e9e3;
+  margin: 3rem 0;
 }
 
 /* Keep existing feature-comparison styles */
 .feature-comparison {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
 }
 
-.sketch-image, .implementation-image {
-    width: 30%;
-    height: auto;
+.sketch-image,
+.implementation-image {
+  width: 30%;
+  height: auto;
 }
 
 .arrow-image {
-    width: 100px;
-    height: auto;
+  width: 100px;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
-    .feature-comparison {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .sketch-image,
-    .implementation-image {
-        width: 60%;
-    }
-    
-    .arrow-image {
-        transform: rotate(90deg);
-    }
-    
-    .takeaways .research-description {
-        font-size: 1.1rem;
-        padding: 0 1rem;
-    }
+  .feature-comparison {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sketch-image,
+  .implementation-image {
+    width: 60%;
+  }
+
+  .arrow-image {
+    transform: rotate(90deg);
+  }
+
+  .takeaways .research-description {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+}
+
+.menusection li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+  list-style: decimal;
+}
+
+.menusection li:hover {
+  color: #F2E9E4;
+}
+
+.menusection a {
+  color: inherit;
+  text-decoration: none;
 }
