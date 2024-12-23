@@ -134,6 +134,7 @@ html {
     line-height: 1.3;
     font-weight: 300;
     margin-bottom: 3rem;
+    padding-left: 0; /* Remove any left padding */
 }
 
 .intro span {
@@ -244,15 +245,18 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 6rem 2rem 2rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.hero-wrapper {
+    min-height: 100vh;
 }
 
 .content-wrapper {
     display: flex;
     align-items: flex-start;
-    gap: 4rem;
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 2rem;
@@ -261,6 +265,8 @@ html {
 .intro-content {
     flex: 1;
     max-width: 50%;
+    padding-right: 2rem; /* Add some padding on the right to maintain space with video */
+    padding-left: 0; /* Remove any left padding */
 }
 
 .demo-section {
@@ -295,11 +301,19 @@ html {
     line-height: 1.3;
     font-size: 1.5rem;
     margin-top: 0;
+    font-weight: 300;
+    /* list-style-position: inside; */
+    padding-left: 0;
 }
 
 .feature-list li {
     color: #F4E9E3;
     margin-bottom: 0;
+    font-weight: 200;
+}
+
+.feature-list li::marker {
+    font-size: 0.8em;
 }
 
 .intro:last-of-type {
