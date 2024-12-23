@@ -148,12 +148,12 @@ html {
   margin: 0;
 }
 .menusection {
-  color: #4A4E68;
+  color: #4a4e68;
   font-size: 4rem;
   align-self: flex-start;
   padding-left: 15vw;
   margin-bottom: 10rem;
-  font-family: 'Buenard', serif;
+  font-family: "Buenard", serif;
 }
 
 .contact {
@@ -346,6 +346,21 @@ html {
   margin: 2rem 0;
 }
 
+.research-description.image-caption {
+  text-align: center;
+  margin-top: 0;
+  font-style: italic;
+  color: #9a8c98;
+}
+
+.primary-highlight {
+  color: #ccd7ff;
+}
+
+.secondary-highlight {
+  color: #9a8c98;
+}
+
 .divider {
   display: flex;
   justify-content: center;
@@ -439,7 +454,6 @@ html {
 }
 
 .research-image {
-  width: 50%; /* Take up half the space */
   height: auto;
   border-radius: 8px;
   margin-bottom: 0; /* Remove bottom margin since we're using gap */
@@ -598,7 +612,7 @@ html {
 }
 
 .menusection li:hover {
-  color: #F2E9E4;
+  color: #f2e9e4;
 }
 
 .menusection a {
