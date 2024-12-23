@@ -500,18 +500,15 @@ html {
   margin: 3rem 0;
 }
 
-.sketch-image {
-  width: 35%;
-  height: auto;
+.sketch-image,
+.implementation-image {
+  height: 500px; /* Set a fixed height */
+  width: auto; /* Allow width to adjust based on aspect ratio */
+  object-fit: contain; /* Maintain aspect ratio */
 }
 
 .arrow-image {
   width: 100px;
-  height: auto;
-}
-
-.implementation-image {
-  width: 25%;
   height: auto;
 }
 
@@ -523,7 +520,8 @@ html {
 
   .sketch-image,
   .implementation-image {
-    width: 60%;
+    height: 350px; /* Smaller height for mobile */
+    width: auto;
   }
 
   .arrow-image {
@@ -540,11 +538,11 @@ html {
 }
 
 .takeaways .research-description {
-  max-width: 900px;
-  margin: 3rem auto;
+  max-width: 100%;
+  margin: 3rem 0;
   font-size: 1.3rem;
   line-height: 1.8;
-  color: #f4e9e3;
+  color: var(--text-light);
 }
 
 .menusection li {
