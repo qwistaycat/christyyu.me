@@ -66,6 +66,7 @@ html {
   background-color: black;
   z-index: 2;
   font-family: "Metamorphous", serif;
+  letter-spacing: normal;
 }
 
 .menu_buttons {
@@ -104,6 +105,7 @@ html {
   gap: 3vw;
   margin-left: 10vw;
   font-size: 1.5rem;
+  letter-spacing: normal;
 }
 
 .menu a {
