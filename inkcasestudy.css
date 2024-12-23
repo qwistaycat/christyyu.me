@@ -1,228 +1,216 @@
 body {
-    background-image: url("images/inkcasestudy/bg_inkcasestudy.png");
-    background-size: cover;
-    font-family: 'Monda', monospace;
-    letter-spacing: .1rem;
-    margin:0;
+  background-image: url("images/inkcasestudy/bg_inkcasestudy.png");
+  background-size: cover;
+  font-family: "Monda", monospace;
+  letter-spacing: 0.1rem;
+  margin: 0;
 }
-
 
 html {
-    font-size: 16px; /* Base font size */
-  }
-  
-  /* Small phones */
-  @media screen and (max-width: 320px) {
-    html {
-      font-size: 50%; /* 8px */
-    }
-  }
-  
-  /* Larger phones */
-  @media screen and (min-width: 321px) and (max-width: 767px) {
-    html {
-      font-size: 62.5%; /* 10px */
-    }
-  }
-  
-  /* Tablets */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    html {
-      font-size: 75%; /* 12px */
-    }
-  }
-  
-  /* Laptops and small desktops */
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    html {
-      font-size: 87.5%; /* 14px */
-    }
-  }
-  
-  /* Large desktops */
-  @media screen and (min-width: 1440px) {
-    html {
-      font-size: 100%; /* 16px */
-    }
-  }
-  
-  /* Optional: Fluid scaling for very large screens */
-  @media screen and (min-width: 1800px) {
-    html {
-      font-size: calc(100% + 0.5vw);
-    }
-  }
-
-  .menu {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: sticky;
-    top:0px; /*this code keeps the sticky*/
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    opacity: 0%;
-    background-color: black;
-    z-index: 2;
-    font-family: 'Metamorphous', cursive;
-  } 
-  .menu_buttons{
-    display:flex;
-    justify-content: space-between;
-  }
-  .menu_dark, #moon{
-    height:clamp(20px, 5vw, 30px);
-    margin: 3vh 2vw;
-    position: fixed;
-    top:0px; /*this code keeps the sticky*/
-    z-index: 3;
-    transition-property: transform;
-    transition-duration: .2s;
-    transition-timing-function: ease-out;
-  }
-  .menu_dark{
-    left:0
-  }
-  #moon{
-    right:0;
-  }
-  .menu_dark:hover, #moon:hover {
-    transform: scale(1.2);
-  }
-  .menuWords{
-    display: flex;
-    align-items: center;
-    gap: 3vw;
-    margin-left: 10vw;
-    font-size: 1.5rem; /*24px*/
-  }
-  .menu a{
-    transition-property: transform;
-    transition-duration: .2s;
-    transition-timing-function: ease-out;
-  }
-  .menu a:hover {
-    transform: scale(1.2);
-  }
-
-
-
-
-
-
-
-
-
-.title{
-    margin: 0;
-    display: flex;
-    justify-self: center;
+  font-size: 16px; /* Base font size */
 }
-.subtitle{
-    font-family: "DM Serif Text", serif;
-    font-size: 2.75rem;
-    color: #F4E9E3;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+
+/* Small phones */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
 }
-.intro{
-    font-family: "Libre Franklin", sans-serif;
-    color: #F4E9E3;
-    font-size: 1.5rem; /* Increased from default size */
-    line-height: 1.3;
-    font-weight: 300;
-    margin-bottom: 3rem;
-    padding-left: 0; /* Remove any left padding */
+
+/* Larger phones */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  html {
+    font-size: 62.5%; /* 10px */
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 75%; /* 12px */
+  }
+}
+
+/* Laptops and small desktops */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+}
+
+/* Large desktops */
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 100%; /* 16px */
+  }
+}
+
+/* Optional: Fluid scaling for very large screens */
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: calc(100% + 0.5vw);
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: sticky;
+  top: 0px; /*this code keeps the sticky*/
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  opacity: 0%;
+  background-color: black;
+  z-index: 2;
+  font-family: "Metamorphous", cursive;
+}
+.menu_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_dark,
+#moon {
+  height: clamp(20px, 5vw, 30px);
+  margin: 3vh 2vw;
+  position: fixed;
+  top: 0px; /*this code keeps the sticky*/
+  z-index: 3;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.menu_dark {
+  left: 0;
+}
+#moon {
+  right: 0;
+}
+.menu_dark:hover,
+#moon:hover {
+  transform: scale(1.2);
+}
+.menuWords {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  margin-left: 10vw;
+  font-size: 1.5rem; /*24px*/
+}
+.menu a {
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.menu a:hover {
+  transform: scale(1.2);
+}
+
+.title {
+  margin: 0;
+  display: flex;
+  justify-self: center;
+}
+.subtitle {
+  font-family: "DM Serif Text", serif;
+  font-size: 2.75rem;
+  color: #f4e9e3;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.intro {
+  font-family: "Libre Franklin", sans-serif;
+  color: #f4e9e3;
+  font-size: 1.5rem; /* Increased from default size */
+  line-height: 1.3;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  padding-left: 0; /* Remove any left padding */
 }
 
 .intro span {
-    color: #9A8C98;
+  color: #9a8c98;
 }
 
-.inkmenu{
-    background-color: #9A8C98;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin:0;
-    padding: 2.5vw 10vw 0 10vw;
+.inkmenu {
+  background-color: #9a8c98;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 2.5vw 10vw 0 10vw;
 }
-.inkmenu img{
-    max-width: 100%;
-    margin: 0;
+.inkmenu img {
+  max-width: 100%;
+  margin: 0;
 }
-.menusection{
-    color:#4A4E68;
-    font-size: 3.5rem; 
-    align-self: flex-start;
-    padding-left: 15vw;
-    margin-bottom: 9rem;
+.menusection {
+  color: #4a4e68;
+  font-size: 4rem;
+  align-self: flex-start;
+  padding-left: 15vw;
+  margin-bottom: 10rem;
+  font-family: "Buenard", serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-  .contact{
-    display: flex;
-    justify-content: space-between;
-    color:#7effbc;
-    background-color: black;
-    padding:2vh 5vw;
-    font-size: 3rem; /*48px*/
-    margin-top:30vh;
-    gap:2vw;
-    font-family: 'Metamorphous', cursive;
+.contact {
+  display: flex;
+  justify-content: space-between;
+  color: #7effbc;
+  background-color: black;
+  padding: 2vh 5vw;
+  font-size: 3rem; /*48px*/
+  margin-top: 30vh;
+  gap: 2vw;
+  font-family: "Metamorphous", cursive;
 }
-.links{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 1rem; /*16px*/
+.links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem; /*16px*/
 }
-.linkedin, .email, .github{
-    display: flex;
+.linkedin,
+.email,
+.github {
+  display: flex;
 }
-.linkedin img, .email img, .github img{
-    width: 30px;
-    margin-right: 1vw;
+.linkedin img,
+.email img,
+.github img {
+  width: 30px;
+  margin-right: 1vw;
 }
 
 /* ===== links ====== */
 
 /*all menu links*/
 .menu a {
-    text-decoration: none;
-    }
-  /* unvisited menu links */
+  text-decoration: none;
+}
+/* unvisited menu links */
 .menu a:link {
-    color: #43A9B7; /*TODO:change*/
-  }
-  /* visited menu links */
+  color: #43a9b7; /*TODO:change*/
+}
+/* visited menu links */
 .menu a:visited {
-    color: #43A9B7; /*TODO:change*/
-  }
+  color: #43a9b7; /*TODO:change*/
+}
 
 /*all contact links*/
 .contact a {
-    text-decoration: none;
-    }
-  /* unvisited contact links */
+  text-decoration: none;
+}
+/* unvisited contact links */
 .contact a:link {
-    color: #7effbc; /*TODO:change*/
-  }
-  /* visited menu links */
+  color: #7effbc; /*TODO:change*/
+}
+/* visited menu links */
 .contact a:visited {
-    color: #7effbc; /*TODO:change*/
-  }
+  color: #7effbc; /*TODO:change*/
+}
 /* Link styles */
 .contact a {
   color: #7effbc;
@@ -237,86 +225,199 @@ html {
 }
 
 /* Specifically target LinkedIn and GitHub links */
-.linkedin a:hover, .github a:hover {
+.linkedin a:hover,
+.github a:hover {
   text-decoration: underline;
   color: #7effbc;
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6rem 2rem 2rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 2rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero-wrapper {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .content-wrapper {
-    display: flex;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
 .intro-content {
-    flex: 1;
-    max-width: 50%;
-    padding-right: 2rem; /* Add some padding on the right to maintain space with video */
-    padding-left: 0; /* Remove any left padding */
+  flex: 1;
+  max-width: 50%;
+  padding-right: 2rem; /* Add some padding on the right to maintain space with video */
+  padding-left: 0; /* Remove any left padding */
 }
 
 .demo-section {
-    flex: 1;
-    max-width: 50%;
-    margin-top: -2.5rem;
+  flex: 1;
+  max-width: 50%;
+  margin-top: -2.5rem;
 }
 
 .demo-section video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Add responsive behavior */
 @media screen and (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    .intro-content,
-    .demo-section {
-        max-width: 100%;
-    }
+  .content-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .intro-content,
+  .demo-section {
+    max-width: 100%;
+  }
 }
 
 .feature-list {
-    color: #F4E9E3;
-    font-family: "Libre Franklin", sans-serif;
-    margin-left: 2rem;
-    line-height: 1.3;
-    font-size: 1.5rem;
-    margin-top: 0;
-    font-weight: 300;
-    /* list-style-position: inside; */
-    padding-left: 0;
+  color: #f4e9e3;
+  font-family: "Libre Franklin", sans-serif;
+  margin-left: 2rem;
+  line-height: 1.3;
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 300;
+  /* list-style-position: inside; */
+  padding-left: 0;
 }
 
 .feature-list li {
-    color: #F4E9E3;
-    margin-bottom: 0;
-    font-weight: 200;
+  color: #f4e9e3;
+  margin-bottom: 0;
+  font-weight: 200;
 }
 
 .feature-list li::marker {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .intro:last-of-type {
-    margin-bottom: 0; /* Remove bottom margin from "Features include:" */
+  margin-bottom: 0; /* Remove bottom margin from "Features include:" */
+}
+
+.research-section {
+  color: #f4e9e3;
+  padding: 0 15vw;
+  margin: 4rem 0;
+}
+
+.section-title {
+  font-family: "Buenard", serif;
+  font-size: 4rem;
+  color: #f4e9e3;
+  margin-bottom: 2rem;
+}
+
+.subsection-title {
+  font-family: "Buenard", serif;
+  font-size: 2.5rem;
+  color: #f4e9e3;
+  margin: 3rem 0 2rem 0;
+}
+
+.research-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.research-description {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f4e9e3;
+  margin: 2rem 0;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.divider img {
+  width: auto;
+  height: auto;
+}
+
+/* Keep section content full width */
+.research-section > * {
+  width: 100%;
+}
+
+.user-personas {
+  margin: 4rem 0;
+  color: #F4E9E3;
+}
+
+.personas-title {
+  font-family: 'Buenard', serif;
+  font-size: 4rem;
+  color: #F4E9E3;
+  margin-bottom: 2rem;
+}
+
+.personas-grid {
+  position: relative;
+  margin: 2rem 0;
+  height: 800px; /* Adjust based on your image heights */
+}
+
+.persona-card {
+  position: absolute;
+  width: 80%;
+  max-width: 800px; /* Adjust based on your needs */
+  transition: transform 0.3s ease;
+}
+
+.persona-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Positioning for each card */
+.persona-card:nth-child(1) { /* Hannah */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.persona-card:nth-child(2) { /* Lila */
+  top: 20%;
+  left: 10%;
+  z-index: 2;
+}
+
+.persona-card:nth-child(3) { /* Jared */
+  top: 40%;
+  left: 20%;
+  z-index: 3;
+}
+
+.personas-description {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 300px;
+  color: #F4E9E3;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
