@@ -339,10 +339,6 @@ html {
   margin: 3rem 0 2rem 0;
 }
 
-.subsection-title.features-title {
-  margin-top: 5rem;
-}
-
 @media screen and (max-width: 1534px) {
   .subsection-title.features-title {
     margin-top: 10rem;
