@@ -61,11 +61,13 @@ html {
   position: sticky;
   top: 0px;
   padding: 3vh 0;
-  opacity: 0%;
+  opacity: 0;
   background-color: var(--bg-dark);
   z-index: 2;
   font-family: var(--font-secondary);
   letter-spacing: normal;
+  transition: opacity 0.3s ease;
+  pointer-events: none;  /* Make menu unclickable by default */
 }
 
 .menu_buttons {
@@ -85,6 +87,7 @@ html {
 
 .menu_dark {
   left: 0;
+  transition: transform 0.3s ease;
 }
 
 #moon {
@@ -94,6 +97,10 @@ html {
 .menu_dark:hover,
 #moon:hover {
   transform: scale(1.2);
+}
+
+.menu_dark:hover {
+  cursor: pointer;
 }
 
 .menuWords {
@@ -717,7 +724,7 @@ html {
   }
 
   .arrow-image {
-    width: 60px;
+    width: 70px;
     transform: rotate(90deg);
     margin: 1rem 0;
   }
@@ -748,7 +755,6 @@ html {
     width: 100%;
   }
   .feature-comparison.hifi-comparison .arrow-image {
-    width: 100px;
     transform: rotate(90deg);
     margin: 1rem 0;
   }
