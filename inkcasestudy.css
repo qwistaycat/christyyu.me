@@ -289,6 +289,7 @@ html {
   }
 
   .demo-section video {
+    margin: 2.5rem 0 1.75rem 0;
     max-width: 100%;
   }
 }
@@ -336,6 +337,22 @@ html {
   font-size: 2.5rem;
   color: #f4e9e3;
   margin: 3rem 0 2rem 0;
+}
+
+.subsection-title.features-title {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 1534px) {
+  .subsection-title.features-title {
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .subsection-title.features-title {
+    margin-top: 13rem;
+  }
 }
 
 .research-image {
@@ -386,6 +403,12 @@ html {
   height: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .divider img {
+    width: 100%;
+  }
+}
+
 /* Keep section content full width */
 .research-section > * {
   width: 100%;
@@ -406,7 +429,25 @@ html {
 .personas-grid {
   position: relative;
   margin: 2rem 0;
-  height: 800px; /* Adjust based on your image heights */
+  height: 695px; /* Adjust based on your image heights */
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1428px) {
+  .personas-grid {
+    height: 703px;
+  }
+}
+
+@media screen and (max-width: 1427px) and (min-width: 1337px) {
+  .personas-grid {
+    height: calc(53vw - 58px);
+  }
+}
+
+@media screen and (max-width: 1336px) {
+  .personas-grid {
+    height: calc(50vw - 18px);
+  }
 }
 
 .persona-card {
@@ -447,14 +488,22 @@ html {
 .personas-description {
   font-family: var(--font-body);
   position: absolute;
-  right: 0;
+  right: calc(100% - (10% + 1150px));
   top: 10%;
   transform: translateY(0);
   max-width: 300px;
   color: #f4e9e3;
   font-size: 1.2rem;
   line-height: 1.6;
-  margin-right: -100px;
+}
+
+@media screen and (max-width: 1534px) {
+  .personas-description {
+    position: absolute;
+    max-width: 100%;
+    left: 0;
+    top: calc(100% + 3rem);
+  }
 }
 
 .features-content {
