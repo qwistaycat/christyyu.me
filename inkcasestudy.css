@@ -63,11 +63,11 @@ html {
   padding: 3vh 0;
   opacity: 0;
   background-color: var(--bg-dark);
-  z-index: 2;
+  z-index: 4;
   font-family: var(--font-secondary);
   letter-spacing: normal;
-  transition: opacity 0.3s ease;
-  pointer-events: none;  /* Make menu unclickable by default */
+  transition: opacity var(--transition-duration) ease;
+  pointer-events: none; /* Make menu unclickable by default */
 }
 
 .menu_buttons {
@@ -79,14 +79,10 @@ html {
   height: clamp(20px, 5vw, 30px);
   margin: 3vh 2vw;
   position: fixed;
-  top: 0px;
-  z-index: 3;
-  transition: transform 0.2s ease-out;
-}
-
-.menu_dark {
+  top: 0;
   left: 0;
-  transition: transform 0.3s ease;
+  z-index: 5;
+  transition: transform var(--transition-duration) ease-out;
 }
 
 .menu_dark:hover {
@@ -111,9 +107,7 @@ html {
 }
 
 .menu a {
-  transition-property: transform;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
+  transition: transform var(--transition-duration) ease-out;
   text-decoration: none;
 }
 
@@ -223,7 +217,7 @@ html {
 /* Link styles */
 .contact a {
   color: var(--accent-green);
-  transition: all 0.3s ease;
+  transition: all var(--transition-duration) ease;
   margin-top: auto;
   margin-bottom: auto;
   text-decoration: none;
@@ -244,8 +238,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  max-width: 1200px;
+  padding: var(--spacing-standard);
+  max-width: var(--max-content-width);
   margin: 0 auto;
 }
 
@@ -272,15 +266,15 @@ html {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 2rem;
+  max-width: var(--max-content-width);
+  margin: var(--spacing-standard) auto;
+  padding: 0 var(--spacing-standard);
 }
 
 .intro-content {
   flex: 1;
   max-width: 50%;
-  padding-right: 2rem;
+  padding-right: var(--spacing-standard);
   padding-left: 0;
 }
 
@@ -292,7 +286,7 @@ html {
   width: 100%;
   max-width: 21rem;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   margin: 0 auto;
   display: block;
 }
@@ -301,7 +295,7 @@ html {
 @media screen and (max-width: 767px) {
   .content-wrapper {
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--spacing-standard);
   }
 
   .intro-content,
@@ -325,7 +319,7 @@ html {
 
 .feature-list {
   color: #f4e9e3;
-  margin-left: 2rem;
+  margin-left: var(--spacing-standard);
   line-height: 1.3;
   font-size: 1.5rem;
   margin-top: 0;
@@ -365,7 +359,7 @@ html {
   font-family: var(--font-heading);
   font-size: 2.5rem;
   color: #f4e9e3;
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 0 var(--spacing-standard) 0;
 }
 
 @media screen and (max-width: 1534px) {
@@ -380,15 +374,8 @@ html {
   }
 }
 
-.research-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
 .research-description {
-  margin: 2rem 0;
+  margin: var(--spacing-standard) 0;
   line-height: 1.6;
   color: #f4e9e3;
 }
@@ -411,7 +398,7 @@ html {
 .divider {
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: var(--spacing-standard) 0;
   margin-bottom: -2.75rem;
 }
 
@@ -448,12 +435,12 @@ html {
   font-family: var(--font-heading);
   font-size: 4rem;
   color: #f4e9e3;
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-standard);
 }
 
 .personas-grid {
   position: relative;
-  margin: 2rem 0;
+  margin: var(--spacing-standard) 0;
   height: 800px;
 }
 
@@ -485,7 +472,7 @@ html {
   position: absolute;
   width: 80%;
   max-width: 800px; /* Adjust based on your needs */
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-duration) ease;
 }
 
 .persona-card img {
@@ -538,7 +525,7 @@ html {
 }
 
 .features-content {
-  margin: 2rem 0;
+  margin: var(--spacing-standard) 0;
 }
 
 .features-grid {
@@ -549,8 +536,9 @@ html {
 }
 
 .research-image {
+  width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   margin-bottom: 0; /* Remove bottom margin since we're using gap */
 }
 
@@ -590,7 +578,7 @@ html {
 
 @media screen and (min-width: 727px) {
   .research-description.image-caption.flowchart-caption {
-    margin-top: 2rem;
+    margin-top: var(--spacing-standard);
   }
 }
 
@@ -610,11 +598,7 @@ html {
 @media screen and (max-width: 767px) {
   .features-grid {
     flex-direction: column;
-    gap: 2rem;
-  }
-
-  .features-grid .research-image {
-    width: 100%;
+    gap: var(--spacing-standard);
   }
 }
 
@@ -622,7 +606,7 @@ html {
   margin: 4rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  gap: var(--spacing-standard);
 }
 
 .example-feature {
@@ -633,7 +617,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: var(--spacing-standard);
   margin: 3rem auto; /* Center the comparison */
   max-width: 100%;
   overflow-x: hidden;
@@ -810,10 +794,12 @@ html {
   --font-title: "DM Serif Text", serif;
   --font-body: "Libre Franklin", sans-serif;
   --font-heading: "Buenard", serif;
-}
-
-.menu {
-  background-color: var(--bg-dark);
+  /* New variables */
+  --menu-opacity: 85%;
+  --spacing-standard: 2rem;
+  --border-radius: 8px;
+  --transition-duration: 0.3s;
+  --max-content-width: 1200px;
 }
 
 .contact {

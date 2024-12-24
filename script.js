@@ -9,11 +9,14 @@ function setMenuVisibility(visible) {
   menuOpen = visible;
 }
 
+const MOBILE_BREAKPOINT = 767;
+const SCROLL_THRESHOLD = 50;
+
 // Add scroll handler for mobile
 function handleScroll() {
-  if (window.innerWidth <= 767 && !toggledManually) {
+  if (window.innerWidth <= MOBILE_BREAKPOINT && !toggledManually) {
     // Mobile breakpoint
-    setMenuVisibility(window.scrollY > 50);
+    setMenuVisibility(window.scrollY > SCROLL_THRESHOLD);
   }
 }
 
