@@ -142,7 +142,9 @@ html {
     height: auto;
     border: 6px solid #000;
     border-radius: 40px;
-
+    aspect-ratio: 780/1702;
+    object-fit: cover;
+    min-height: 100%;
   }
   .refractmenu{
     /* TODO: make hovering #9F7DFF, and clicking each section jumps to the section on the website */
@@ -361,6 +363,9 @@ html {
     
     .hero video {
       max-width: 80%;
+      aspect-ratio: 780/1702;
+      object-fit: cover;
+      min-height: 100%;
     }
 
     .methodology {

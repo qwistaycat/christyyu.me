@@ -225,9 +225,24 @@ html {
   min-height: calc(100vh - 8vh);
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .hero-wrapper {
+    padding-top: 4rem;
+    min-height: calc(100vh - 8vh - 4rem);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero-wrapper {
+    padding-top: 8rem;
+    min-height: calc(100vh - 8vh - 8rem);
+  }
+}
+
 .content-wrapper {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 2rem;
@@ -236,24 +251,25 @@ html {
 .intro-content {
   flex: 1;
   max-width: 50%;
-  padding-right: 2rem; /* Add some padding on the right to maintain space with video */
-  padding-left: 0; /* Remove any left padding */
+  padding-right: 2rem;
+  padding-left: 0;
 }
 
 .demo-section {
-  flex: 1;
-  max-width: 50%;
   margin-top: -2.5rem;
 }
 
 .demo-section video {
   width: 100%;
+  max-width: 21rem;
   height: auto;
   border-radius: 8px;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Add responsive behavior */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .content-wrapper {
     flex-direction: column;
     gap: 2rem;
@@ -261,6 +277,18 @@ html {
 
   .intro-content,
   .demo-section {
+    max-width: 100%;
+  }
+
+  .intro-content {
+    padding-right: 0;
+  }
+
+  .content-wrapper {
+    align-items: center;
+  }
+
+  .demo-section video {
     max-width: 100%;
   }
 }
@@ -479,7 +507,7 @@ html {
 }
 
 /* Add responsive behavior */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .features-grid {
     flex-direction: column;
     gap: 2rem;
@@ -521,7 +549,7 @@ html {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .feature-comparison {
     flex-direction: column;
     gap: 1rem;
@@ -569,7 +597,6 @@ html {
   text-decoration: none;
 }
 
-/* Consolidate repeated color values into variables (already defined but not fully utilized) */
 :root {
   --text-light: #f4e9e3;
   --text-muted: #9a8c98;
@@ -585,7 +612,6 @@ html {
   --font-heading: "Buenard", serif;
 }
 
-/* Update these color references */
 .menu {
   background-color: var(--bg-dark);
 }
