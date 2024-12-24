@@ -615,8 +615,16 @@ html {
 .implementation-image {
   max-height: 500px;
   width: auto;
-  max-width: calc(42% - 1rem); /* Slightly smaller to account for gap */
   object-fit: contain;
+}
+
+/* Different sizing for sketch vs implementation */
+.sketch-image {
+  max-width: calc(38% - 1rem); /* Slightly smaller than before */
+}
+
+.implementation-image {
+  max-width: calc(48% - 1rem); /* Larger than the sketch image */
 }
 
 .arrow-image {
@@ -628,12 +636,15 @@ html {
 /* Add new breakpoints to handle the content bleeding */
 @media screen and (max-width: 1330px) {
   .feature-comparison {
-    width: 90%; /* Reduce width at this breakpoint */
+    width: 90%;
   }
   
-  .sketch-image,
+  .sketch-image {
+    max-width: 375px;
+  }
+  
   .implementation-image {
-    max-height: 450px;
+    max-height: 500px; /* Keep implementation larger */
   }
 }
 
@@ -642,9 +653,18 @@ html {
     width: 95%;
   }
   
-  .sketch-image,
-  .implementation-image {
+  .sketch-image {
     max-height: 400px;
+  }
+  
+  .implementation-image {
+    max-height: 450px;
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .sketch-image {
+    max-width: 275px;
   }
 }
 
