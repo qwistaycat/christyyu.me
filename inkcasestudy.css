@@ -180,22 +180,34 @@ html {
   color: var(--accent-green);
   background-color: var(--bg-dark);
   padding: 2vh 5vw;
-  font-size: 3rem; /*48px*/
-  margin-top: 30vh;
+  font-size: 3rem;
   gap: 2vw;
   font-family: var(--font-secondary);
+  align-items: center;
+  letter-spacing: normal;
 }
+
+.contact p {
+  white-space: nowrap;
+  margin: 0;
+}
+
 .links {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size: 1rem; /*16px*/
+  font-size: 1rem;
+  white-space: nowrap;
+  letter-spacing: normal;
 }
+
 .linkedin,
 .email,
 .github {
   display: flex;
+  align-items: center;
 }
+
 .linkedin img,
 .email img,
 .github img {
@@ -203,12 +215,24 @@ html {
   margin-right: 1vw;
 }
 
+/* Link styles */
 .contact a {
-  text-decoration: none;
   color: var(--accent-green);
   transition: all 0.3s ease;
   margin-top: auto;
   margin-bottom: auto;
+  text-decoration: none;
+}
+
+.contact a:hover,
+.linkedin a:hover,
+.github a:hover {
+  text-decoration: underline;
+  color: var(--accent-green);
+}
+
+.email p {
+  margin: auto 0;
 }
 
 .hero {
