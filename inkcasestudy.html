@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ink - Case Study</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="inkcasestudy.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Metamorphous&family=Monda:wght@400..700&family=Oi&family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="menu_buttons">
+      <img class="menu_dark" src="images/menu_dark.svg" alt="menu" />
+    </div>
+    <div class="menu">
+      <div class="menuWords">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a class="portfolio-link" href="portfolio.html">PORTFOLIO</a>
+      </div>
+    </div>
+    <div class="hero-wrapper">
+      <div class="hero">
+        <img
+          class="title"
+          src="images/inkcasestudy/title_inkcasestudy.svg"
+          alt="Ink"
+        />
+        <h1 class="subtitle">Newsletter Curator</h1>
+      </div>
+      <div class="content-wrapper">
+        <div class="intro-content">
+          <p class="intro">
+            I lead this project in SB Creative Labs' Project Teams program in
+            spring 2024, as a first-time project manager. In 8 weeks, my team of
+            4 conducted research, designed, and presented a case study for a
+            <span
+              >mobile app that curates newsletters for different interests — any
+              interests generic or niche — to help users explore their
+              hobbies.</span
+            >
+          </p>
+          <p class="intro">Features include:</p>
+          <ul class="feature-list">
+            <li>Daily recommendations</li>
+            <li>
+              Personal Library of saved articles and topics, Pinterest-Styled
+            </li>
+            <li>Trending articles, and popular among friends</li>
+            <li>Annotation mode while reading</li>
+            <li>...more!</li>
+          </ul>
+        </div>
+
+        <div class="demo-section">
+          <video autoplay loop muted playsinline>
+            <source src="videos/inkcasestudy/ink_demo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="inkmenu">
+      <ol class="menusection">
+        <li><a href="#preliminary-research">Preliminary Research</a></li>
+        <li><a href="#ideation">Ideation: lofi</a></li>
+        <li><a href="#design">Design: hifi & prototyping</a></li>
+        <li><a href="#takeaways">Takeaways</a></li>
+      </ol>
+      <img
+        src="images/inkcasestudy/ink_phone.svg"
+        alt="Ink mobile app icon"
+        loading="lazy"
+      />
+    </div>
+
+    <section id="preliminary-research" class="research-section">
+      <div class="divider divider1">
+        <img
+          src="images/inkcasestudy/divider1.svg"
+          alt="divider"
+          loading="lazy"
+        />
+      </div>
+      <h2 class="section-title">1. Preliminary Research</h2>
+
+      <h3 class="subsection-title">Competitive Research</h3>
+
+      <img
+        src="images/inkcasestudy/competitive_research.avif"
+        alt="Competitive Research"
+        class="research-image"
+        loading="lazy"
+      />
+
+      <p class="research-description">
+        We researched relevant websites — such as Pinterest, Apple News, Print
+        Magazine, Nightingale, Spotify, Facebook, and Instagram — and
+        consolidated features we loved, disliked, and could improve on for our
+        app.
+      </p>
+
+      <h3 class="subsection-title">User Research</h3>
+      <p class="research-description">
+        Our method was to conduct both
+        <span class="secondary-highlight">surveys</span> and
+        <span class="secondary-highlight">interviews</span>. We sought specific
+        quantitative data through the survey — for example: how often users read
+        articles, or what apps and devices they use. Interviews focused on
+        personal feedback, asking questions like how users stay updated on
+        current news, or are there any specific issues users run into when
+        accessing articles online.
+        <span class="primary-highlight"
+          >We found that people valued user-friendly accessibility and
+          interface, privacy and allowing users to choose what they share to
+          friends, and having a wide variety of content with well-organized
+          navigation for easy access to different articles.</span
+        >
+      </p>
+
+      <img
+        src="images/inkcasestudy/survey_questions.avif"
+        alt="Survey and Interview Questions"
+        class="research-image"
+        loading="lazy"
+      />
+      <p class="research-description image-caption">
+        Brainstorming and finalizing questions for UX research.
+      </p>
+
+      <h3 class="subsection-title">User Personas</h3>
+      <div class="personas-grid">
+        <div class="persona-card">
+          <img
+            src="images/inkcasestudy/persona_hannah.avif"
+            alt="Hannah Moore Persona"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="persona-card">
+          <img
+            src="images/inkcasestudy/persona_lila.avif"
+            alt="Lila Harper Persona"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="persona-card">
+          <img
+            src="images/inkcasestudy/persona_jared.avif"
+            alt="Jared Smith Persona"
+            loading="lazy"
+          />
+        </div>
+
+        <p class="personas-description">
+          User personas were made to help understand the different possible
+          profiles and user-styles that might use our app.
+        </p>
+      </div>
+
+      <h3 class="subsection-title features-title">Finalizing features & pages</h3>
+      <div class="features-content">
+        <div class="features-grid">
+          <p class="research-description affinity-map-description">
+            Based on the research results, we came up with features we want to
+            implement or improve upon in our app.
+            <span class="primary-highlight"
+              >The biggest pain points we found were privacy concerns in regards
+              to what users were reading, biased news articles, running into
+              paywalls, and accessibility and interface navigation in existing
+              apps.</span
+            >
+          </p>
+
+          <img
+            src="images/inkcasestudy/features_affinity.avif"
+            alt="Features affinity map"
+            class="research-image affinity-map"
+            loading="lazy"
+          />
+        </div>
+
+        <img
+          src="images/inkcasestudy/flowchart.avif"
+          alt="App flowchart"
+          class="research-image flowchart"
+          loading="lazy"
+        />
+
+        <p class="research-description image-caption flowchart-caption">
+          We made a flowchart to help us understand interactions between pages —
+          this helped us design the initial sketches and lofi iterations of each
+          page.
+        </p>
+      </div>
+
+      <div class="divider divider2">
+        <img
+          src="images/inkcasestudy/divider2.svg"
+          alt="divider"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section id="ideation" class="research-section">
+      <h2 class="section-title">2. Ideation: lofi</h2>
+
+      <div class="lofi-screens">
+        <img
+          src="images/inkcasestudy/lofi_screens.avif"
+          alt="Low fidelity wireframes showing various app screens"
+          loading="lazy"
+          class="research-image"
+        />
+      </div>
+
+      <div class="example-feature">
+        <p class="research-description">
+          <strong>Example:</strong> We wanted to make a
+          <span class="secondary-highlight">connections page</span> to add
+          friends, where people could see peer's reading activity, since there
+          was a lot of interest in this feature from the UX research. We
+          combined aspects of social media with the newsletter app to
+          accommodate.
+        </p>
+
+        <div class="feature-comparison">
+          <img
+            src="images/inkcasestudy/sketch_friends.avif"
+            alt="Sketch of friends feature"
+            loading="lazy"
+            class="sketch-image"
+          />
+          <img
+            src="images/inkcasestudy/arrow.svg"
+            alt="Arrow pointing to implementation"
+            loading="lazy"
+            class="arrow-image"
+          />
+          <img
+            src="images/inkcasestudy/friends_implementation.avif"
+            alt="Final implementation of friends feature"
+            loading="lazy"
+            class="implementation-image"
+          />
+        </div>
+      </div>
+
+      <div class="divider">
+        <img
+          src="images/inkcasestudy/divider3.svg"
+          alt="divider"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section id="design" class="research-section">
+      <h2 class="section-title">3. Design: hifi & prototyping</h2>
+
+      <div class="hifi-design">
+        <img
+          src="images/inkcasestudy/hifi_styleguide.avif"
+          alt="High fidelity style guide showing colors, typography, and UI elements"
+          loading="lazy"
+          class="research-image"
+        />
+      </div>
+
+      <div class="example-feature">
+        <p class="research-description">
+          <strong>Example hifi revision:</strong> For this page, we added
+          usernames and the reading history, and allowed activity privacy and
+          customization options in the settings!
+        </p>
+
+        <div class="feature-comparison hifi-comparison">
+          <img
+            src="images/inkcasestudy/friends_implementation.avif"
+            alt="Original friends page design"
+            loading="lazy"
+            class="sketch-image hifi-before"
+          />
+          <img
+            src="images/inkcasestudy/arrow.svg"
+            alt="Arrow pointing to implementation"
+            loading="lazy"
+            class="arrow-image"
+          />
+          <img
+            src="images/inkcasestudy/hifi_after.avif"
+            alt="Updated friends page with privacy settings"
+            loading="lazy"
+            class="implementation-image hifi-after"
+          />
+        </div>
+      </div>
+
+      <div class="divider">
+        <img
+          src="images/inkcasestudy/divider4.svg"
+          alt="divider"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section id="takeaways" class="research-section takeaways">
+      <h2 class="section-title">4. Takeaways</h2>
+
+      <p class="research-description">
+        As a
+        <span class="secondary-highlight">first time project manager</span> for
+        a design project, I learned to balance
+        <span class="secondary-highlight">task delegation</span> and
+        <span class="secondary-highlight">leading by example</span>. To overcome
+        my perfectionist tendencies of handling all the work myself, I learned
+        to trust my teammates by delegating important tasks. As a result,
+        allowing the team to claim more ownership made them more dedicated —
+        constantly staying long after meetings to ensure we deliver a quality
+        project. In addition, I also lead by example by enthusiastically taking
+        up grunt work and unclaimed tasks, so that the team stays motivated and
+        involved without being overwhelmed.
+        <span class="primary-highlight"
+          >I emerged from this experience a more open-minded leader and
+          dependable team player.</span
+        >
+      </p>
+
+      <div class="divider divider5">
+        <img
+          src="images/inkcasestudy/divider5.svg"
+          alt="divider"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <div class="contact">
+      <div class="links">
+        <div class="linkedin">
+          <img src="images/LinkedIn.svg" alt="LinkedIn logo" loading="lazy" />
+          <a
+            href="https://www.linkedin.com/in/christyyu"
+            target="_blank"
+            rel="noopener noreferrer"
+            >linkedin.com/in/christyyu</a
+          >
+        </div>
+        <div class="email">
+          <img src="images/Email.svg" alt="email logo" loading="lazy" />
+          <p>christyyu [at] ucsb [dot] edu</p>
+        </div>
+        <div class="github">
+          <img src="images/GitHub.svg" alt="github logo" loading="lazy" />
+          <a
+            href="https://github.com/qwistaycat"
+            target="_blank"
+            rel="noopener noreferrer"
+            >github.com/qwistaycat</a
+          >
+        </div>
+      </div>
+      <p>Hit me up!</p>
+    </div>
+  </body>
+</html>

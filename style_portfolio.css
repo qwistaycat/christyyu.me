@@ -7,6 +7,7 @@ body {
 
 html {
 font-size: 16px; /* Base font size */
+scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Small phones */
@@ -79,12 +80,14 @@ padding-bottom: 3vh;
 opacity: 0%;
 background-color: black;
 z-index: 2;
+transition: opacity 0.3s ease;
+pointer-events: none;  /* Make menu unclickable by default */
 } 
 .menu_buttons{
 display:flex;
 justify-content: space-between;
 }
-.menu_dark, #moon{
+.menu_dark{
 height:clamp(20px, 5vw, 30px);
 margin: 3vh 2vw;
 position: fixed;
@@ -97,10 +100,7 @@ transition-timing-function: ease-out;
 .menu_dark{
 left:0
 }
-#moon{
-right:0;
-}
-.menu_dark:hover, #moon:hover {
+.menu_dark:hover {
 transform: scale(1.2);
 }
 .menuWords{
@@ -209,8 +209,8 @@ color:#FFFFC5;
 }
 }
 p.new {
-color:#FF737B;
-font-size: 1rem; /*16px*/
+  color:#FF737B;
+  font-size: 1rem; /*16px*/
 }
 
 /* Hover states for each project */
