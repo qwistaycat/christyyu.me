@@ -112,6 +112,10 @@ html {
   letter-spacing: normal;
 }
 
+.menu .menuWords .portfolio-link {
+  color: var(--text-light);
+}
+
 .menu a {
   transition-property: transform;
   transition-duration: 0.2s;
