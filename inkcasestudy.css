@@ -429,7 +429,13 @@ html {
 .personas-grid {
   position: relative;
   margin: 2rem 0;
-  height: 695px; /* Adjust based on your image heights */
+  height: 800px;
+}
+
+@media screen and (max-width: 1534px) and (min-width: 1440px) {
+  .personas-grid {
+    height: 695px;
+  }
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1428px) {
