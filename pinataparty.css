@@ -1,5 +1,5 @@
 body {
-    /* background-image: url("images/pinataparty/bg_pinataparty.png"); */
+    /* background-image: url("images/pinataparty/bg_pinataparty.avif"); */
     background-color: white;
     background-size: cover;
     font-family: 'Monda', monospace;
@@ -121,7 +121,7 @@ html {
   }
 
 .pinatahover:hover {
-    content: url("images/pinataparty/hover_pinata.png");
+    content: url("images/pinataparty/hover_pinata.avif");
 }
 
 

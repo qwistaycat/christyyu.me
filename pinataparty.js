@@ -20,11 +20,11 @@ const pinata = document.querySelector('.pinata');
 
 pinata.addEventListener('click', () => {
     pinata.classList.remove("pinatahover");
-    pinata.src = "images/pinataparty/pinatahit.png";
+    pinata.src = "images/pinataparty/pinatahit.avif";
     setTimeout(function(){
-        pinata.src = "images/pinataparty/pinataopen.png";
+        pinata.src = "images/pinataparty/pinataopen.avif";
     }, 2000);
     setTimeout(function(){
-        pinata.src = "images/pinataparty/funnyfriend.png";
+        pinata.src = "images/pinataparty/funnyfriend.avif";
     }, 4000);
 });
