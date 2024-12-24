@@ -748,6 +748,12 @@ html {
   color: var(--text-light);
 }
 
+@media screen and (max-width: 767px) {
+  .divider.divider5 img {
+    width: auto;
+  }
+}
+
 .menusection li {
   cursor: pointer;
   transition: color 0.2s ease;
