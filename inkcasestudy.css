@@ -600,6 +600,10 @@ html {
     flex-direction: column;
     gap: var(--spacing-standard);
   }
+
+  .features-grid .research-image {
+    width: 100%;
+  }
 }
 
 .lofi-screens {
