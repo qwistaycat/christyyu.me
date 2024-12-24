@@ -75,8 +75,7 @@ html {
   justify-content: space-between;
 }
 
-.menu_dark,
-#moon {
+.menu_dark {
   height: clamp(20px, 5vw, 30px);
   margin: 3vh 2vw;
   position: fixed;
@@ -90,12 +89,7 @@ html {
   transition: transform 0.3s ease;
 }
 
-#moon {
-  right: 0;
-}
-
-.menu_dark:hover,
-#moon:hover {
+.menu_dark:hover {
   transform: scale(1.2);
 }
 
