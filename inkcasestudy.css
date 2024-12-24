@@ -604,36 +604,78 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
-  margin: 3rem 0;
+  gap: 2rem;
+  margin: 3rem auto; /* Center the comparison */
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%; /* Take full width of container */
 }
 
 .sketch-image,
 .implementation-image {
-  height: 500px; /* Set a fixed height */
-  width: auto; /* Allow width to adjust based on aspect ratio */
-  object-fit: contain; /* Maintain aspect ratio */
+  max-height: 500px;
+  width: auto;
+  max-width: calc(42% - 1rem); /* Slightly smaller to account for gap */
+  object-fit: contain;
 }
 
 .arrow-image {
-  width: 100px;
+  width: min(60px, 8%); /* Make arrow responsive but not too small */
   height: auto;
+  flex-shrink: 0; /* Prevent arrow from shrinking too much */
+}
+
+/* Add new breakpoints to handle the content bleeding */
+@media screen and (max-width: 1330px) {
+  .feature-comparison {
+    width: 90%; /* Reduce width at this breakpoint */
+  }
+  
+  .sketch-image,
+  .implementation-image {
+    max-height: 450px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .feature-comparison {
+    width: 95%;
+  }
+  
+  .sketch-image,
+  .implementation-image {
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sketch-image,
+  .implementation-image {
+    max-height: 350px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .feature-comparison {
     flex-direction: column;
-    gap: 1rem;
+    gap: 2.5rem;
+    width: 100%;
   }
 
-  .sketch-image,
+  .sketch-image {
+    max-height: 350px;
+    max-width: 100%;
+  }
+
   .implementation-image {
-    height: 350px; /* Smaller height for mobile */
-    width: auto;
+    max-height: 600px;
+    max-width: 100%;
   }
 
   .arrow-image {
+    width: 60px;
     transform: rotate(90deg);
+    margin: 1rem 0;
   }
 }
 
