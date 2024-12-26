@@ -108,7 +108,7 @@ html {
   .menu a:hover {
     transform: scale(1.2);
   }
-
+/* end of template copy */
 
 
 
@@ -273,7 +273,7 @@ html {
 
 
 
-
+/* footer copy */
   .contact{
     display: flex;
     justify-content: space-between;
@@ -354,6 +354,14 @@ html {
     text-decoration: underline;
     color: #7effbc;
   }
+  /* end of footer copy */
+
+
+
+
+
+
+
 
   /* Add media query for smaller screens */
   @media screen and (max-width: 768px) {

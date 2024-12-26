@@ -1,0 +1,201 @@
+body {
+    background-color: #EAEEF4;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1rem;
+    margin:0;
+}
+
+
+html {
+    font-size: 16px; /* Base font size */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+  }
+  
+  /* Small phones */
+  @media screen and (max-width: 320px) {
+    html {
+      font-size: 50%; /* 8px */
+    }
+  }
+  
+  /* Larger phones */
+  @media screen and (min-width: 321px) and (max-width: 767px) {
+    html {
+      font-size: 62.5%; /* 10px */
+    }
+  }
+  
+  /* Tablets */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+      font-size: 75%; /* 12px */
+    }
+  }
+  
+  /* Laptops and small desktops */
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    html {
+      font-size: 87.5%; /* 14px */
+    }
+  }
+  
+  /* Large desktops */
+  @media screen and (min-width: 1440px) {
+    html {
+      font-size: 100%; /* 16px */
+    }
+  }
+  
+  /* Optional: Fluid scaling for very large screens */
+  @media screen and (min-width: 1800px) {
+    html {
+      font-size: calc(100% + 0.5vw);
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky;
+    top: 0px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    opacity: 0;
+    background-color: black;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    font-family: 'Metamorphous', cursive;
+    pointer-events: none;  /* Make menu unclickable by default */
+  } 
+  .menu_buttons{
+    display:flex;
+    justify-content: space-between;
+  }
+  .menu_dark {
+    height:clamp(20px, 5vw, 30px);
+    margin: 3vh 2vw;
+    position: fixed;
+    top:0px; /*this code keeps the sticky*/
+    z-index: 3;
+    transition-property: transform;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+  }
+  .menu_dark{
+    left:0
+  }
+  .menu_dark:hover {
+    transform: scale(1.2);
+  }
+  .menuWords{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-left: 10vw;
+    font-size: 1.5rem; /*24px*/
+  }
+  .menu .menuWords .portfolio-link {
+    color: #FED751;
+  }
+  .menu a{
+    transition-property: transform;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+  }
+  .menu a:hover {
+    transform: scale(1.2);
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .contact{
+    display: flex;
+    justify-content: space-between;
+    color: #7effbc;
+    background-color: black;
+    padding: 2vh 5vw;
+    font-size: 3rem; /*48px*/
+    gap: 2vw;
+    font-family: 'Metamorphous', serif;
+    align-items: center;
+    letter-spacing: normal;
+  }
+
+  .contact p {
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem; /*16px*/
+    white-space: nowrap;
+    letter-spacing: normal;
+  }
+  .linkedin, .email, .github{
+    display: flex;
+    align-items: center;
+  }
+  .linkedin img, .email img, .github img{
+    width: 30px;
+    margin-right: 1vw;
+  }
+
+  /* ===== links ====== */
+
+  /*all menu links*/
+  .menu a {
+    text-decoration: none;
+    }
+  /* unvisited menu links */
+  .menu a:link {
+    color: #43A9B7; /*TODO:change*/
+  }
+  /* visited menu links */
+  .menu a:visited {
+    color: #43A9B7; /*TODO:change*/
+  }
+
+  /*all contact links*/
+  .contact a {
+    text-decoration: none;
+    }
+  /* unvisited contact links */
+  .contact a:link {
+    color: #7effbc; /*TODO:change*/
+  }
+  /* visited menu links */
+  .contact a:visited {
+    color: #7effbc; /*TODO:change*/
+  }
+  /* Link styles */
+  .contact a {
+    color: #7effbc;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+    color: #7effbc;
+  }
+
+  /* Specifically target LinkedIn and GitHub links */
+  .linkedin a:hover, .github a:hover {
+    text-decoration: underline;
+    color: #7effbc;
+  }
