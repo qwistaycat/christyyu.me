@@ -140,6 +140,14 @@ margin-left: 10vw;
 margin-top:5vh;
 max-width: 55vw;
 }
+.tagline2 {
+  color: #7effbc;
+  font-size: 1.5rem; /*24px*/
+  margin-left: 10vw;
+  margin-top:1vh;
+  max-width: 55vw;
+  }
+
 
 .folder {
   width: 100%;
