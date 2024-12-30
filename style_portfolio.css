@@ -226,7 +226,7 @@ p.new {
 content: url("images/works_cards/refract_hover.svg");
 }
 .work a:hover img.portfoliocard[src*="noteblockit"] {
-content: url("images/works_cards/noteblockit_hover.svg");
+content: url("images/works_cards/noteblockit_hover.avif");
 }
 .work a:hover img.portfoliocard[src*="newsletter"] {
 content: url("images/works_cards/newsletter_hover.svg");
@@ -235,7 +235,7 @@ content: url("images/works_cards/newsletter_hover.svg");
   content: url("images/works_cards/pinataparty_hover.svg");
 }
 .work a:hover img.portfoliocard[src*="sbhacks"] {
-content: url("images/works_cards/sbhacks_hover.svg");
+content: url("images/works_cards/sbhacks_hover.avif");
 }
 .work a:hover img.portfoliocard[src*="sbcl"] {
 content: url("images/works_cards/sbcl_hover.svg");
@@ -249,7 +249,7 @@ content: url("images/works_cards/dogether_hover.avif");
 content: url("images/works_cards/refract_onclick.svg");
 }
 .work a:active img.portfoliocard[src*="noteblockit"] {
-content: url("images/works_cards/noteblockit_onclick.svg");
+content: url("images/works_cards/noteblockit_onclick.avif");
 }
 .work a:active img.portfoliocard[src*="newsletter"] {
 content: url("images/works_cards/newsletter_onclick.svg");
@@ -258,7 +258,7 @@ content: url("images/works_cards/newsletter_onclick.svg");
 content: url("images/works_cards/pinataparty_onclick.svg");
 }
 .work a:active img.portfoliocard[src*="sbhacks"] {
-content: url("images/works_cards/sbhacks_onclick.svg");
+content: url("images/works_cards/sbhacks_onclick.avif");
 }
 .work a:active img.portfoliocard[src*="sbcl"] {
 content: url("images/works_cards/sbcl_onclick.svg");
