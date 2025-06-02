@@ -1,201 +1,209 @@
-body {
-    background-color: #EAEEF4;
-    background-size: cover;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: .1rem;
-    margin:0;
+:root {
+	--text-light: #f4e9e3;
+	--text-muted: #9a8c98;
+	--accent-blue: #43a9b7;
+	--accent-green: #7effbc;
+	--bg-dark: black;
+	--color-ink-menu: #4a4e68;
+	/* Font families */
+	--font-primary: "Monda", monospace;
+	--font-secondary: "Metamorphous", serif;
+	--font-title: "DM Serif Text", serif;
+	--font-body: "Libre Franklin", sans-serif;
+	--font-heading: "Buenard", serif;
+	/* New variables */
+	--menu-opacity: 85%;
+	--spacing-standard: 2rem;
+	--border-radius: 8px;
+	--transition-duration: 0.3s;
+	--max-content-width: 1200px;
 }
 
+body {
+	background-image: url("images/inkcasestudy/bg_inkcasestudy.avif");
+	background-size: cover;
+	font-family: var(--font-primary);
+	letter-spacing: 0.1rem;
+	margin: 0;
+}
 
 html {
-    font-size: 16px; /* Base font size */
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-  }
-  
-  /* Small phones */
-  @media screen and (max-width: 320px) {
-    html {
-      font-size: 50%; /* 8px */
-    }
-  }
-  
-  /* Larger phones */
-  @media screen and (min-width: 321px) and (max-width: 767px) {
-    html {
-      font-size: 62.5%; /* 10px */
-    }
-  }
-  
-  /* Tablets */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    html {
-      font-size: 75%; /* 12px */
-    }
-  }
-  
-  /* Laptops and small desktops */
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    html {
-      font-size: 87.5%; /* 14px */
-    }
-  }
-  
-  /* Large desktops */
-  @media screen and (min-width: 1440px) {
-    html {
-      font-size: 100%; /* 16px */
-    }
-  }
-  
-  /* Optional: Fluid scaling for very large screens */
-  @media screen and (min-width: 1800px) {
-    html {
-      font-size: calc(100% + 0.5vw);
-    }
-  }
+	font-size: 16px; /* Base font size */
+	scroll-behavior: smooth; /* Enable smooth scrolling */
+}
 
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: sticky;
-    top: 0px;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    opacity: 0;
-    background-color: black;
-    z-index: 2;
-    transition: opacity 0.3s ease;
-    font-family: 'Metamorphous', cursive;
-    pointer-events: none;  /* Make menu unclickable by default */
-  } 
-  .menu_buttons{
-    display:flex;
-    justify-content: space-between;
-  }
-  .menu_dark {
-    height:clamp(20px, 5vw, 30px);
-    margin: 3vh 2vw;
-    position: fixed;
-    top:0px; /*this code keeps the sticky*/
-    z-index: 3;
-    transition-property: transform;
-    transition-duration: .2s;
-    transition-timing-function: ease-out;
-  }
-  .menu_dark{
-    left:0
-  }
-  .menu_dark:hover {
-    transform: scale(1.2);
-  }
-  .menuWords{
-    display: flex;
-    align-items: center;
-    gap: 3vw;
-    margin-left: 10vw;
-    font-size: 1.5rem; /*24px*/
-  }
-  .menu .menuWords .portfolio-link {
-    color: #FED751;
-  }
-  .menu a{
-    transition-property: transform;
-    transition-duration: .2s;
-    transition-timing-function: ease-out;
-  }
-  .menu a:hover {
-    transform: scale(1.2);
-  }
+/* Small phones */
+@media screen and (max-width: 320px) {
+	html {
+		font-size: 50%; /* 8px */
+	}
+}
 
+/* Larger phones */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+	html {
+		font-size: 62.5%; /* 10px */
+	}
+}
 
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	html {
+		font-size: 75%; /* 12px */
+	}
+}
 
+/* Laptops and small desktops */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	html {
+		font-size: 87.5%; /* 14px */
+	}
+}
 
+/* Large desktops */
+@media screen and (min-width: 1440px) {
+	html {
+		font-size: 100%; /* 16px */
+	}
+}
 
+/* Optional: Fluid scaling for very large screens */
+@media screen and (min-width: 1800px) {
+	html {
+		font-size: calc(100% + 0.5vw);
+	}
+}
 
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	position: sticky;
+	top: 0px;
+	padding: 3vh 0;
+	opacity: 0;
+	background-color: var(--bg-dark);
+	z-index: 4;
+	font-family: var(--font-secondary);
+	letter-spacing: normal;
+	transition: opacity var(--transition-duration) ease;
+	pointer-events: none; /* Make menu unclickable by default */
+}
 
+.menu_buttons {
+	display: flex;
+	justify-content: space-between;
+}
 
+.menu_dark {
+	height: clamp(20px, 5vw, 30px);
+	margin: 3vh 2vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	transition: transform var(--transition-duration) ease-out;
+}
 
+.menu_dark:hover {
+	transform: scale(1.2);
+}
 
+.menu_dark:hover {
+	cursor: pointer;
+}
 
-  .contact{
-    display: flex;
-    justify-content: space-between;
-    color: #7effbc;
-    background-color: black;
-    padding: 2vh 5vw;
-    font-size: 3rem; /*48px*/
-    gap: 2vw;
-    font-family: 'Metamorphous', serif;
-    align-items: center;
-    letter-spacing: normal;
-  }
+.menuWords {
+	display: flex;
+	align-items: center;
+	gap: 3vw;
+	margin-left: 10vw;
+	font-size: 1.5rem;
+	letter-spacing: normal;
+}
 
-  .contact p {
-    white-space: nowrap;
-    margin: 0;
-  }
+.menu .menuWords .portfolio-link {
+	color: var(--text-light);
+}
 
-  .links{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 1rem; /*16px*/
-    white-space: nowrap;
-    letter-spacing: normal;
-  }
-  .linkedin, .email, .github{
-    display: flex;
-    align-items: center;
-  }
-  .linkedin img, .email img, .github img{
-    width: 30px;
-    margin-right: 1vw;
-  }
+.menu a {
+	transition: transform var(--transition-duration) ease-out;
+	text-decoration: none;
+}
 
-  /* ===== links ====== */
+.menu a:hover {
+	transform: scale(1.2);
+}
 
-  /*all menu links*/
-  .menu a {
-    text-decoration: none;
-    }
-  /* unvisited menu links */
-  .menu a:link {
-    color: #43A9B7; /*TODO:change*/
-  }
-  /* visited menu links */
-  .menu a:visited {
-    color: #43A9B7; /*TODO:change*/
-  }
+.menu a:link,
+.menu a:visited {
+	color: var(--accent-blue);
+}
 
-  /*all contact links*/
-  .contact a {
-    text-decoration: none;
-    }
-  /* unvisited contact links */
-  .contact a:link {
-    color: #7effbc; /*TODO:change*/
-  }
-  /* visited menu links */
-  .contact a:visited {
-    color: #7effbc; /*TODO:change*/
-  }
-  /* Link styles */
-  .contact a {
-    color: #7effbc;
-    transition: all 0.3s ease;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+/* link styles */
 
-  .contact a:hover {
-    text-decoration: underline;
-    color: #7effbc;
-  }
+.contact {
+	display: flex;
+	justify-content: space-between;
+	color: var(--accent-green);
+	background-color: var(--bg-dark);
+	padding: 2vh 5vw;
+	font-size: 3rem;
+	gap: 2vw;
+	font-family: var(--font-secondary);
+	align-items: center;
+	letter-spacing: normal;
+}
 
-  /* Specifically target LinkedIn and GitHub links */
-  .linkedin a:hover, .github a:hover {
-    text-decoration: underline;
-    color: #7effbc;
-  }
+.contact p {
+	white-space: nowrap;
+	margin: 0;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1rem;
+	white-space: nowrap;
+	letter-spacing: normal;
+}
+
+.linkedin,
+.email,
+.github {
+	display: flex;
+	align-items: center;
+}
+
+.linkedin img,
+.email img,
+.github img {
+	width: 30px;
+	margin-right: 1vw;
+}
+
+.contact a,
+.linkedin a,
+.github a {
+	color: var(--accent-green);
+}
+
+.contact a {
+	transition: all var(--transition-duration) ease;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-decoration: none;
+}
+
+.contact a:hover,
+.linkedin a:hover,
+.github a:hover {
+	text-decoration: underline;
+	color: var(--accent-green);
+}
+
+.email p {
+	margin: auto 0;
+}

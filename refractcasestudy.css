@@ -98,7 +98,7 @@ html {
     font-size: 1.5rem; /*24px*/
   }
   .menu .menuWords .portfolio-link {
-    color: #9F7DFF;
+    color: #CCD7FF;
   }
   .menu a{
     transition-property: transform;
@@ -252,7 +252,7 @@ html {
   }
   .face {
     max-width: 100%;
-    align-self: center;;
+    align-self: center;
   }
 
   .takeaways{
