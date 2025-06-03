@@ -130,6 +130,7 @@ table {
 
 :root {
 	--text-light: #f4e9e3;
+	--text-highlight: #fed751;
 	--text-muted: #9a8c98;
 	--accent-blue: #43a9b7;
 	--accent-green: #7effbc;
@@ -140,19 +141,9 @@ table {
 	--border-radius: 8px;
 	--transition-duration: 0.3s;
 	--max-content-width: 1200px;
-}
-
-.font-title {
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.font-secondary {
-	font-family: "Montserrat", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
+	--font-primary: "Poppins", sans-serif;
+	--font-secondary: "Montserrat", sans-serif;
+	--font-header-footer: "Metamorphous", serif;
 }
 
 body {
@@ -208,72 +199,21 @@ html {
 	}
 }
 
-.site-header {
-	padding-bottom: 20px;
-	text-align: center;
-	position: relative; /* For positioning the menu */
-	font-family: var(--font-heading);
-}
-
-.hero {
-	padding-top: 12px; /* add padding to push content below menu */
-}
-
-.main-title {
-	margin: 0;
-	color: #2c4f89;
-	text-align: center;
-	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: #1d5c9d;
-	font-size: 96px;
-	letter-spacing: -0.03em;
-}
-
-.main-title .gold-text {
-	color: #fed751;
-}
-
-.subtitle {
-	color: #5672a1;
-	font-size: 32px;
-	margin-top: 22px;
-	text-align: center;
-}
-
-.hero-image {
-  margin: 52px 0;
-  text-align: center;
-}
-
-/* Adjust existing menu styles */
-.menu_buttons {
-	position: absolute; /* Position hamburger menu within header */
-	top: 20px;
-	left: 20px;
-	z-index: 10; /* Ensure it's above other header content */
-}
-
-.menu_dark {
-	/* Adjust if needed, current styles might be okay */
-	/* Example: ensure it's visible against new header bg */
-	/* filter: brightness(0.5); /* If it's a light icon on light bg */
-}
-
 .menu {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
 	position: sticky;
-	top: 0px;
+	top: 0;
 	padding: 3vh 0;
 	opacity: 0;
 	background-color: var(--bg-dark);
 	z-index: 4;
-	font-family: var(--font-secondary);
+	font-family: var(--font-header-footer);
 	letter-spacing: normal;
 	transition: opacity var(--transition-duration) ease;
-	pointer-events: none; /* Make menu unclickable by default */
+	pointer-events: none; /* make menu unclickable by default */
 }
 
 .menu_dark {
@@ -321,6 +261,71 @@ html {
 	color: var(--accent-blue);
 }
 
+.hero {
+	padding-top: 12px; /* add padding to push content below menu */
+}
+
+.main-title {
+	margin: 0;
+	color: #2c4f89;
+	text-align: center;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #1d5c9d;
+	font-family: var(--font-primary);
+	font-size: 96px;
+	letter-spacing: -0.03em;
+}
+
+.main-title .gold-text {
+	color: var(--text-highlight);
+}
+
+.subtitle {
+	color: #5672a1;
+	font-family: var(--font-secondary);
+	font-size: 32px;
+	margin-top: 22px;
+	text-align: center;
+}
+
+.hero-image {
+	margin: 52px 0;
+	text-align: center;
+}
+
+.toc-section {
+	height: 100vh;
+	background: #2c4f89;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.toc-list {
+	color: var(--text-light);
+	font-family: var(--font-primary);
+	font-size: 4rem;
+	list-style-type: decimal;
+	list-style-position: inside;
+	padding-left: 15vw;
+}
+
+.toc-list li {
+	cursor: pointer;
+	transition: color 0.2s ease;
+	margin-bottom: 1rem;
+}
+
+.toc-list li:hover {
+	color: var(--text-highlight);
+}
+
+.toc-list a {
+	color: inherit;
+	text-decoration: none;
+}
+
 /* link styles */
 
 .contact {
@@ -331,7 +336,7 @@ html {
 	padding: 2vh 5vw;
 	font-size: 3rem;
 	gap: 2vw;
-	font-family: var(--font-secondary);
+	font-family: var(--font-header-footer);
 	align-items: center;
 	letter-spacing: normal;
 }
