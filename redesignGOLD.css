@@ -1,3 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 :root {
 	--text-light: #f4e9e3;
 	--text-muted: #9a8c98;
@@ -5,13 +135,6 @@
 	--accent-green: #7effbc;
 	--bg-dark: black;
 	--color-ink-menu: #4a4e68;
-	/* Font families */
-	--font-primary: "Monda", monospace;
-	--font-secondary: "Metamorphous", serif;
-	--font-title: "DM Serif Text", serif;
-	--font-body: "Libre Franklin", sans-serif;
-	--font-heading: "Buenard", serif;
-	/* New variables */
 	--menu-opacity: 85%;
 	--spacing-standard: 2rem;
 	--border-radius: 8px;
@@ -19,12 +142,23 @@
 	--max-content-width: 1200px;
 }
 
+.font-title {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.font-secondary {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
 body {
-	background-image: url("images/inkcasestudy/bg_inkcasestudy.avif");
-	background-size: cover;
+	background-color: #eaeef4;
 	font-family: var(--font-primary);
 	letter-spacing: 0.1rem;
-	margin: 0;
 }
 
 html {
@@ -74,6 +208,57 @@ html {
 	}
 }
 
+.site-header {
+	padding-bottom: 20px;
+	text-align: center;
+	position: relative; /* For positioning the menu */
+	font-family: var(--font-heading);
+}
+
+.hero {
+	padding-top: 12px; /* add padding to push content below menu */
+}
+
+.main-title {
+	margin: 0;
+	color: #2c4f89;
+	text-align: center;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #1d5c9d;
+	font-size: 96px;
+	letter-spacing: -0.03em;
+}
+
+.main-title .gold-text {
+	color: #fed751;
+}
+
+.subtitle {
+	color: #5672a1;
+	font-size: 32px;
+	margin-top: 22px;
+	text-align: center;
+}
+
+.hero-image {
+  margin: 52px 0;
+  text-align: center;
+}
+
+/* Adjust existing menu styles */
+.menu_buttons {
+	position: absolute; /* Position hamburger menu within header */
+	top: 20px;
+	left: 20px;
+	z-index: 10; /* Ensure it's above other header content */
+}
+
+.menu_dark {
+	/* Adjust if needed, current styles might be okay */
+	/* Example: ensure it's visible against new header bg */
+	/* filter: brightness(0.5); /* If it's a light icon on light bg */
+}
+
 .menu {
 	display: flex;
 	flex-direction: row;
@@ -89,11 +274,6 @@ html {
 	letter-spacing: normal;
 	transition: opacity var(--transition-duration) ease;
 	pointer-events: none; /* Make menu unclickable by default */
-}
-
-.menu_buttons {
-	display: flex;
-	justify-content: space-between;
 }
 
 .menu_dark {
