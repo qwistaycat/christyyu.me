@@ -251,7 +251,7 @@ html {
     gap: 0 1vw;
   }
   .face {
-    max-width: 100%;
+    max-width: min(100%, 319px);
     align-self: center;
   }
 

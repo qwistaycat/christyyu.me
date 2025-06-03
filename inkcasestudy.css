@@ -124,6 +124,7 @@ html {
   margin: 0;
   display: flex;
   justify-self: center;
+  width: 208px;
 }
 .subtitle {
   font-family: var(--font-title);
