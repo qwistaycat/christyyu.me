@@ -155,13 +155,10 @@ max-width: 55vw;
   z-index: -1;
   top: 80vh;
 }
-.worksfolder{
+.worksfolder {
   border: black solid 2px;
   border-radius: 25px 25px 0 0;
   background-image: linear-gradient(180deg, #14343E, rgba(0,0,0,.4));
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   margin: 25vh 0vw 0vh 0vw;
   display: grid;
   place-items: center;
@@ -222,6 +219,9 @@ p.new {
 }
 
 /* Hover states for each project */
+.work a:hover img.portfoliocard[src*="jaffx"] {
+content: url("images/works_cards/jaffx_hover.avif");
+}
 .work a:hover img.portfoliocard[src*="refract"] {
 content: url("images/works_cards/refract_hover.svg");
 }
@@ -232,7 +232,7 @@ content: url("images/works_cards/noteblockit_hover.avif");
 content: url("images/works_cards/newsletter_hover.svg");
 }
 .work a:hover img.portfoliocard[src*="pinataparty"] {
-  content: url("images/works_cards/pinataparty_hover.svg");
+content: url("images/works_cards/pinataparty_hover.svg");
 }
 .work a:hover img.portfoliocard[src*="sbhacks"] {
 content: url("images/works_cards/sbhacks_hover.avif");
@@ -245,6 +245,9 @@ content: url("images/works_cards/dogether_hover.avif");
 }
 
 /* Active (onclick) states for each project */
+.work a:active img.portfoliocard[src*="jaffx"] {
+content: url("images/works_cards/jaffx_onclick.avif");
+}
 .work a:active img.portfoliocard[src*="refract"] {
 content: url("images/works_cards/refract_onclick.svg");
 }
