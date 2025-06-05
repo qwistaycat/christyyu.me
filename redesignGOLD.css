@@ -326,7 +326,72 @@ html {
 	text-decoration: none;
 }
 
-/* link styles */
+.divider {
+	display: block;
+	margin: 6rem auto;
+}
+
+.section-title {
+	font-size: 4rem;
+	letter-spacing: 6.4px;
+	margin: 0 7rem 1.3rem;
+}
+
+.section-text {
+	font-family: var(--font-secondary);
+	font-size: 1.5rem;
+	letter-spacing: 2.4px;
+	margin: 0 11.6rem 1.3rem;
+}
+
+.section-subtitle {
+	color: #2c4f89;
+	font-family: var(--font-secondary);
+	font-size: 2.25rem;
+	font-weight: 700;
+	letter-spacing: 3.6px;
+	margin: 0 11.6rem 0.7rem;
+}
+
+.section-list {
+	font-family: var(--font-secondary);
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 2.4px;
+	margin: 0 11.6rem 1.3rem;
+	list-style-type: disc;
+	padding-left: 0.8rem;
+
+	li {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	li::before {
+		content: "•";
+		font-size: 0.8em;
+		margin-right: 0.5em;
+		margin-top: 0.15em;
+		line-height: inherit;
+	}
+}
+
+.affinity-map {
+	width: calc(100% - 23.2rem);
+	margin: 1.75rem 11.6rem 0.7rem;
+}
+
+.affinity-map-caption {
+	font-family: var(--font-secondary);
+	font-size: 1.5rem;
+	letter-spacing: 2.4px;
+	margin: 0 11.6rem 1.3rem;
+	font-style: italic;
+	letter-spacing: 1.6px;
+}
+
+/* footer styles */
 
 .contact {
 	display: flex;
