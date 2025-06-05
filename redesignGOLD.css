@@ -386,9 +386,21 @@ html {
 	font-family: var(--font-secondary);
 	font-size: 1.5rem;
 	letter-spacing: 2.4px;
-	margin: 0 11.6rem 1.3rem;
+	margin: 0 11.6rem 4rem;
 	font-style: italic;
 	letter-spacing: 1.6px;
+}
+
+.survey-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 2rem;
+	margin: 0 11.6rem 4rem;
+}
+
+.survey-image {
+	width: 55%;
 }
 
 /* footer styles */
