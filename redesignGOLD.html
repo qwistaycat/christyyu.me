@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Metamorphous&amp;family=Montserrat:ital,wght@0,400;0,700;1,400&amp;family=Poppins&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Metamorphous&amp;family=Montserrat:ital,wght@0,400;0,700;1,400&amp;family=Poppins:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
     <script defer src="script.js"></script>
@@ -60,26 +60,28 @@
 
       <section class="overview-section">
         <h2 id="overview" class="section-title">1. Overview</h2>
-        <p class="section-text">
-          This project was created under SB Creative Lab&apos;s Beginner Project
-          Teams program of Fall Quarter (Oct.-Dec. 2023), and was my first
-          product design project. While I had intuition from making marketing
-          graphics and posters for clubs and visual arts backgroun from digital
-          painting, this was my first time completing a design process centered
-          on UX research and iterative feedback.
-        </p>
-        <h3 class="section-subtitle">Work Delegation</h3>
-        <ul class="section-list">
-          <li>I worked with two other designers under a project manager.</li>
-          <li>
-            We contributed to forming the survey, interviewing, and affinity map
-            together to summarize the user persona and pain points.
-          </li>
-          <li>
-            We each tackled one page to do sketches, lofi, and hifi. We all gave
-            each other feedback in between each of those steps.
-          </li>
-        </ul>
+        <div class="section-container">
+          <p class="section-text">
+            This project was created under SB Creative Lab&apos;s Beginner
+            Project Teams program of Fall Quarter (Oct.-Dec. 2023), and was my
+            first product design project. While I had intuition from making
+            marketing graphics and posters for clubs and visual arts backgroun
+            from digital painting, this was my first time completing a design
+            process centered on UX research and iterative feedback.
+          </p>
+          <h3 class="section-subtitle">Work Delegation</h3>
+          <ul class="section-list">
+            <li>I worked with two other designers under a project manager.</li>
+            <li>
+              We contributed to forming the survey, interviewing, and affinity
+              map together to summarize the user persona and pain points.
+            </li>
+            <li>
+              We each tackled one page to do sketches, lofi, and hifi. We all
+              gave each other feedback in between each of those steps.
+            </li>
+          </ul>
+        </div>
       </section>
 
       <img
@@ -91,84 +93,92 @@
 
       <section class="user-research-section">
         <h2 id="user-research" class="section-title">2. User Research</h2>
-        <img
-          class="affinity-map"
-          loading="lazy"
-          src="images/redesignGOLDcasestudy/affinity-map.avif"
-          alt="affinity map"
-        />
-        <p class="affinity-map-caption">
-          The group looked at the responses from the survey and interview notes,
-          and wrote key points down. We then affinity mapped by grouping main
-          concerns!
-        </p>
-
-        <h3 class="section-subtitle">Survey</h3>
-        <div class="survey-container">
+        <div class="section-container">
           <img
-            class="survey-image"
+            class="affinity-map"
             loading="lazy"
-            src="images/redesignGOLDcasestudy/survey.avif"
-            alt="survey greeting message"
+            src="images/redesignGOLDcasestudy/affinity-map.avif"
+            alt="affinity map"
           />
-          <div class="survey-goals">
-            <h4 class="section-subheading">Goals</h4>
-            <ul class="section-list">
-              <li>
-                To gauge and validate the major user pain points of using GOLD
-              </li>
-              <li>To understand the user persona (WHO is using the website)</li>
-              <li>Initial assessment and thoughts of GOLD</li>
-              <li>Collect quantitative data</li>
-            </ul>
-          </div>
-        </div>
-        <div class="survey-outcome-container">
-          <h3 class="section-subtitle">Outcome</h3>
-          <p class="section-text">
-            After brainstorming as a team, we came up with questions that
-            inquired about class registration, ideal features, pain points, and
-            ease of use for GOLD.
+          <p class="affinity-map-caption">
+            The group looked at the responses from the survey and interview
+            notes, and wrote key points down. We then affinity mapped by
+            grouping main concerns!
           </p>
-          <p class="section-text">
-            We found that designing a question to specifically pinpoint what we
-            wanted was easier said than done. Walking through different
-            variations of the questions after brainstorming helped tremendously.
-          </p>
-        </div>
 
-        <h3 class="section-subtitle">Interviews</h3>
-        <div class="interviews-container">
-          <div class="goals-container">
-            <h4 class="section-subheading">Goals</h4>
-            <ul class="section-list">
-              <li>
-                To record user behavior on the GOLD website; how do users
-                navigate the website
-              </li>
-              <li>To gain more context and description of user pain points</li>
-              <li>Collect qualitative data</li>
-            </ul>
+          <h3 class="section-subtitle">Survey</h3>
+          <div class="survey-container">
+            <img
+              class="survey-image"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/survey.avif"
+              alt="survey greeting message"
+            />
+            <div class="survey-goals">
+              <h4 class="section-subheading">Goals</h4>
+              <ul class="section-list">
+                <li>
+                  To gauge and validate the major user pain points of using GOLD
+                </li>
+                <li>
+                  To understand the user persona (WHO is using the website)
+                </li>
+                <li>Initial assessment and thoughts of GOLD</li>
+                <li>Collect quantitative data</li>
+              </ul>
+            </div>
           </div>
-          <div class="outcome-container">
-            <h4 class="section-subheading">Outcome</h4>
+          <div class="survey-outcome-container">
+            <h3 class="section-subtitle survey-outcome-title">Outcome</h3>
             <p class="section-text">
-              We brainstormed questions asking how users like to use GOLD,
-              opinions on specific interfaces and features, and what they valued
-              most about it. User behavioral testing involved asking them to
-              perform a task in GOLD, such as searching for registration time,
-              checking grades, and filtering for classes, etc.
+              After brainstorming as a team, we came up with questions that
+              inquired about class registration, ideal features, pain points,
+              and ease of use for GOLD.
             </p>
             <p class="section-text">
-              User behavior data was super useful to pinpoint what was
-              subconsciously an efficient design feature or not on GOLD.
-              Additionally, interviews allows for more clarification of answers
-              to questions that surveys don&apos;t allow.
+              We found that designing a question to specifically pinpoint what
+              we wanted was easier said than done. Walking through different
+              variations of the questions after brainstorming helped
+              tremendously.
             </p>
           </div>
-        </div>
 
-        <h3 class="section-subtitle">User Pain Points</h3>
+          <h3 class="section-subtitle">Interviews</h3>
+          <div class="interviews-container">
+            <div class="goals-container">
+              <h4 class="section-subheading">Goals</h4>
+              <ul class="section-list">
+                <li>
+                  To record user behavior on the GOLD website; how do users
+                  navigate the website
+                </li>
+                <li>
+                  To gain more context and description of user pain points
+                </li>
+                <li>Collect qualitative data</li>
+              </ul>
+            </div>
+            <div class="outcome-container">
+              <h4 class="section-subheading">Outcome</h4>
+              <p class="section-text">
+                We brainstormed questions asking how users like to use GOLD,
+                opinions on specific interfaces and features, and what they
+                valued most about it. User behavioral testing involved asking
+                them to perform a task in GOLD, such as searching for
+                registration time, checking grades, and filtering for classes,
+                etc.
+              </p>
+              <p class="section-text">
+                User behavior data was super useful to pinpoint what was
+                subconsciously an efficient design feature or not on GOLD.
+                Additionally, interviews allows for more clarification of
+                answers to questions that surveys don&apos;t allow.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="section-subtitle">User Pain Points</h3>
+        </div>
         <ul class="user-pain-points-list">
           <li>
             <h4 class="user-pain-point-title">
@@ -221,12 +231,14 @@
             </ul>
           </li>
         </ul>
-        <img
-          class="user-persona-image"
-          loading="lazy"
-          src="images/redesignGOLDcasestudy/user-persona.avif"
-          alt="user persona"
-        />
+        <div class="section-container">
+          <img
+            class="user-persona-image"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/user-persona.avif"
+            alt="user persona"
+          />
+        </div>
       </section>
 
       <img
