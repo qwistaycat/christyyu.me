@@ -394,6 +394,7 @@ html {
 	margin-bottom: 4rem;
 	font-style: italic;
 	letter-spacing: 1.6px;
+	line-height: normal;
 }
 
 .survey-container {
@@ -461,7 +462,7 @@ html {
 	font-size: 1.5rem;
 	font-weight: 700;
 	letter-spacing: 2.4px;
-	margin: 0 1rem 1rem;
+	margin: 0 2rem 1rem;
 	line-height: normal;
 }
 
@@ -488,6 +489,20 @@ html {
 		margin-top: 0.15em;
 		line-height: inherit;
 	}
+}
+
+.user-persona-image {
+	max-width: calc(100% - 28rem);
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.ideation-image {
+	max-width: calc(100% - 14rem);
+	height: auto;
+	display: block;
+	margin: -2rem 12rem 1rem 2rem;
 }
 
 /* footer styles */
