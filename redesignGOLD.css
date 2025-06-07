@@ -505,8 +505,10 @@ html {
 	margin: -2rem 12rem 1rem 2rem;
 }
 
-.homepage-original-container {
-	margin-left: 5rem;
+.homepage-original-and-transition-container {
+	display: flex;
+	gap: 3rem;
+	margin: 0 5rem;
 }
 
 .homepage-original {
@@ -521,6 +523,46 @@ html {
 	font-weight: 700;
 	letter-spacing: 2.4px;
 	line-height: normal;
+}
+
+.homepage-transition-container {
+	flex: 1;
+	position: relative;
+}
+
+.lofi-transition-text {
+	position: absolute;
+	top: 16%;
+	left: 6.5%;
+	transform: rotate(-19deg);
+	color: #2c4f89;
+	font-family: var(--font-secondary);
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: 2.4px;
+	line-height: normal;
+}
+
+.lofi-transition-symbol {
+	position: absolute;
+	bottom: 1.5rem;
+	left: 0;
+	height: 55%;
+}
+
+.homepage-lofi-container {
+	margin: 0 3rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.homepage-lofi {
+	margin-top: -0.25rem;
+	width: 77%;
+
+	border-radius: 30px;
+	border: 3px solid #2c4f89;
+	background: lightgray -2px -2.055px / 100.513% 100.809% no-repeat;
 }
 
 /* footer styles */
