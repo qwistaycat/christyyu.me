@@ -566,22 +566,23 @@ html {
 }
 
 .course-info-original-transition-and-final-container {
+	display: grid;
 	position: relative;
 	margin: 0 5rem;
 }
 
+.course-info-original-transition-and-final-container > * {
+	grid-area: 1 / 1;
+}
+
 .course-info-lofi-transition-symbol {
-	position: absolute;
-	top: 5%;
-	left: 48%;
-	height: 9%;
+	margin-top: 7.5%;
+	margin-left: 47.5%;
+	height: 14%;
 }
 
 .course-info-lofi-transition-text {
-	position: absolute;
-	top: 1%;
-	left: 55%;
-	transform: rotate(-19deg);
+	transform: translate(59.1cqw, -20.7cqh) rotate(-19deg);
 	color: #2c4f89;
 	font-family: var(--font-secondary);
 	font-size: 3rem;
@@ -591,10 +592,9 @@ html {
 }
 
 .course-info-pop-up-lofi {
-	position: absolute;
 	width: 61.5%;
-	top: 55%;
-	left: 40%;
+	margin-top: 22.8%;
+	margin-left: 40%;
 }
 
 /* footer styles */
