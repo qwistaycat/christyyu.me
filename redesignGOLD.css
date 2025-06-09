@@ -516,6 +516,11 @@ html {
 	margin-bottom: 0.4rem;
 }
 
+.original-lofi-page {
+	border-radius: 30px;
+	background: lightgray -1.224px -1.258px / 100.513% 100.809% no-repeat;
+}
+
 .original-caption {
 	color: #2c4f89;
 	font-family: var(--font-secondary);
@@ -530,7 +535,7 @@ html {
 	position: relative;
 }
 
-.lofi-transition-text {
+.transition-text {
 	position: absolute;
 	top: 16%;
 	left: 6.5%;
@@ -543,35 +548,46 @@ html {
 	line-height: normal;
 }
 
-.lofi-transition-symbol {
+.hifi-transition-text {
+	color: #fed851;
+	-webkit-text-stroke-width: 6px;
+	letter-spacing: 4.8px;
+	font-size: 2.8125rem;
+	-webkit-text-stroke-color: #2c4f89;
+	paint-order: stroke fill;
+}
+
+.transition-symbol {
 	position: absolute;
 	bottom: 1.5rem;
 	left: 0;
 	height: 55%;
 }
 
-.lofi-container {
+.new-container {
 	margin: 0 3rem 7rem;
 	display: flex;
 	justify-content: flex-end;
 }
 
-.lofi {
+.new {
 	margin-top: -0.25rem;
 	width: 77%;
+}
 
+.lofi {
 	border-radius: 30px;
 	border: 3px solid #2c4f89;
 	background: lightgray -2px -2.055px / 100.513% 100.809% no-repeat;
 }
 
-.course-info-original-transition-and-final-container {
+.course-info-original-transition-and-lofi-container {
 	display: grid;
 	position: relative;
 	margin: 0 5rem;
 }
 
-.course-info-original-transition-and-final-container > * {
+.course-info-original-transition-and-lofi-container > * {
 	grid-area: 1 / 1;
 }
 
@@ -595,6 +611,21 @@ html {
 	width: 61.5%;
 	margin-top: 22.8%;
 	margin-left: 40%;
+}
+
+.design-system {
+	width: 100%;
+}
+
+.design-system-caption {
+	color: #000;
+	font-family: var(--font-secondary);
+	font-size: 1rem;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 1.6px;
+	margin-bottom: 8rem;
 }
 
 /* footer styles */
