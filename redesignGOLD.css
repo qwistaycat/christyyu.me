@@ -121,7 +121,6 @@ blockquote:after,
 q:before,
 q:after {
 	content: "";
-	content: none;
 }
 table {
 	border-collapse: collapse;
@@ -393,7 +392,6 @@ html {
 	letter-spacing: 2.4px;
 	margin-bottom: 4rem;
 	font-style: italic;
-	letter-spacing: 1.6px;
 	line-height: normal;
 }
 
@@ -662,9 +660,7 @@ html {
 	-webkit-text-stroke-color: #2c4f89;
 	paint-order: stroke fill;
 	font-family: var(--font-secondary);
-	font-size: 3rem;
 	font-weight: 700;
-	letter-spacing: 2.4px;
 	line-height: normal;
 }
 
