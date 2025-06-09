@@ -1,3 +1,5 @@
+/* TODO: put in a GitHub issue to biome because this `biome-ignore-* format` is not working */
+/* biome-ignore-start format: this is a copy-pasted css reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,6 +128,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* biome-ignore-end format: this is a copy-pasted css reset */
 
 :root {
 	--text-light: #f4e9e3;
@@ -149,6 +152,7 @@ body {
 	background-color: #eaeef4;
 	font-family: var(--font-primary);
 	letter-spacing: 0.1rem;
+	overflow-x: hidden;
 }
 
 html {
