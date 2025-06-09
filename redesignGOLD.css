@@ -628,6 +628,51 @@ html {
 	margin-bottom: 8rem;
 }
 
+.course-info-lofi-transition-and-hifi-container {
+	display: grid;
+	position: relative;
+	margin: 0 6rem 0 15rem;
+}
+
+.course-info-lofi-transition-and-hifi-container > * {
+	grid-area: 1 / 1;
+}
+
+.course-info-lofi-container {
+	margin-left: 9.63%;
+	width: 39%;
+}
+
+.course-info-lofi {
+	width: 100%;
+}
+
+.course-info-hifi-transition-symbol {
+	margin-top: 11.5%;
+	margin-left: 52%;
+	height: 14%;
+}
+
+.course-info-hifi-transition-text {
+	transform: translate(60.3cqw, -14.2cqh) rotate(-19deg);
+	color: #fed851;
+	-webkit-text-stroke-width: 6px;
+	letter-spacing: 4.8px;
+	font-size: 2.8125rem;
+	-webkit-text-stroke-color: #2c4f89;
+	paint-order: stroke fill;
+	font-family: var(--font-secondary);
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: 2.4px;
+	line-height: normal;
+}
+
+.course-info-hifi {
+	margin-top: 31.8%;
+	width: 100%;
+}
+
 /* footer styles */
 
 .contact {
