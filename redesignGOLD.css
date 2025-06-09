@@ -249,6 +249,7 @@ html {
 
 .menu a {
 	transition: transform var(--transition-duration) ease-out;
+	line-height: normal;
 	text-decoration: none;
 }
 
@@ -272,7 +273,7 @@ html {
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: #1d5c9d;
 	font-family: var(--font-primary);
-	font-size: 96px;
+	font-size: 6rem;
 	letter-spacing: -0.03em;
 }
 
@@ -283,7 +284,7 @@ html {
 .subtitle {
 	color: #5672a1;
 	font-family: var(--font-secondary);
-	font-size: 32px;
+	font-size: 2rem;
 	margin-top: 22px;
 	text-align: center;
 }
@@ -735,4 +736,244 @@ html {
 
 .email p {
 	margin: auto 0;
+}
+
+/* TODO: review this AI code */
+@media screen and (max-width: 768px) {
+	.main-title {
+		font-size: 4.5rem;
+		-webkit-text-stroke-width: 2px;
+	}
+
+	.subtitle {
+		font-size: 1.5rem;
+	}
+
+	.hero-image img {
+		width: 100%;
+		padding: 0 1rem;
+		box-sizing: border-box;
+	}
+
+	.toc-section {
+		height: auto;
+		padding: 5rem 0;
+	}
+
+	.toc-list {
+		font-size: 3rem;
+		padding-left: 10vw;
+	}
+
+	.section-title {
+		font-size: 3rem;
+		margin: 0 2rem 1.3rem;
+		letter-spacing: 3.2px;
+	}
+
+	.section-container {
+		margin: 0 2rem;
+	}
+
+	.section-text {
+		font-size: 1.25rem;
+		letter-spacing: 1.2px;
+	}
+
+	.section-subtitle {
+		font-size: 2rem;
+	}
+
+	.section-list {
+		padding-left: 1.5rem;
+	}
+
+	.user-pain-points-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		margin: 3rem 2rem 1.5rem;
+	}
+
+	.user-pain-points-list > * {
+		display: block; /* reset grid behavior */
+	}
+
+	.user-pain-point-title {
+		margin: 0 1rem 1rem;
+	}
+
+	.user-pain-point-details {
+		margin: 0;
+	}
+
+	.user-persona-image {
+		max-width: 100%;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.ideation-image {
+		max-width: 100%;
+		margin: -2rem auto 1rem;
+		padding: 0 1rem;
+		box-sizing: border-box;
+	}
+
+	.original-and-transition-container {
+		flex-direction: column;
+		gap: 2rem;
+		margin: 0 2rem;
+	}
+
+	.original {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.transition-container {
+		position: static;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.transition-text {
+		position: static;
+		transform: none;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.transition-symbol {
+		display: none;
+	}
+
+	.new-container {
+		margin: 0 2rem 5rem;
+	}
+
+	.new {
+		width: 100%;
+	}
+
+	.course-info-original-transition-and-lofi-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin: 0 2rem;
+	}
+
+	.course-info-original-transition-and-lofi-container > * {
+		grid-area: auto;
+	}
+
+	.course-info-lofi-transition-symbol,
+	.course-info-lofi-transition-text {
+		display: none;
+	}
+
+	.course-info-pop-up-lofi {
+		width: 100%;
+		margin: 0;
+	}
+
+	.survey-container {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.survey-image {
+		width: 100%;
+	}
+
+	.interviews-container {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.interviews-container > * {
+		width: 100%;
+	}
+
+	.design-system {
+		width: 100%;
+	}
+
+	.design-system-caption {
+		margin-bottom: 4rem;
+	}
+
+	.course-info-lofi-transition-and-hifi-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin: 0 2rem;
+	}
+
+	.course-info-lofi-transition-and-hifi-container > * {
+		grid-area: auto;
+	}
+
+	.course-info-lofi-container {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.course-info-hifi-transition-symbol,
+	.course-info-hifi-transition-text {
+		display: none;
+	}
+
+	.course-info-hifi {
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.contact {
+		flex-direction: column;
+		text-align: center;
+		gap: 1.5rem;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.main-title {
+		font-size: 3rem;
+		line-height: 1.2;
+	}
+
+	.subtitle {
+		font-size: 1.25rem;
+	}
+
+	.toc-list {
+		font-size: 2rem;
+	}
+
+	.section-title {
+		font-size: 2.2rem;
+	}
+
+	.section-text {
+		font-size: 1rem;
+	}
+
+	.section-subtitle {
+		font-size: 1.5rem;
+	}
+
+	.contact {
+		font-size: 1.5rem;
+	}
+
+	.user-pain-points-list {
+		margin: 3rem 1rem 1.5rem;
+	}
+
+	.section-container {
+		margin: 0 1rem;
+	}
 }
