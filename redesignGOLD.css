@@ -209,6 +209,7 @@ html {
 	opacity: 0;
 	background-color: var(--bg-dark);
 	z-index: 4;
+	color: var(--text-light);
 	font-family: var(--font-header-footer);
 	letter-spacing: normal;
 	transition: opacity var(--transition-duration) ease;
@@ -240,10 +241,6 @@ html {
 	margin-left: 10vw;
 	font-size: 1.5rem;
 	letter-spacing: normal;
-}
-
-.menu .menuWords .portfolio-link {
-	color: var(--text-light);
 }
 
 .menu a {
