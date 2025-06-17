@@ -98,7 +98,7 @@ html {
     font-size: 1.5rem; /*24px*/
   }
   .menu .menuWords .portfolio-link {
-    color: #9F7DFF;
+    color: #CCD7FF;
   }
   .menu a{
     transition-property: transform;
@@ -108,7 +108,7 @@ html {
   .menu a:hover {
     transform: scale(1.2);
   }
-
+/* end of template copy */
 
 
 
@@ -251,8 +251,8 @@ html {
     gap: 0 1vw;
   }
   .face {
-    max-width: 100%;
-    align-self: center;;
+    max-width: min(100%, 319px);
+    align-self: center;
   }
 
   .takeaways{
@@ -273,7 +273,7 @@ html {
 
 
 
-
+/* footer copy */
   .contact{
     display: flex;
     justify-content: space-between;
@@ -354,6 +354,14 @@ html {
     text-decoration: underline;
     color: #7effbc;
   }
+  /* end of footer copy */
+
+
+
+
+
+
+
 
   /* Add media query for smaller screens */
   @media screen and (max-width: 768px) {

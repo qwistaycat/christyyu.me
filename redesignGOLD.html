@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redesign GOLD - Case Study</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="redesignGOLD.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metamorphous&amp;family=Montserrat:ital,wght@0,400;0,700;1,400&amp;family=Poppins:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- TODO: make the img and nav in a header while keeping it sticky -->
+    <img class="menu_dark" src="images/menu_dark.svg" alt="menu" />
+    <nav class="menu">
+      <div class="menuWords">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+      </div>
+    </nav>
+    <main>
+      <section class="hero">
+        <h1 class="main-title">
+          Redesigning <span class="gold-text">GOLD</span>
+        </h1>
+        <p class="subtitle">(UCSB&apos;s Course Registration Website)</p>
+        <div class="hero-image">
+          <img
+            src="images/redesignGOLDcasestudy/redesignGOLDHero.svg"
+            alt="GOLD"
+          />
+        </div>
+      </section>
+
+      <section class="toc-section">
+        <ol class="toc-list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#user-research">User Research</a></li>
+          <li><a href="#ideation">Ideation (LoFis)</a></li>
+          <li><a href="#iterations">Iterations (HiFis)</a></li>
+          <li><a href="#takeaways">Takeaways</a></li>
+        </ol>
+      </section>
+
+      <img
+        class="divider"
+        loading="lazy"
+        src="images/redesignGOLDcasestudy/divider1.svg"
+        alt="divider1"
+      />
+
+      <section class="overview-section">
+        <h2 id="overview" class="section-title">1. Overview</h2>
+        <div class="section-container">
+          <p class="section-text">
+            This project was created under SB Creative Lab&apos;s Beginner
+            Project Teams program of Fall Quarter (Oct.-Dec. 2023), and was my
+            first product design project. While I had intuition from making
+            marketing graphics and posters for clubs and visual arts backgroun
+            from digital painting, this was my first time completing a design
+            process centered on UX research and iterative feedback.
+          </p>
+          <h3 class="section-subtitle">Work Delegation</h3>
+          <ul class="section-list">
+            <li>I worked with two other designers under a project manager.</li>
+            <li>
+              We contributed to forming the survey, interviewing, and affinity
+              map together to summarize the user persona and pain points.
+            </li>
+            <li>
+              We each tackled one page to do sketches, lofi, and hifi. We all
+              gave each other feedback in between each of those steps.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <img
+        class="divider"
+        loading="lazy"
+        src="images/redesignGOLDcasestudy/divider2.svg"
+        alt="divider2"
+      />
+
+      <section class="user-research-section">
+        <h2 id="user-research" class="section-title">2. User Research</h2>
+        <div class="section-container">
+          <img
+            class="affinity-map"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/affinity-map.avif"
+            alt="affinity map"
+          />
+          <p class="affinity-map-caption">
+            The group looked at the responses from the survey and interview
+            notes, and wrote key points down. We then affinity mapped by
+            grouping main concerns!
+          </p>
+
+          <h3 class="section-subtitle">Survey</h3>
+          <div class="survey-container">
+            <img
+              class="survey-image"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/survey.avif"
+              alt="survey greeting message"
+            />
+            <div>
+              <h4 class="section-subheading">Goals</h4>
+              <ul class="section-list">
+                <li>
+                  To gauge and validate the major user pain points of using GOLD
+                </li>
+                <li>
+                  To understand the user persona (WHO is using the website)
+                </li>
+                <li>Initial assessment and thoughts of GOLD</li>
+                <li>Collect quantitative data</li>
+              </ul>
+            </div>
+          </div>
+          <div class="survey-outcome-container">
+            <h3 class="section-subtitle survey-outcome-title">Outcome</h3>
+            <p class="section-text">
+              After brainstorming as a team, we came up with questions that
+              inquired about class registration, ideal features, pain points,
+              and ease of use for GOLD.
+            </p>
+            <p class="section-text">
+              We found that designing a question to specifically pinpoint what
+              we wanted was easier said than done. Walking through different
+              variations of the questions after brainstorming helped
+              tremendously.
+            </p>
+          </div>
+
+          <h3 class="section-subtitle">Interviews</h3>
+          <div class="interviews-container">
+            <div>
+              <h4 class="section-subheading">Goals</h4>
+              <ul class="section-list">
+                <li>
+                  To record user behavior on the GOLD website; how do users
+                  navigate the website
+                </li>
+                <li>
+                  To gain more context and description of user pain points
+                </li>
+                <li>Collect qualitative data</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="section-subheading">Outcome</h4>
+              <p class="section-text">
+                We brainstormed questions asking how users like to use GOLD,
+                opinions on specific interfaces and features, and what they
+                valued most about it. User behavioral testing involved asking
+                them to perform a task in GOLD, such as searching for
+                registration time, checking grades, and filtering for classes,
+                etc.
+              </p>
+              <p class="section-text">
+                User behavior data was super useful to pinpoint what was
+                subconsciously an efficient design feature or not on GOLD.
+                Additionally, interviews allows for more clarification of
+                answers to questions that surveys don&apos;t allow.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="section-subtitle user-pain-points-title">
+            User Pain Points
+          </h3>
+        </div>
+        <ul class="user-pain-points-list">
+          <li>
+            <h4 class="user-pain-point-title">
+              Prioritizing Important Class Information
+            </h4>
+            <ul class="user-pain-point-details">
+              <li>
+                Important class info to students including pre-reqs,
+                description, and syllabus are not very accessible to user.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h4 class="user-pain-point-title">
+              Difficult to Navigate Advanced Search
+            </h4>
+            <ul class="user-pain-point-details">
+              <li>The advanced search layout was unintuitive and complex.</li>
+              <li>Unused filters cluttered the page.</li>
+              <li>
+                Having to re-enter filters when starting a new search was also
+                frustrating.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h4 class="user-pain-point-title">Inefficient Site Navigation</h4>
+            <ul class="user-pain-point-details">
+              <li>Clunky, required lots of clicking</li>
+              <li>
+                To return to a page, users need to click through the tabs again
+                rather than a single back button.
+              </li>
+              <li>Fonts too small</li>
+            </ul>
+          </li>
+
+          <li>
+            <h4 class="user-pain-point-title">
+              Lack of Visual Appeal + Low Responsiveness
+            </h4>
+            <ul class="user-pain-point-details">
+              <li>
+                Number of available spaces for a course can be inaccurate.
+              </li>
+              <li>Inconsistent fonts and sizes</li>
+              <li>Page layout incohesive</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="section-container">
+          <img
+            class="user-persona-image"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/user-persona.avif"
+            alt="user persona"
+          />
+        </div>
+      </section>
+
+      <img
+        class="divider"
+        loading="lazy"
+        src="images/redesignGOLDcasestudy/divider3.svg"
+        alt="divider3"
+      />
+
+      <section class="ideation-section">
+        <h2 id="ideation" class="section-title">3. Ideation (LoFis)</h2>
+        <div class="section-container">
+          <img
+            class="ideation-image"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/ideation.avif"
+            alt="journal with lofi sketches, notes, and ideas"
+          />
+
+          <h3 class="section-subtitle">Home Page</h3>
+          <p class="section-text">
+            We wanted to create a uniform dashboard that minimized scrolling to
+            see all information, so we designed a one-page layout to get all
+            info needed for current classes.
+          </p>
+        </div>
+        <div class="original-and-transition-container">
+          <div>
+            <img
+              class="original"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/homepage-original.avif"
+              alt="original homepage"
+            />
+            <p class="original-caption">Original Page</p>
+          </div>
+          <div class="transition-container">
+            <img
+              class="transition-symbol"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/lofi-transition-symbol.svg"
+              alt="symbol to indicate transition from original homepage to new homepage LoFi mockup"
+            />
+            <p class="transition-text">LoFi Mockup</p>
+          </div>
+        </div>
+        <div class="new-container">
+          <img
+            class="new lofi"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/homepage-lofi.avif"
+            alt="new homepage LoFi mockup"
+          />
+          <p class="transition-text-mobile original-caption">LoFi Mockup</p>
+        </div>
+
+        <div class="section-container">
+          <h3 class="section-subtitle">Advanced Search Page</h3>
+          <p class="section-text">
+            The filters of the old page were messy and cluttered, so we
+            prioritized with the most popular filters used to simplify the page,
+            which allows users to scan the screen quicker.
+          </p>
+        </div>
+        <div class="original-and-transition-container">
+          <div>
+            <img
+              class="original"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/advanced-search-original.avif"
+              alt="original advanced search page"
+            />
+            <p class="original-caption">Original Page</p>
+          </div>
+          <div class="transition-container">
+            <img
+              class="transition-symbol"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/lofi-transition-symbol.svg"
+              alt="symbol to indicate transition from original advanced search page to new advanced search page LoFi mockup"
+            />
+            <p class="transition-text">LoFi Mockup</p>
+          </div>
+        </div>
+        <div class="new-container">
+          <img
+            class="new lofi"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/advanced-search-lofi.avif"
+            alt="new advanced search page LoFi mockup"
+          />
+          <p class="transition-text-mobile original-caption">LoFi Mockup</p>
+        </div>
+
+        <div class="section-container">
+          <h3 class="section-subtitle">Course Information Pop-up</h3>
+          <p class="section-text">
+            Currently, Description, Prerequisites, Restrictions, and Enrollment
+            History are scattered to multiple tabs, so we condensed it to one
+            page since each info did not take up a lot of space, and it users
+            can see all info quicker. Also, we removed irrelevant information
+            that users complained about.
+          </p>
+        </div>
+        <div class="course-info-original-transition-and-lofi-container">
+          <div>
+            <img
+              class="original"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/course-info-pop-up-original.avif"
+              alt="original course information pop-up"
+            />
+            <p class="original-caption">Original Pop-up</p>
+          </div>
+          <img
+            class="course-info-lofi-transition-symbol"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/lofi-transition-symbol.svg"
+            alt="symbol to indicate transition from original course information pop-up to new course information pop-up LoFi mockup"
+          />
+          <p class="course-info-lofi-transition-text">LoFi Mockup</p>
+          <div>
+            <img
+              class="course-info-pop-up-lofi"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/course-info-pop-up-lofi.avif"
+              alt="new course information pop-up LoFi mockup"
+            />
+            <p class="transition-text-mobile original-caption">LoFi Mockup</p>
+          </div>
+        </div>
+      </section>
+
+      <img
+        class="divider"
+        loading="lazy"
+        src="images/redesignGOLDcasestudy/divider4.svg"
+        alt="divider4"
+      />
+
+      <section class="iterations-section">
+        <h2 id="iterations" class="section-title">4. Iterations (HiFis)</h2>
+        <div class="section-container">
+          <img
+            class="design-system"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/design-system.avif"
+            alt="design system"
+          />
+          <p class="design-system-caption">
+            Our Design System -- finalized colors, font hierarchy, and other
+            components
+          </p>
+
+          <h3 class="section-subtitle">Home Page Dashboard Revisions</h3>
+          <ul class="section-list">
+            <li>Menu Icon</li>
+            <li>Displayed Information for class time, location, details</li>
+            <li>Applied style guide for uniformity</li>
+          </ul>
+        </div>
+        <div class="original-and-transition-container">
+          <div>
+            <img
+              class="original original-lofi-page"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/homepage-lofi.avif"
+              alt="original homepage LoFi mockup"
+            />
+            <p class="original-caption">LoFi Page</p>
+          </div>
+          <div class="transition-container">
+            <img
+              class="transition-symbol"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/hifi-transition-symbol.svg"
+              alt="symbol to indicate transition from original homepage LoFi mockup to new homepage HiFi mockup"
+            />
+            <p class="transition-text hifi-transition-text">HiFi Mockup</p>
+          </div>
+        </div>
+        <div class="new-container">
+          <img
+            class="new"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/homepage-hifi.avif"
+            alt="new homepage HiFi mockup"
+          />
+          <p class="transition-text-mobile original-caption">HiFi Mockup</p>
+        </div>
+
+        <div class="section-container">
+          <h3 class="section-subtitle">Advanced Search Page Revisions</h3>
+          <ul class="section-list">
+            <li>Reformatted layout into a more intuitive flow</li>
+            <li>
+              Categorized by Basic Search and Advanced Search to not clutter
+              queries with too many details
+            </li>
+          </ul>
+        </div>
+        <div class="original-and-transition-container">
+          <div>
+            <img
+              class="original original-lofi-page"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/advanced-search-lofi.avif"
+              alt="original advanced search page LoFi mockup"
+            />
+            <p class="original-caption">LoFi Page</p>
+          </div>
+          <div class="transition-container">
+            <img
+              class="transition-symbol"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/hifi-transition-symbol.svg"
+              alt="symbol to indicate transition from original advanced search page LoFi mockup to new advanced search page HiFi mockup"
+            />
+            <p class="transition-text hifi-transition-text">HiFi Mockup</p>
+          </div>
+        </div>
+        <div class="new-container">
+          <img
+            class="new"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/advanced-search-hifi.avif"
+            alt="new advanced search page HiFi mockup"
+          />
+          <p class="transition-text-mobile original-caption">HiFi Mockup</p>
+        </div>
+
+        <div class="section-container">
+          <h3 class="section-subtitle">
+            Find Course Results + Info Pop-up Revisions
+          </h3>
+          <ul class="section-list">
+            <li>Changed bullet points to checks or crosses in Prerequisites</li>
+            <li>Applied style guide</li>
+            <li>
+              Underlined &quot;show more&quot; link to indicate clickable
+              feature
+            </li>
+          </ul>
+        </div>
+        <div class="course-info-lofi-transition-and-hifi-container">
+          <div class="course-info-lofi-container">
+            <img
+              class="course-info-lofi"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/course-info-pop-up-lofi.avif"
+              alt="original course information pop-up LoFi mockup"
+            />
+            <p class="original-caption">LoFi Pop-up</p>
+          </div>
+          <img
+            class="course-info-hifi-transition-symbol"
+            loading="lazy"
+            src="images/redesignGOLDcasestudy/hifi-transition-symbol.svg"
+            alt="symbol to indicate transition from original course results page LoFi mockup to new course results page HiFi mockup"
+          />
+          <p class="course-info-hifi-transition-text">HiFi Mockups</p>
+          <div>
+            <img
+              class="new course-info-hifi"
+              loading="lazy"
+              src="images/redesignGOLDcasestudy/course-results-page-and-info-pop-up-hifi.avif"
+              alt="new course results page and course information pop-up HiFi mockup"
+            />
+            <p class="transition-text-mobile original-caption">HiFi Mockup</p>
+          </div>
+        </div>
+      </section>
+
+      <img
+        class="divider"
+        loading="lazy"
+        src="images/redesignGOLDcasestudy/divider5.svg"
+        alt="divider5"
+      />
+
+      <section class="takeaways-section">
+        <h2 id="takeaways" class="section-title">5. Takeaways</h2>
+        <div class="section-container">
+          <p class="section-text">
+            This was my first user-centered design project, so it was my first
+            time conducting user-testing interviews, and affinity mapping UX
+            research results. I also used Figma for the first time, as I used to
+            use Photoshop and sketching apps to create graphics or other digital
+            art. I learned a lot of basic Figma features as well as introductory
+            prototyping, all of which I&apos;ve expanded upon in numerous
+            projects since this one.
+          </p>
+          <p class="section-text">
+            I learned that iterative revision is key to a solid design, and that
+            user feedback guides a productive and useful design journey! &lt;3
+          </p>
+        </div>
+      </section>
+
+      <img
+        class="divider"
+        loading="lazy"
+        src="images/redesignGOLDcasestudy/star.svg"
+        alt="star"
+      />
+    </main>
+
+    <div class="contact">
+      <div class="links">
+        <div class="linkedin">
+          <img src="images/LinkedIn.avif" alt="LinkedIn logo" loading="lazy" />
+          <a
+            href="https://www.linkedin.com/in/christyyu"
+            target="_blank"
+            rel="noopener noreferrer"
+            >linkedin.com/in/christyyu</a
+          >
+        </div>
+        <div class="email">
+          <img src="images/Email.avif" alt="email logo" loading="lazy" />
+          <p>christyyu [at] ucsb [dot] edu</p>
+        </div>
+        <div class="github">
+          <img src="images/GitHub.avif" alt="github logo" loading="lazy" />
+          <a
+            href="https://github.com/qwistaycat"
+            target="_blank"
+            rel="noopener noreferrer"
+            >github.com/qwistaycat</a
+          >
+        </div>
+      </div>
+      <p>Hit me up!</p>
+    </div>
+  </body>
+</html>
