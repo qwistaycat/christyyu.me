@@ -243,6 +243,9 @@ content: url("images/works_cards/sbcl_hover.svg");
 .work a:hover img.portfoliocard[src*="dogether"] {
 content: url("images/works_cards/dogether_hover.avif");
 }
+.work a:hover img.portfoliocard[src*="redesignGOLD"] {
+content: url("images/works_cards/redesignGOLD_hover.svg");
+}
 
 /* Active (onclick) states for each project */
 .work a:active img.portfoliocard[src*="jaffx"] {
@@ -268,6 +271,9 @@ content: url("images/works_cards/sbcl_onclick.svg");
 }
 .work a:active img.portfoliocard[src*="dogether"] {
 content: url("images/works_cards/dogether_onclick.avif");
+}
+.work a:active img.portfoliocard[src*="redesignGOLD"] {
+content: url("images/works_cards/redesignGOLD_onclick.svg");
 }
 
 
