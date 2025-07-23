@@ -151,41 +151,12 @@ html {
 }
 
 
-.bigheader{
-    color:#FFFFC5;
-    font-size: 4rem; /*64px*/
-    font-family: "Metamorphous", serif;
-    margin: 0;
-}
 .text{
     color:#FFFFC5;
     font-size: 1.5rem; /*24px*/
     font-family: 'Syne Mono', serif;
 }
-.story{
-    padding: 20vh 15vw;
-}
-.resume{
-    padding: 20vh 15vw;
-    font-family: 'Syne Mono', serif;
-}
-.category{
-    font-size: 1.5rem; /*24px*/
-    color:#43A9B7;
-}
-.title{
-    font-size: 1.5em; /*24px*/
-    background-color: #FFFFC5;
-    opacity: 0.60;
-    padding: 1vh .7vw;
-    border-radius: 5px;
-    display: inline-block;  
-    margin: 0;
-}
-ul{
-    color: #FFFFC5;
-    font-size: 1em; /*16px*/
-}
+
 .pt1{
     display: flex;
     gap: 10vw;
