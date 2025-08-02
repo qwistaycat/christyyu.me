@@ -111,6 +111,7 @@ html {
   font-size:6rem; /*96px*/
   margin-left: 10vw;
   margin-top: 40vh;
+  text-shadow: 0px 0px 15px #14343E;
 }
 .blur {
   max-width: 90vh;
@@ -125,16 +126,28 @@ html {
   margin-left: 10vw;
   margin-top:5vh;
   max-width: 55vw;
-  margin-bottom:60vh;
+  margin-bottom:30vh;
+  text-shadow: 0px 0px 15px #14343E;
 }
 
 .GOLD, .newsletter, .refract{
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding: 10vh 10vw;
 }
 
+.side{
+  padding-top: 10vh;
+}
+.numbered{
+  color:#43A9B7;
+  font-family: 'Syne Mono', serif;
+  font: size 2rem; /*32px*/
+  padding-left: .4vw;
+}
+.star{
+  width:40px;
+}
 
 
 .contact{
