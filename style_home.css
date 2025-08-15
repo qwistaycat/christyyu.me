@@ -136,6 +136,58 @@ html {
   padding: 10vh 10vw;
 }
 
+.refract .leftside .title{
+  color:#9F7DFF;
+}
+
+.pallette{
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  gap: 15px;
+  justify-content: space-between;
+}
+.refract .leftside .pallette .color1{
+  background-color:#4A5168;
+  /* WHY DOES THIS WORK FHEUIWFHEIUWHFIEUWLHFIUW */
+}
+.refract .leftside .pallette .color2{
+  background-color:#909ABD;
+}
+.refract .leftside .pallette .color3{
+  background-color:#AAB3D3;
+}
+.refract .leftside .pallette .color4{
+  background-color:#E4EAFF;
+}
+.refract .leftside .pallette .color5{
+  background-color:#9F7DFF;
+}
+.refract .leftside .pallette .color6{
+  background-color:#8A7CB2;
+}
+.refract .leftside .subtitle{
+  color: #AAB3D3;
+}
+.refract .leftside .github{
+  color: #9F7DFF;
+}
+.refract .leftside .timeline{
+  color: #F4E9E3;
+}
+.refract .rightside .headline{
+  color: #AAB3D3;
+}
+.og{
+  color:#FFFFFF
+}
+.cloaked{
+  color:#9F7DFF;
+}
+.subtag{
+  color:#AAB3D3;
+}
+
 .side{
   padding-top: 10vh;
 }
