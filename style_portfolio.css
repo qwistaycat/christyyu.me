@@ -225,6 +225,9 @@ content: url("images/works_cards/jaffx_hover.avif");
 .work a:hover img.portfoliocard[src*="refract"] {
 content: url("images/works_cards/refract_hover.svg");
 }
+.work a:hover img.portfoliocard[src*="dawdle"] {
+content: url("images/works_cards/dawdle_hover.svg");
+}
 .work a:hover img.portfoliocard[src*="noteblockit"] {
 content: url("images/works_cards/noteblockit_hover.avif");
 }
@@ -256,6 +259,9 @@ content: url("images/works_cards/jaffx_onclick.avif");
 }
 .work a:active img.portfoliocard[src*="refract"] {
 content: url("images/works_cards/refract_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="dawdle"] {
+content: url("images/works_cards/dawdle_onclick.svg");
 }
 .work a:active img.portfoliocard[src*="noteblockit"] {
 content: url("images/works_cards/noteblockit_onclick.avif");
