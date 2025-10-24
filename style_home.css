@@ -111,15 +111,15 @@ html {
   font-size:6rem; /*96px*/
   margin-left: 10vw;
   margin-top: 40vh;
-  text-shadow: 0px 0px 15px #14343E;
+  text-shadow: 0px 0px 15px #000;
 }
-.blur {
+/* .blur {
   max-width: 90vh;
   position: absolute;
   left: 5vw;
   top: 35vh;
   z-index: -1;
-}
+} */
 .tagline {
   color: #7effbc;
   font-size: 1.5rem; /*24px*/
@@ -213,7 +213,6 @@ html {
   color:#AAB3D3;
 }
 
-
 .numbered{
   color:#43A9B7;
   font-family: 'Syne Mono', serif;
@@ -224,17 +223,15 @@ html {
   width:40px;
 }
 
-
-
-.github-link{
+.github-link a{
   color:#9F7DFF;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 .github-star{
   width: 25px;
   vertical-align: middle;
 }
-
 
 .leftside a{
   text-decoration: none;
@@ -259,8 +256,7 @@ html {
   color: #E4EAFF;
 }
 
-
-
+/* right side content here */
 
 .rightside .headline{
   font-size: 3rem; /*48px*/
@@ -273,11 +269,17 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  text-align: center;
+  gap: 1vw;
 }
 .picture-content img{
   max-width: 100%;
   height: auto;
 }
+
+
+
+
 
 .contact{
   display: flex;
