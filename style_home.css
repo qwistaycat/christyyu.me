@@ -132,40 +132,62 @@ html {
 
 .GOLD, .newsletter, .refract{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 10vh 10vw;
+  gap: 2vw;
+}
+.refract {
+  font-family: 'Monda', monospace;
+}
+
+.leftside{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  max-width: 40vw;
+}
+.rightside{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  max-width: 50vw;
 }
 
 .refract .leftside .title{
   color:#9F7DFF;
+  font-size: 5rem; /*48px*/
 }
 
 .pallette{
   display: flex;
   flex-direction: row;
-  height: 30px;
-  gap: 15px;
+  gap: 1vw;
   justify-content: space-between;
 }
-.refract .leftside .pallette .color1{
-  background-color:#4A5168;
-  /* WHY DOES THIS WORK FHEUIWFHEIUWHFIEUWLHFIUW */
+.swatch{
+  width:40px;
+  height:40px;
 }
-.refract .leftside .pallette .color2{
+.slate{
+  background-color:#4A5168;
+}
+.stone{
   background-color:#909ABD;
 }
-.refract .leftside .pallette .color3{
+.lightgrey{
   background-color:#AAB3D3;
 }
-.refract .leftside .pallette .color4{
+.white{
   background-color:#E4EAFF;
 }
-.refract .leftside .pallette .color5{
+.purple{
   background-color:#9F7DFF;
 }
-.refract .leftside .pallette .color6{
+.bruise{
   background-color:#8A7CB2;
 }
+
 .refract .leftside .subtitle{
   color: #AAB3D3;
 }
@@ -188,9 +210,7 @@ html {
   color:#AAB3D3;
 }
 
-.side{
-  padding-top: 10vh;
-}
+
 .numbered{
   color:#43A9B7;
   font-family: 'Syne Mono', serif;
@@ -199,6 +219,38 @@ html {
 }
 .star{
   width:40px;
+}
+
+
+
+.github-link{
+  color:#9F7DFF;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+.github-star{
+  width: 25px;
+  vertical-align: middle;
+}
+
+.action-button{
+  border: none;
+  border-radius: 10px;
+  padding: 1vh 2vw;
+  font-size: 1.5rem; /*24px*/
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.refract .action-button{
+  background-color: #E4EAFF;
+  color: #9F7DFF;
+  font-family: 'Monda', monospace;
+}
+.refract .action-button:hover{
+  background-color: #9F7DFF;
+  color: #E4EAFF;
 }
 
 
