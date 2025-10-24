@@ -278,10 +278,10 @@ html {
 
 /* ====== INK NEWSLETTER ======= */
 .inkpic{
-  width: auto;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .newsletter {
   font-family: 'Buenard', serif;
@@ -324,11 +324,17 @@ html {
 .newsletter .timeline{
   color: #CAADA7;
 }
+.appmockup{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* right side content of ink */
 
 .newsletter .rightside .headline{
-  font-size: 3rem; /*48px*/
+  font-size: 4rem; /*64px*/
   font-weight: bold;
   text-align: right;
   font-family: 'DM Serif Display', serif;
@@ -337,6 +343,26 @@ html {
   font-size: 1.5rem; /*19.2px*/
   padding: 0;
 }
+
+.newsletter .picture-content{
+  display: flex;
+  gap: 1vw;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.main-dashboard, .annotation-mode, .personal-library {
+  flex: 1;
+}
+
+/* .newsletter .picture-content > .main-dashboard,
+.newsletter .picture-content > .annotation-mode,
+.newsletter .picture-content > .personal-library {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+} */
 
 
 
