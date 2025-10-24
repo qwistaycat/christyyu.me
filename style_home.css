@@ -145,18 +145,18 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1vh;
-  max-width: 40vw;
+  max-width: 30vw;
 }
 .rightside{
   display: flex;
   flex-direction: column;
   gap: 1vh;
-  max-width: 50vw;
+  max-width: 70vw;
 }
 
 .refract .leftside .title{
   color:#9F7DFF;
-  font-size: 5rem; /*48px*/
+  font-size: 6rem; 
 }
 
 .pallette{
@@ -166,8 +166,11 @@ html {
   justify-content: space-between;
 }
 .swatch{
-  width:40px;
   height:40px;
+  display: block;
+  /* Make each swatch expand equally to fill the palette row */
+  flex: 1 1 0;
+  min-width: 0; /* allows flex children to shrink properly when needed */
 }
 .slate{
   background-color:#4A5168;
@@ -225,23 +228,26 @@ html {
 
 .github-link{
   color:#9F7DFF;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  font-size: 1.5rem;
 }
 .github-star{
   width: 25px;
   vertical-align: middle;
 }
 
+
+.leftside a{
+  text-decoration: none;
+}
 .action-button{
   border: none;
   border-radius: 10px;
   padding: 1vh 2vw;
   font-size: 1.5rem; /*24px*/
   cursor: pointer;
-  width: fit-content;
+  /* width: fit-content; */
+  text-align: center;
   transition: background-color 0.3s ease;
-  text-decoration: none;
 }
 .refract .action-button{
   background-color: #E4EAFF;
