@@ -113,13 +113,6 @@ html {
   margin-top: 40vh;
   text-shadow: 0px 0px 15px #000;
 }
-/* .blur {
-  max-width: 90vh;
-  position: absolute;
-  left: 5vw;
-  top: 35vh;
-  z-index: -1;
-} */
 .tagline {
   color: #7effbc;
   font-size: 1.5rem; /*24px*/
@@ -137,6 +130,11 @@ html {
   padding: 10vh 10vw;
   gap: 2vw;
 }
+
+/* ====== REFRACT STARTS ======= */
+
+/* left side of refract */
+
 .refract {
   font-family: 'Monda', monospace;
 }
@@ -278,9 +276,76 @@ html {
 }
 
 
+/* ====== INK NEWSLETTER ======= */
+.inkpic{
+  width: auto;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.newsletter {
+  font-family: 'Buenard', serif;
+  font-size: 1.2rem; /*24px*/
+  color: #F4E9E3;
+}
+.newsletter .leftside .title{
+  color:#F4E9E3;
+  font-size: 2rem; 
+}
+.grey {
+  background-color:#4A4E68;
+}
+.mauve {
+  background-color: #9A8C98;
+}
+.beige {
+  background-color: #CAADA7;
+}
+.peach {
+  background-color: #F2E9E4;
+}
+.blood {
+  background-color: #96190C;
+}
+
+.newsletter .leftside .subtitle{
+  color: #F4E9E3;
+}
+.newsletter .action-button{
+  background-color: #F2E9E4;
+  color: #4A4E68;
+  font-family: 'Buenard', serif;
+}
+.newsletter .action-button:hover{
+  background-color: #4A4E68;
+  color: #F2E9E4;
+}
+
+.newsletter .timeline{
+  color: #CAADA7;
+}
+
+/* right side content of ink */
+
+.newsletter .rightside .headline{
+  font-size: 3rem; /*48px*/
+  font-weight: bold;
+  text-align: right;
+  font-family: 'DM Serif Display', serif;
+}
+.newsletter .picture-content p{
+  font-size: 1.5rem; /*19.2px*/
+  padding: 0;
+}
 
 
 
+
+
+
+
+
+/* ====== CONTACT ======= */
 .contact{
   display: flex;
   justify-content: space-between;
