@@ -138,6 +138,30 @@ html {
 .refract {
   font-family: 'Monda', monospace;
 }
+@media screen and (max-width: 1200px) {
+  .refract {
+    flex-direction: column;
+    align-items: left;
+  }
+  .refract .leftside {
+    max-width: 50vw;
+  }
+  .newsletter{
+    flex-direction: column;
+    align-items: left;
+  }
+  .newsletter .leftside {
+    max-width: 50vw;
+  }
+  .GOLD{
+    flex-direction: column;
+    align-items: left;
+  }
+  .GOLD .leftside {
+    max-width: 50vw;
+  }
+}
+
 
 .leftside{
   display: flex;
