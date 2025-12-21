@@ -112,6 +112,9 @@ html {
     font-size: 6rem; /*TODO: change clamp lol 96px*/
     margin-left: 10vw;
     margin-top: 40vh;
+    text-shadow: 0px 0px 15px #14343E;
+    -webkit-text-stroke: 10px #000;
+    paint-order: stroke fill;
 }
 .blur {
     max-width: 90vh;
@@ -126,6 +129,9 @@ html {
     margin-left: 10vw;
     margin-top:5vh;
     max-width: 55vw;
+    text-shadow: 0px 0px 15px #14343E;
+    -webkit-text-stroke: 5px #000;
+    paint-order: stroke fill;
 }
 .star_plane{
     margin-left:65vw;
@@ -137,14 +143,47 @@ html {
     display: flex;
     align-items: center;
     padding: 0 15vw;
-    gap: 5vw;
+    gap: 10vw;
     color:#43A9B7;
-    font-size: 1.5rem; /*24px*/
+    font-size: 1.2rem; 
     font-family: 'Syne Mono', serif;
 }
 .window{
-    max-width: 55vw;
+    max-width: 30vw;
 }
+.aboutmetext{
+    flex-direction: column;
+    max-width: 80vw;
+}
+@media screen and (max-width: 1237px) {
+      .aboutme{
+        gap: 5vh;
+        padding: 0 5vw;
+    }
+    .window{
+        max-width: 30vw;
+    }
+    .aboutmetext{
+        max-width: 80vw;
+        font-size: 1.2rem;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .aboutme{
+        flex-direction: column;
+        gap: 5vh;
+        padding: 0 5vw;
+    }
+    .window{
+        max-width: 60vw;
+    }
+    .aboutmetext{
+        max-width: 80vw;
+        font-size: 2rem;
+    }
+}
+
 
 .divider{
     padding-left: 50%;

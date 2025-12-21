@@ -107,11 +107,17 @@ html {
 
 
 .greetings {
-  color: #7effbc;
-  font-size:6rem; /*96px*/
+  color: #43A9B7;
+  font-size:3rem;
   margin-left: 10vw;
   margin-top: 40vh;
-  text-shadow: 0px 0px 15px #000;
+  text-shadow: 0px 0px 15px #14343E;
+  -webkit-text-stroke: 10px #000;
+  paint-order: stroke fill;
+}
+.greetings2 {
+  margin-top: 0vh;
+  margin-right: 10vw;
 }
 .tagline {
   color: #7effbc;
@@ -121,6 +127,9 @@ html {
   max-width: 55vw;
   margin-bottom:30vh;
   text-shadow: 0px 0px 15px #14343E;
+  -webkit-text-stroke: 5px #000;
+  paint-order: stroke fill;
+
 }
 
 .GOLD, .newsletter, .refract{
