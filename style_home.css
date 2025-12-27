@@ -111,7 +111,7 @@ html {
   font-size:3rem;
   margin-left: 10vw;
   margin-top: 40vh;
-  text-shadow: 0px 0px 15px #14343E;
+  /* text-shadow: 0px 0px 15px #14343E; */
   -webkit-text-stroke: 10px #000;
   paint-order: stroke fill;
 }
@@ -126,7 +126,7 @@ html {
   margin-top:5vh;
   max-width: 55vw;
   margin-bottom:30vh;
-  text-shadow: 0px 0px 15px #14343E;
+  /* text-shadow: 0px 0px 15px #14343E; */
   -webkit-text-stroke: 5px #000;
   paint-order: stroke fill;
 

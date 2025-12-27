@@ -125,7 +125,7 @@ color: #7effbc;
 font-size:6rem; /*96px*/
 margin-left: 10vw;
 margin-top: 40vh;
-text-shadow: 0px 0px 15px #2A1010;
+/* text-shadow: 0px 0px 15px #2A1010; */
 -webkit-text-stroke: 10px #000;
 paint-order: stroke fill;
 }
@@ -149,7 +149,7 @@ max-width: 55vw;
   margin-left: 10vw;
   margin-top:1vh;
   max-width: 55vw;
-  text-shadow: 0px 0px 15px #2A1010;
+  /* text-shadow: 0px 0px 15px #2A1010; */
   -webkit-text-stroke: 5px #000;
   paint-order: stroke fill;
 }
