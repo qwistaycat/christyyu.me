@@ -247,6 +247,7 @@ html {
 	letter-spacing: normal;
 }
 
+
 .menu a {
 	transition: transform var(--transition-duration) ease-out;
 	line-height: normal;

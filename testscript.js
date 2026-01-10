@@ -1,1 +1,0 @@
-`<a href="${url}"><img class ="portfoliocard" src="${imgSrc}"></a>`
