@@ -196,7 +196,7 @@ html {
     margin-bottom: 10rem;
 }
 
-p{
+.normaltext{
     line-height: 1.6;
     font-size: 1.4rem;
 }
@@ -262,7 +262,7 @@ ul, ol{
   padding: 2vh 5vw;
   font-size: 3rem;
   gap: 2vw;
-  font-family: var(--font-secondary);
+  font-family: 'Metamorphous', serif;
   align-items: center;
   letter-spacing: normal;
 }
@@ -370,6 +370,11 @@ section {
   .divider img {
     width: 100%;
   }
+  .divider5 {
+    max-width: 50%;
+    display: flex;
+    justify-self: center;
+  }
 }
 
 
@@ -399,6 +404,17 @@ section {
   color: inherit;
   text-decoration: none;
 }
+
+/* smaller screens */
+@media screen and (max-width: 768px) {
+}
+
+/* even smaller screens */
+@media screen and (max-width: 480px) {
+}
+
+
+
 
 :root {
   --text-light: #f4e9e3;
