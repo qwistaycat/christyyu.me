@@ -161,6 +161,16 @@ html {
 .avatar {
     justify-self: center;
     margin: 0;
+
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .dawdlemenu {
@@ -219,6 +229,10 @@ ul, ol{
     justify-content: center;
     gap: 5vw;
 }
+.timer-comparison .image-caption-pair img{
+    width: 100%;
+    height: auto;
+}
 
 .image-caption-pair{
     display: flex;
@@ -233,6 +247,17 @@ ul, ol{
     justify-content: center;
     align-items: center;
     gap: 5vh;
+}
+
+.imagerow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+}
+.imagerow img{
+    width: 100%;
+    height: auto;
 }
 
 .timer-features {
