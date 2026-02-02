@@ -243,10 +243,13 @@ ul, ol{
 
 .onboarding-comparison{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 5vh;
+    gap: 5vw;
+}
+.onboarding-comparison .image-caption-pair img{
+    width: 100%;
+    height: auto;
 }
 
 .imagerow{
@@ -256,7 +259,18 @@ ul, ol{
     gap: 2vw;
 }
 .imagerow img{
-    width: 100%;
+    width: 50%;
+    height: auto;
+}
+
+.coach-flow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+}
+.coach-flow .image-caption-pair img{
+    width: 30%;
     height: auto;
 }
 
@@ -272,6 +286,34 @@ ul, ol{
     flex-direction: column;
     justify-content: center;
     gap: 5vh;
+}
+/* 
+.timer-comparison{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+}
+.timer-comparison .image-caption-pair img{
+    width: 100%;
+    height: auto;
+} */
+
+
+
+.timer-features img{
+    width: 30%;
+    height: auto;
+}
+@media screen and (max-width: 784px) {
+    .timer-features img{
+        width: 60%;
+        height: auto;
+    }
+    .coach-flow .image-caption-pair img{
+        width: 60%;
+        height: auto;
+    }   
 }
 
 
