@@ -132,13 +132,63 @@ html {
 
 }
 
-.GOLD, .newsletter, .refract{
+.newsletter, .refract, .dawdle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10vh 10vw;
   gap: 2vw;
 }
+
+
+
+/* ====== DAWDLE STARTS ======= */
+
+/* leftside of dawdle */
+.dawdle{
+  font-family: "Inter", sans-serif;
+  color: #F6EDEA;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.dawdle .leftside .title{
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 5.5rem; 
+  background: -webkit-linear-gradient(left, #FF6123, #BCB6FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cream{
+  background-color:#F6EDEA;
+}
+.salmon{
+  background-color:#FF9977;
+}
+.tangerine{
+  background-color:#FF6123;
+}
+.lightpurple{
+  background-color:#BCB6FF;
+}
+.greypurple{
+  background-color:#8881C9;
+}
+.darkpurple{
+  background-color:#544E87;
+}
+
+.dawdle .action-button{
+  background-color: #F6EDEA;
+  color: #FF6123;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+.dawdle .action-button:hover{
+  background-color: #FF6123;
+  color: #F6EDEA;
+}
+
 
 /* ====== REFRACT STARTS ======= */
 
@@ -148,6 +198,13 @@ html {
   font-family: 'Monda', monospace;
 }
 @media screen and (max-width: 1200px) {
+  .dawdle {
+    flex-direction: column;
+    align-items: left;
+  }
+  .dawdle .leftside {
+    max-width: 50vw;
+  }
   .refract {
     flex-direction: column;
     align-items: left;
@@ -160,13 +217,6 @@ html {
     align-items: left;
   }
   .newsletter .leftside {
-    max-width: 50vw;
-  }
-  .GOLD{
-    flex-direction: column;
-    align-items: left;
-  }
-  .GOLD .leftside {
     max-width: 50vw;
   }
 }
@@ -270,7 +320,7 @@ html {
 .action-button{
   border: none;
   border-radius: 10px;
-  padding: 1vh 2vw;
+  padding: 2vh 2vw;
   font-size: 1.5rem; /*24px*/
   cursor: pointer;
   /* width: fit-content; */
@@ -365,7 +415,6 @@ html {
   height: auto;
 }
 
-
 /* right side content of ink */
 
 .newsletter .rightside .headline{
@@ -387,83 +436,6 @@ html {
 .main-dashboard, .annotation-mode, .personal-library {
   flex: 1;
 }
-
-/* ========= GOLDDD ======== */
-
-/* left side content of gold */
-
-.GOLD {
-  font-family: 'Montserrat', serif;
-  font-size: 1.2rem; /*24px*/
-  color: #F4E9E3;
-}
-.GOLD .leftside .title{
-  color:#5672A1;
-  font-size: 4rem; 
-  font-family: 'Poppins', sans-serif;
-  padding: 0;
-}
-.GOLD .leftside .title2{
-  color:#FED851;
-  font-size: 7rem; 
-  font-family: 'Poppins', sans-serif;
-  -webkit-text-stroke: 4px #5672A1;
-  font-weight: bold;
-  padding: 0;
-}
-.yellow1 {
-  background-color:#CDB242;
-}
-.yellow2 {
-  background-color:#FED851;
-}
-.yellow3 {
-  background-color:#FEE385;
-}
-.white1 {       
-  background-color:#ECE4CB;
-}
-.white2 {       
-  background-color:#EAEDF3;
-}
-.blue1 {
-  background-color:#5672A1;
-}
-.blue2 {
-  background-color:#2C4F89;
-}
-.blue3 {
-  background-color:#21325D;
-}
-
-.GOLD .leftside .subtitle{
-  color: #CDB242;
-}
-
-.GOLD .action-button{
-  background-color: #ECE4CB;
-  color: #2C4F89;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-}
-.GOLD .action-button:hover{
-  background-color: #2C4F89;
-  color: #ECE4CB;
-}
-
-/* right side content of gold */
-.GOLD .rightside .headline{
-  font-size: 3rem; /*48px*/
-  text-align: right;
-  color: #AAB3D3
-}
-.gold-preview{
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-
 
 
 
