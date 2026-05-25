@@ -141,7 +141,7 @@ html {
   color: #7effbc;
   font-size: 1.5rem;
   margin-left: 2vw;
-  width: 95%;
+  width: 96%;
 }
 .work::after {
   content: "";
@@ -152,6 +152,48 @@ html {
 
 
 
+
+.worksgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2vw;
+  gap: 2vw;
+  color: #7effbc
+}
+.griditem{
+  gap: 1rem;
+}
+.gridcard {
+  border-radius: 15px;
+  border-color: #1E5B73;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.dawdle {
+  grid-row-start: 1;
+  grid-row-end: span 5;
+}
+.refract {
+  grid-row-start: 1;
+  grid-row-end: span 6;
+}
+.PLUS {
+  grid-row-start: 6;
+  grid-row-end: span 2;
+}
+.collier {
+  grid-row-start: 7;
+  grid-row-end: span 2;
+}
+.jaffx {
+  grid-row-start: 8;
+  grid-row-end: span 5;
+}
+.artistsvsai {
+  grid-row-start: 9;
+  grid-row-end: span 5;
+}
 
 @media screen and (max-width: 1200px) {
 }
