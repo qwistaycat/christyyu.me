@@ -171,6 +171,12 @@ html {
   max-width: 100%;
   overflow: hidden;
 }
+.gridcard img,
+.gridcard video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .gridcard:hover {
   border: #7effbc solid 1px;
   box-shadow: 0 0 10px 2px #43A9B7;
