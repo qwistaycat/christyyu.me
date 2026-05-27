@@ -168,17 +168,23 @@ html {
 }
 .gridcard {
   border-radius: 15px;
-  border-color: #1E5B73;
-  border-style: solid;
-  border-width: 2px;
   max-width: 100%;
   overflow: hidden;
 }
+.gridcard:hover {
+  border: #7effbc solid 1px;
+  box-shadow: 0 0 10px 2px #43A9B7;
+  transform: scale(1.007);
+  transition: transform 0.1s ease-in-out;
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 0.75rem 1rem 1rem;
+  align-self: center;
+  justify-content: center;
 }
 .project-tag {
   display: inline-block;
@@ -225,7 +231,7 @@ html {
 }
 .description{
   font-family: monospace;
-  color:#FFFFC5;
+  color:#7effbc;
   font-size: 1.1rem; /*17.6px*/
 }
 .about{
