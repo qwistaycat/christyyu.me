@@ -295,6 +295,11 @@ html {
   font-family: "Titillium Web", sans-serif;
   font-size: 2rem; /*32px*/
 }
+.griditem.PLUS img {
+  height: 7rem;
+  width:auto;
+  padding: 2vh 1vw;
+}
 .rainbowplus {
   background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
   height: 10px;
@@ -326,7 +331,8 @@ html {
 .griditem.collier .gridcard img {
   height: 7rem;
   width: auto;
-  object-fit: contain;
+  /* object-fit: contain; */
+  padding: 2vh 1vw;
 }
 .collierwordmark {
   display: flex;
