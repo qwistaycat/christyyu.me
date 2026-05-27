@@ -123,9 +123,9 @@ html {
   color: #7effbc;
   font-size: 1.2rem;
   margin-left: 10vw;
-  margin-top:5vh;
+  margin-top:1vw;
   max-width: 60vw;
-  margin-bottom:30vh;
+  margin-bottom:5vw;
   /* text-shadow: 0px 0px 15px #14343E; */
   -webkit-text-stroke: 5px #000;
   paint-order: stroke fill;
@@ -208,18 +208,18 @@ html {
 }
 .PLUS {
   grid-row-start: 7;
-  grid-row-end: span 6;
+  grid-row-end: span 4;
 }
 .collier {
   grid-row-start: 8;
-  grid-row-end: span 6;
+  grid-row-end: span 5;
 }
 .jaffx {
-  grid-row-start: 13;
+  grid-row-start: 11;
   grid-row-end: span 6;
 }
 .artistsvsai {
-  grid-row-start: 14;
+  grid-row-start: 13;
   grid-row-end: span 6;
 }
 
@@ -374,6 +374,17 @@ html {
   font-family: 'Metamorphous', serif;
   align-items: center;
   letter-spacing: normal;
+}
+
+@media screen and (max-width: 500px) {
+  .hmu {
+    font-size: 1.5rem; /*24px*/
+  }
+}
+@media screen and (max-width: 400px) {
+  .hmu {
+    display: none;
+  }
 }
 .links{
   display: flex;
