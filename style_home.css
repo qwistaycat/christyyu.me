@@ -133,11 +133,14 @@ html {
 }
 
 
+
+
+
 .work{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1rem;
+  gap: 1vw;
   color: #7effbc;
   font-size: 1.5rem;
   margin-left: 2vw;
@@ -152,15 +155,15 @@ html {
 
 
 
+
 .worksgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 2vw;
-  gap: 2vw;
+  gap: 1vw;
   color: #7effbc
 }
 .griditem{
-  gap: 1rem;
   max-width: 100%;
 }
 .gridcard {
@@ -174,38 +177,83 @@ html {
 
 .dawdle {
   grid-row-start: 1;
-  grid-row-end: span 5;
+  grid-row-end: span 6;
 }
 .refract {
   grid-row-start: 1;
-  grid-row-end: span 6;
+  grid-row-end: span 7;
 }
 .PLUS {
-  grid-row-start: 6;
-  grid-row-end: span 2;
+  grid-row-start: 7;
+  grid-row-end: span 6;
 }
 .collier {
-  grid-row-start: 7;
-  grid-row-end: span 2;
+  grid-row-start: 8;
+  grid-row-end: span 6;
 }
 .jaffx {
-  grid-row-start: 8;
-  grid-row-end: span 5;
+  grid-row-start: 13;
+  grid-row-end: span 6;
 }
 .artistsvsai {
-  grid-row-start: 9;
-  grid-row-end: span 5;
+  grid-row-start: 14;
+  grid-row-end: span 6;
+}
+
+.name{
+  font-family: 'Syne Mono', serif;
+  color:#43A9B7;
+  font-size: 1.3rem; /*20.8px*/
+  text-align: right;
+}
+.description{
+  font-family: monospace;
+  color:#FFFFC5;
+  font-size: 1.1rem; /*17.6px*/
+}
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1vw;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
   .worksgrid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .dawdle, .refract, .PLUS, .collier, .jaffx, .artistsvsai {
-    grid-row-end: auto;
     width: 100%;
   }
+  .about{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem; /*24px*/
+    align-items: flex-start;
+  }
+  .description{
+    margin-top: 1vh;
+    margin-bottom: 0;
+    font-size: 1.5rem; /*24px*/
+  }
+  .name{
+    text-align: left;
+    font-size: 1.5rem; /*24px*/
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+  }
 }
+
+.griditem.dawdle .gridcard {
+  background-color: #F6EDEA;
+}
+.dawdle .gridcard img {
+  width: 100%;
+  display: block;
+}
+
 .griditem.refract .gridcard {
   background-color: #3C4257;
 }
@@ -218,7 +266,6 @@ html {
   font-style: italic;
   font-size: 2rem; /*32px*/
 }
-
 .rainbowplus {
   background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
   height: 10px;
@@ -260,6 +307,29 @@ html {
   -webkit-background-clip: initial;
   background-clip: initial;
   font-family: "Abril Fatface", serif;
+}
+
+.griditem.jaffx .gridcard {
+  background-color: #1A0D1C;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 1vw;
+  gap: 1vh;
+}
+.griditem.jaffx .gridcard p{
+  background: linear-gradient(90deg, #FDFEC2 0%, #F14E13 50%, #3B9A8C 100%);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem; /*24px*/
+}
+
+.griditem.artistsvsai .gridcard {
+  background-color: #E9E9DB;
+  max-width: 100%;
 }
 
 
