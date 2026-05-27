@@ -188,19 +188,18 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 0.75rem 1rem 1rem;
+  padding: 2vh 2vw;
   align-self: center;
   justify-content: center;
 }
 .project-tag {
   display: inline-block;
-  padding: 0.2rem 0.6rem;
+  padding: 0.5rem 1rem;
   border-radius: 999px;
-  background: #1E5B73;
+  background: #14343E;
   color: #7effbc;
   font-family: "Syne Mono", monospace;
   font-size: 1rem;
-  letter-spacing: 0.02em;
 }
 
 .dawdle {
@@ -231,12 +230,12 @@ html {
 .name{
   font-family: 'Syne Mono', serif;
   color:#43A9B7;
-  font-size: 1.3rem; /*20.8px*/
+  font-size: 1.1rem; /*17.6px*/
   text-align: right;
 }
 .description{
   font-family: monospace;
-  color:#7effbc;
+  color: #7effbc;
   font-size: 1.1rem; /*17.6px*/
 }
 .about{
