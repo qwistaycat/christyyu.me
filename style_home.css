@@ -196,11 +196,10 @@ html {
   display: inline-block;
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
-  /* border: 1px solid #1E5B73; */
   background: #1E5B73;
   color: #7effbc;
   font-family: "Syne Mono", monospace;
-  font-size: 0.85rem;
+  font-size: 1rem;
   letter-spacing: 0.02em;
 }
 
@@ -272,6 +271,9 @@ html {
     font-size: 1.5rem; /*24px*/
     margin-top: 1vh;
     margin-bottom: 2vh;
+  }
+  .project-tag{
+    font-size: 1.5rem; /*24px*/
   }
 }
 
