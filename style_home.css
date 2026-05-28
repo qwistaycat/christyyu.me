@@ -274,6 +274,12 @@ html {
   .project-tag{
     font-size: 1.5rem; /*24px*/
   }
+  .griditem.PLUS .gridcard p{
+    padding: 0 3vw;
+  }
+  .griditem.collier .gridcard p{
+    padding: 0 3vw;
+  }
 }
 
 .griditem.dawdle .gridcard {
@@ -296,7 +302,6 @@ html {
   font-size: 2rem; /*32px*/
 }
 .griditem.PLUS img {
-  height: 7rem;
   width:auto;
   padding: 2vh 1vw;
 }
