@@ -123,12 +123,40 @@ html {
 
 
 
-
+.hero-wrapper{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    color: #2C2D26;
+}
+.zine a {
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    font-family: 'Spectral', serif;
+    border: #2C2D26 solid 1px;
+    border-radius: 100px;
+    margin: 2vh 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #2C2D26;
+}
+.zine a:hover {
+    transition: all var(--transition-duration) ease-in-out;
+    transform: scale(1.1);
+}
 
 
 
 .casestudymenu {
-  background-image: url('images/dawdlecasestudy/gradient.png');
+  background-color: #A54C48;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -136,12 +164,9 @@ html {
   margin: 0;
   padding: 2.5vw 10vw 0 10vw;
 }
-.casestudymenu img {
-  max-width: 100%;
-  margin: 0;
-}
+
 .menusection {
-  color: #A54C48;
+  color: #E9E9DB;
   font-size: 4rem;
   align-self: flex-start;
   padding-left: 15vw;
@@ -274,16 +299,13 @@ section {
 }
 
 
-.takeaways {
-  margin-bottom: 6rem;
-}
-
 .takeaways{
   max-width: 100%;
   margin: 3rem 0;
   font-size: 1.3rem;
   line-height: 1.8;
   color: var(--text-light);
+  margin-bottom: 6rem;
 }
 
 .menusection li {
@@ -293,7 +315,7 @@ section {
 }
 
 .menusection li:hover {
-  color: #544E87;
+  color: #2C2D26;
 }
 
 .menusection a {
@@ -320,8 +342,10 @@ section {
   --bg-dark: black;
   --color-ink-menu: #4a4e68;
   /* Font families */
-  --font-primary: "Inter", sans-serif;
-  --font-title: "League Spartan", sans-serif;
+  --font-primary: "Jost", sans-serif;
+  --font-title: "Jost", sans-serif;
+  --font-secondary: "Spectral", serif;
+  --font-special: "Emilia", serif;
   /* New variables */
   --menu-opacity: 85%;
   --spacing-standard: 2rem;
