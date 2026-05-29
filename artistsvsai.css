@@ -133,8 +133,21 @@ html {
     font-weight: lighter;
     color: #2C2D26;
 }
+.heroimg{
+  width: 40%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .heroimg{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .heroimg{
+    width: 90%;
+  }
+}
 .zine a {
-    padding: 1vh 1vw;
+    padding: 1vh 1.5vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -272,7 +285,7 @@ html {
 section {
   color: #544E87;
   padding: 0 10vw;
-  margin: 4rem 0;
+  margin: 0;
 }
 
 .divider {
