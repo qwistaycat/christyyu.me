@@ -213,12 +213,54 @@ h2{
 #methods p{
   font-size: 1.5rem;
 }
+#methods img{
+  width: 25vw;
+}
+.methodscontainer{
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+  gap: 1vw;
+}
+.methodsgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vw;
+}
 .greenbox{
   background-color: #0D1F20;
   border-radius: 30px;
   height: 100%;
   padding: 1vh 2vw;
 }
+@media screen and (max-width: 768px){
+  .methodscontainer{
+    flex-direction: column;
+  }
+  #methods img{
+    width: 80%;
+  }
+  .methodsgrid{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh; 
+  }
+  .greenbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .greenbox h2{
+    margin: 0
+  }
+}
+
+
+
+
+
 
 
 
