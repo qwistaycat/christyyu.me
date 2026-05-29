@@ -8,7 +8,6 @@ body {
 html {
   font-size: 16px; /* Base font size */
   scroll-behavior: smooth; /* Enable smooth scrolling */
-  font-weight: bold;
 }
 
 /* Small phones */
@@ -132,6 +131,7 @@ html {
     align-items: center;
     font-weight: lighter;
     color: #2C2D26;
+    font-weight: bold;
 }
 .heroimg{
   width: 40%;
@@ -170,7 +170,9 @@ html {
 
 .casestudymenu {
   background-color: #A54C48;
-  background-size: cover;
+  background-image: url("images/artistsvsaicasestudy/menuBG.png");
+  background-size: cover; 
+  /* how do you make the image stay on the right and bottom side instead of the left and top??? */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,6 +188,15 @@ html {
   font-family: var(--font-primary);
   font-weight: bold;
 }
+
+
+#problem h1{
+  font-family: 'Spectral', serif;
+}
+#problem p{
+  font-size: 1.5rem;
+}
+
 
 
 
@@ -283,7 +294,7 @@ html {
 }
 
 section {
-  color: #544E87;
+  color: #2C2D26;
   padding: 0 10vw;
   margin: 0;
 }
