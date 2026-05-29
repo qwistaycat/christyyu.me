@@ -190,8 +190,12 @@ html {
 }
 
 
-#problem h1{
+h1{
   font-family: 'Spectral', serif;
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
 }
 #problem p{
   font-size: 1.5rem;
@@ -199,10 +203,22 @@ html {
 
 
 
-
-
-
-
+#methods {
+  background-color: #2C2D26;
+  color: #E9E9DB;
+  background-image: url("images/artistsvsaicasestudy/MethodsBGtext.svg");
+  /* background-size: ; */
+  /* how do i make it only one ???*/
+}
+#methods p{
+  font-size: 1.5rem;
+}
+.greenbox{
+  background-color: #0D1F20;
+  border-radius: 30px;
+  height: 100%;
+  padding: 1vh 2vw;
+}
 
 
 
@@ -295,7 +311,7 @@ html {
 
 section {
   color: #2C2D26;
-  padding: 0 10vw;
+  padding: 10vh 10vw;
   margin: 0;
 }
 
