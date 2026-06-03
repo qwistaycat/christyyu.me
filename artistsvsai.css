@@ -257,6 +257,30 @@ h2{
   }
 }
 
+.insightsgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3vw;
+}
+.insightsgrid img {
+  max-width: 40vw;
+}
+@media screen and (max-width: 768px){
+  .insightsgrid{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh; 
+  }
+  .insightsgrid img {
+    max-width: 80vw;
+    align-self: center;
+  }
+}
+.quote {
+  font-size: 1.5rem;
+  color: #A54C48;
+}
+
 
 
 
