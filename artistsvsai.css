@@ -281,8 +281,92 @@ h2{
   color: #A54C48;
 }
 
+#takeaways {
+  background-color: #A54C48;
+  color: #E9E9DB;
+  padding-top: 3vh;
+  background-image: url("images/artistsvsaicasestudy/NextStepsBGtext.svg");
+}
+.designdirections {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.takeaways-list {
+  --dot-col: 28px;
+  --dot-size: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 2.5rem 0 4rem;
+  padding-left: 0;
+}
 
+.takeaways-list::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--dot-col) / 2);
+  top: 0.9rem;
+  bottom: 0.9rem;
+  width: 2px;
+  background-color: #E9E9DB;
+}
+
+.takeaway-item {
+  display: grid;
+  grid-template-columns: var(--dot-col) 1fr;
+  column-gap: 2rem;
+  align-items: start;
+}
+
+.takeaway-dot {
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background-color: #E9E9DB;
+  border: 2px solid #E9E9DB;
+  margin-top: 0.6rem;
+  justify-self: center;
+}
+
+.takeaway-content h3 {
+  margin: 0 0 0.6rem;
+  font-size: 2rem;
+  color: #E9E9DB;
+  letter-spacing: 0.04rem;
+}
+
+.takeaway-content p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #D6D1C6;
+}
+
+@media screen and (max-width: 767px) {
+  .takeaways-list {
+    gap: 2rem;
+    --dot-col: 22px;
+    --dot-size: 14px;
+    padding-left: 0;
+  }
+  .takeaway-item {
+    grid-template-columns: var(--dot-col) 1fr;
+    column-gap: 1.25rem;
+  }
+  .takeaway-dot {
+    margin-top: 0.5rem;
+  }
+  .takeaway-content h3 {
+    font-size: 1.6rem;
+  }
+  .takeaway-content p {
+    font-size: 1.05rem;
+  }
+}
 
 
 
@@ -402,16 +486,6 @@ section {
     display: flex;
     justify-self: center;
   }
-}
-
-
-.takeaways{
-  max-width: 100%;
-  margin: 3rem 0;
-  font-size: 1.3rem;
-  line-height: 1.8;
-  color: var(--text-light);
-  margin-bottom: 6rem;
 }
 
 .menusection li {
