@@ -328,7 +328,7 @@ html {
   flex-direction: column;
 }
 .griditem.collier .gridcard p.colliercasestudy {
-  background-image: url('images/home_assets/collier/colliergradient.png');
+  background-image: url('images/home_assets/collier/colliergradient.avif');
   background-clip:text;
   -webkit-background-clip:text;
   color:transparent;

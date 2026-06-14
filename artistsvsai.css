@@ -170,7 +170,7 @@ html {
 
 .casestudymenu {
   background-color: #A54C48;
-  background-image: url("images/artistsvsaicasestudy/menuBG.png");
+  background-image: url("images/artistsvsaicasestudy/menuBG.avif");
   background-size: cover; 
   /* how do you make the image stay on the right and bottom side instead of the left and top??? */
   display: flex;
