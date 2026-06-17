@@ -12,6 +12,31 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Monda&family=Oi&family=Syne+Mono&family=Buenard:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;700&family=League+Spartan:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Abril+Fatface&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <!-- Preload all hover/onclick images of portfolio cards -->
+        <link rel="preload" as="image" href="images/works_cards/Resume_hover.svg">
+        <link rel="preload" as="image" href="images/works_cards/Resume_onclick.svg">
+        <link rel="preload" as="image" href="images/works_cards/refract_hover.svg">
+        <link rel="preload" as="image" href="images/works_cards/refract_onclick.svg">
+        <link rel="preload" as="image" href="images/works_cards/dawdle_hover.svg">
+        <link rel="preload" as="image" href="images/works_cards/dawdle_onclick.svg">
+        <link rel="preload" as="image" href="images/works_cards/newsletter_hover.svg">
+        <link rel="preload" as="image" href="images/works_cards/newsletter_onclick.svg">
+        <link rel="preload" as="image" href="images/works_cards/jaffx_hover.avif">
+        <link rel="preload" as="image" href="images/works_cards/jaffx_onclick.avif">
+        <link rel="preload" as="image" href="images/works_cards/noteblockit_hover.avif">
+        <link rel="preload" as="image" href="images/works_cards/noteblockit_onclick.avif">
+        <link rel="preload" as="image" href="images/works_cards/Fourier_hover.svg">
+        <link rel="preload" as="image" href="images/works_cards/Fourier_onclick.svg">
+        <!-- <link rel="preload" as="image" href="images/works_cards/pinataparty_hover.svg"> -->
+        <!-- <link rel="preload" as="image" href="images/works_cards/pinataparty_onclick.svg"> -->
+        <link rel="preload" as="image" href="images/works_cards/sbhacks_hover.avif">
+        <link rel="preload" as="image" href="images/works_cards/sbhacks_onclick.avif">
+        <link rel="preload" as="image" href="images/works_cards/sbcl_hover.svg">
+        <link rel="preload" as="image" href="images/works_cards/sbcl_onclick.svg">
+        <link rel="preload" as="image" href="images/works_cards/dogether_hover.avif">
+        <link rel="preload" as="image" href="images/works_cards/dogether_onclick.avif">
+        <link rel="preload" as="image" href="images/works_cards/redesignGOLD_hover.svg">
+        <link rel="preload" as="image" href="images/works_cards/redesignGOLD_onclick.svg">
         <script defer src="script.js"></script>
     </head>
     <body>
@@ -34,7 +59,7 @@
 
 
         <div style="display: flex; flex-direction: row;">
-            <p class="work">Work</p>
+            <p class="headerlinedivider">Work</p>
         </div>
 
         <div class="worksgrid">
@@ -192,7 +217,86 @@
         </div>
 
         <div style="display: flex; flex-direction: row;">
-            <p class="work">Playground</p>
+            <p class="headerlinedivider">Playground</p>
+        </div>
+
+        <div class="worksfolder">
+
+            <div class="works">
+                <div class="work">
+                    <a href="https://github.com/qwistaycat/resume">
+                        <img class="portfoliocard" src="images/works_cards/Resume.svg">
+                    </a>
+                    <div>
+                        <p>Built in LaTex!</p>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <a href="https://medium.com/@christyyu2003/drawing-with-fourier-transform-epicycles-ca7661b51fe4">
+                        <img class="portfoliocard" src="images/works_cards/Fourier.svg">
+                    </a>
+                    <div>
+                        <p>Draw anything in one equation with Fourier Transform Epicycles</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <!-- <a href="inkcasestudy.html">
+                        <img class="portfoliocard" src="images/works_cards/newsletter.svg">
+                    </a>
+                    <div>
+                        <p>Consolidates and curates articles on any topic</p>
+                    </div> -->
+                </div>
+                
+                <div class="work">
+                    <a href="https://github.com/Ononymous/Noteblockit">
+                        <img class="portfoliocard" src="images/works_cards/noteblockit.avif">
+                    </a>
+                    <p>Multi-instrumental midi converter with Machine Learning</p>
+                </div>
+                <!-- <div class="work">
+                    <a href="pinataparty.html">
+                        <img class="portfoliocard" src="images/works_cards/pinataparty.svg">
+                    </a>
+                    <div>
+                        <p>Comedy as a coping mechanism!</p>
+                    </div>
+                </div> -->
+                <div class="work">
+                    <a href="https://2025.sbhacks.com/">
+                        <img class="portfoliocard" src="images/works_cards/sbhacks.avif">
+                    </a>
+                    <p>UCSB's Annual Hackathon Website (11th iteration)</p>
+                </div>
+                <div class="work">
+                    <a href="https://www.sbcreativelab.com/">
+                        <img class="portfoliocard" src="images/works_cards/sbcl.svg">
+                    </a>
+                    <p>UCSB's Design Club Website</p>
+                </div>
+                <div class="work">
+                    <a href="https://github.com/SwiftWinds/do-gether">
+                        <img class="portfoliocard" src="images/works_cards/dogether.avif">
+                    </a>
+                    <p>Tamagotchi Task Manager Accountability with friends</p>
+                </div>
+                <div class="work">
+                    <a href="redesignGOLD.html">
+                        <img class="portfoliocard" src="images/works_cards/redesignGOLD.svg">
+                    </a>
+                    <div>
+                        <p>UCSB's Course Registration site redesign</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <a>
+                        <img class="portfoliocard" src="images/works_cards/thisweb.svg">
+                    </a>
+                    <p><a href="https://www.figma.com/design/6V9TPgJG1qymCzlyPNYnpV/the-design-hovel-hole?node-id=772-1290&t=SmtKuqF1NarUOlg2-1">Figma</a> + <a href="https://github.com/qwistaycat/christyyu.me">Github</a></p>
+                </div>
+            </div>
         </div>
 
 

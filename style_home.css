@@ -136,7 +136,7 @@ html {
 
 
 
-.work{
+.headerlinedivider{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -146,7 +146,7 @@ html {
   margin-left: 2vw;
   width: 96%;
 }
-.work::after {
+.headerlinedivider::after {
   content: "";
   flex: 1 1 auto;
   border-bottom: 2px solid #7effbc;
@@ -376,6 +376,153 @@ html {
   background-color: #E9E9DB;
   max-width: 100%;
 }
+
+
+
+
+
+.worksfolder {
+  /* border: black solid 2px; */
+  display: grid;
+  place-items: center;
+}
+.checklist {
+padding: 5vh 3vw;
+color:#FFFFC5;
+font-family: 'Syne Mono', serif;
+font-size: 1rem; /*16px*/
+}
+.works{
+padding: 5vh 3vw;
+/* height: 40vh; */
+/* overflow: scroll; */
+}
+.work{
+display: flex;
+align-items: center;
+}
+.work img{
+padding: 1vh;
+}
+.work p{
+padding-left: 1vw;
+font-family: 'Syne Mono', serif;
+color:#FFFFC5;
+font-size: 1.5rem; /*24px*/
+place-items: center;
+flex: 1;
+margin-top: auto;
+margin-bottom: auto;
+}
+.work p a{
+color:#FFFFC5;
+}
+@media screen and (min-width: 1025px) {
+.portfoliocard{
+  max-width: 40vw;
+}
+}
+@media screen and (max-width: 1024px) {
+.work{
+  flex-direction: column;
+}
+.portfoliocard{
+  width: min(60rem, 95vh);
+}
+.work p {
+  padding-bottom: 3.5vh;
+  margin-top: 0vh;
+  font-size: 2rem; /*19.2px*/
+  text-align: center;
+}
+}
+p.new {
+  color:#FF737B;
+  font-size: 1rem; /*16px*/
+}
+
+/* Hover states for each project */
+.work a:hover img.portfoliocard[src*="jaffx"] {
+content: url("images/works_cards/jaffx_hover.avif");
+}
+.work a:hover img.portfoliocard[src*="refract"] {
+content: url("images/works_cards/refract_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="dawdle"] {
+content: url("images/works_cards/dawdle_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="noteblockit"] {
+content: url("images/works_cards/noteblockit_hover.avif");
+}
+.work a:hover img.portfoliocard[src*="newsletter"] {
+content: url("images/works_cards/newsletter_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="pinataparty"] {
+content: url("images/works_cards/pinataparty_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="sbhacks"] {
+content: url("images/works_cards/sbhacks_hover.avif");
+}
+.work a:hover img.portfoliocard[src*="sbcl"] {
+content: url("images/works_cards/sbcl_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="dogether"] {
+content: url("images/works_cards/dogether_hover.avif");
+}
+.work a:hover img.portfoliocard[src*="redesignGOLD"] {
+content: url("images/works_cards/redesignGOLD_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="Resume"] {
+content: url("images/works_cards/Resume_hover.svg");
+}
+.work a:hover img.portfoliocard[src*="Fourier"] {
+content: url("images/works_cards/Fourier_hover.svg");
+}
+
+/* Active (onclick) states for each project */
+.work a:active img.portfoliocard[src*="jaffx"] {
+content: url("images/works_cards/jaffx_onclick.avif");
+}
+.work a:active img.portfoliocard[src*="refract"] {
+content: url("images/works_cards/refract_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="dawdle"] {
+content: url("images/works_cards/dawdle_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="noteblockit"] {
+content: url("images/works_cards/noteblockit_onclick.avif");
+}
+.work a:active img.portfoliocard[src*="newsletter"] {
+content: url("images/works_cards/newsletter_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="pinataparty"] {
+content: url("images/works_cards/pinataparty_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="sbhacks"] {
+content: url("images/works_cards/sbhacks_onclick.avif");
+}
+.work a:active img.portfoliocard[src*="sbcl"] {
+content: url("images/works_cards/sbcl_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="dogether"] {
+content: url("images/works_cards/dogether_onclick.avif");
+}
+.work a:active img.portfoliocard[src*="redesignGOLD"] {
+content: url("images/works_cards/redesignGOLD_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="Resume"] {
+content: url("images/works_cards/Resume_onclick.svg");
+}
+.work a:active img.portfoliocard[src*="Fourier"] {
+content: url("images/works_cards/Fourier_onclick.svg");
+}
+
+
+
+.portDiv{
+padding: 5vh 0vw;
+}
+
 
 
 
